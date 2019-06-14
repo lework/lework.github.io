@@ -150,10 +150,10 @@ ExampleInventory()
 chmod+x test_inventory.py
 ```
 --list信息
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-ac37393f591fe3dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-ac37393f591fe3dd.png
 --host信息
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-aea8cef51bdd5542.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-aea8cef51bdd5542.png
 执行
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-02050b63b128bf4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-02050b63b128bf4a.png
 查看变量
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-7003229cbe9eaadc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-7003229cbe9eaadc.png

@@ -15,17 +15,17 @@ auth: lework
 编译打包的流程图如下：
 
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-dd300b4ec40dc30d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-dd300b4ec40dc30d.png
 
 
 
 ### 在jenkins上创建Deploy_demo任务
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-25113df66686bce4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-25113df66686bce4.png
 
 添加构建
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-d11aa77cfbaf9b07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-d11aa77cfbaf9b07.png
 
 ```powershell
 [string]$xmldocpath = "D:\scripts\config.xml"
@@ -91,7 +91,7 @@ Set-Item wsman:\localhost\Client\TrustedHosts -value 192.168.77.*
 winrm quickconfig
 ```
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-85fc74c84d486680.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-85fc74c84d486680.png
 
 
 

@@ -19,48 +19,48 @@ PyCharm是一种Python IDE，带有一整套可以帮助用户在使用Python语
 ---
 
 1. 打开pycharm--》RUN==》Edit Configuration
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-01b174e36a1d8328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-01b174e36a1d8328.png
 1. 点击+号按钮，选择Python Remote Debug
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-3b8da6ddea172f05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-3b8da6ddea172f05.png
 1. 设置远程debug的监听地址。
- ![image.png](http://upload-images.jianshu.io/upload_images/3629406-ef85449d5438103b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+ ![image.png]/assets/images/Ansible/3629406-ef85449d5438103b.png
    - **Local host name** 是本机的IP。
    - **Port**在保证不冲突的情况下可以任意指定。
 1. 启动pycharm调试
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-d4fece9f68ba6ff5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-d4fece9f68ba6ff5.png
 可以看到console里的监听信息，正在等待远程主机连接。
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-4a85f69a8a7ad0bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-4a85f69a8a7ad0bb.png
 
 
 ## 在远程服务器上安装远程调试插件
 ---
 
 1. 将pycharm-debug.egg文件拷贝到远程主机的python的site-packages目录下，并安装。
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-78ad90e8d9f0bca1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-78ad90e8d9f0bca1.png
 安装pycharm-debug.egg
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-b4bcfd92a32955da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-b4bcfd92a32955da.png
 
 2. 在需要调试的代码中加入远程调试所需的代码
 查找到ansible执行文件
-![](http://upload-images.jianshu.io/upload_images/3629406-1d6c326286f984e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![]/assets/images/Ansible/3629406-1d6c326286f984e0.png
 
 3. 在程序入口添加下面两行代码
 import pydevd
 pydevd.settrace('192.168.77.1', port=9999, stdoutToServer=True, stderrToServer=True)
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-bc980fcc580f8224.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-bc980fcc580f8224.png
 4. 启动ansible命令
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-cae6e5aa34974bff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-cae6e5aa34974bff.png
 
 
 ## 使用pycharm调试远程代码
 ---
 
 1. 查看pycharm窗口，可以看到有链接进来。
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-a1a806b20856147a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-a1a806b20856147a.png
 2. 此时可点击”Download”下载源码
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-9f881a88d2a0a40d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-9f881a88d2a0a40d.png
 3. 点击完成后，就可以看到远程的ansible代码。
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-b210d89660eb4739.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-b210d89660eb4739.png
 4. 调试的一些常用按钮
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-cd427cecdc81da3b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-cd427cecdc81da3b.png
 

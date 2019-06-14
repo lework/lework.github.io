@@ -28,7 +28,7 @@ Ansible 的目标有如下：
 ##  Ansible是怎么工作的
 ---
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-84b4a2e7285d74bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-84b4a2e7285d74bf.png
 
 从上图可以看出，运行ansible的先决条件是，安装ansible到管理节点，定义主机清单，并有一些playbooks定义。
 
@@ -39,7 +39,7 @@ Ansible 的目标有如下：
 可以用动图说明下此次过程。
 
 
-![46-ansible-playbook-haproxy-nginx1.gif](http://upload-images.jianshu.io/upload_images/3629406-cd0eaeac69698452.gif?imageMogr2/auto-orient/strip)
+![46-ansible-playbook-haproxy-nginx1.gif]/assets/images/Ansible/3629406-cd0eaeac69698452.gif
 
 ## 对管理主机的要求
 ---

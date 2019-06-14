@@ -24,7 +24,7 @@ auth: lework
 
 ## 执行模块的过程
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-74fb47e88468c3dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-74fb47e88468c3dd.png
 
 首先，将模块文件读入内存，然后添加传递给模块的参数，最后将模块中所需要的类添加到内存，由zipfile压缩后，再由base64进行编码，写入到模版文件内。
 
@@ -40,7 +40,7 @@ vim /etc/ansible/ansible.cfg
 pipelining = True
 ```
 执行过程
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-4e456a746bc6eb4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-4e456a746bc6eb4c.png
 
 
 

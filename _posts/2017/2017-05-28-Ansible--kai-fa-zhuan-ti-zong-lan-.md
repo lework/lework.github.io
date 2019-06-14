@@ -41,7 +41,7 @@ Ansible 开发分为两大模块，一是`modules`，而是`plugins`。
 
 ## ansible执行ping模块的过程。
 ----
-![ansible运行过程.jpg](http://upload-images.jianshu.io/upload_images/3629406-cdde75580732a013.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ansible运行过程.jpg]/assets/images/Ansible/3629406-cdde75580732a013.jpg
 
 图片看不清，移步http://upload-images.jianshu.io/upload_images/3629406-cdde75580732a013.jpg
 

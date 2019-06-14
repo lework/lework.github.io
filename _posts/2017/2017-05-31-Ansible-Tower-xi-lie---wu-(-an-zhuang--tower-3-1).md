@@ -88,16 +88,16 @@ pg和rabbitmq 如果本机没有安装的话，默认会进行安装。
 ## 获取license
 访问web页面，默认80端口
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-946c0cc66dbcb0de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-946c0cc66dbcb0de.png
 
 
 选择第二项，填写信息
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-422bf1d50bfc36e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-422bf1d50bfc36e9.png
 
 填写完成后，ansible官方会发一份邮件到你的邮箱
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-48fcf904d5529566.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-48fcf904d5529566.png
 
 下载邮箱中的license，提交到页面。
 
@@ -118,7 +118,7 @@ pg和rabbitmq 如果本机没有安装的话，默认会进行安装。
 
 点击提交后，就进入了后台页面
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-575c4ddfadacd173.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-575c4ddfadacd173.png
 
 
 

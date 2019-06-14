@@ -20,7 +20,7 @@ Cloudera Manager是用于管理CDH群集的端到端应用程序。 Cloudera Man
 Cloudera Manager架构
 cloudera manager的核心是管理服务器，该服务器承载管理控制台的Web服务器和应用程序逻辑，并负责安装软件，配置，启动和停止服务，以及管理上的服务运行群集。
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-693027522626d110.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-693027522626d110.png
 
 ## ansible介绍
 ---
@@ -32,7 +32,7 @@ Ansible 是一个配置管理和应用部署工具，功能类似于目前业界
 
 ## 本次使用的cdh集群架构
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-c0fa9423936645a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-c0fa9423936645a7.png
 
 系统版本： `Centos 6.7 X64`
 

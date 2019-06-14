@@ -73,7 +73,7 @@ ansible-playbook -i hosts test.yml
 
 输出结果
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-1895c3c1c3d062e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-1895c3c1c3d062e2.png
 
 
 ** 在执行playbook前，可以做些检查**

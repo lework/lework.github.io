@@ -34,7 +34,7 @@ callback_whitelist = profile_tasks
 
 现在，执行 ansible-playbook 命令就会看到 playbook 中每个 tasks 的用时情况。
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-598bb35e440a1a7c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-598bb35e440a1a7c.png
 
 在这里，我设置了 2 个 task，1 个 task sleep2 秒，另 1 个 task sleep4秒，在 PLAY RECAP 处会汇总所有 task 执行消耗的时间，并按照耗费时间排序。
 

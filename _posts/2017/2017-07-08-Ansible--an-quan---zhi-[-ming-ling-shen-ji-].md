@@ -104,7 +104,7 @@ running postrotate script
 ## 客户端记录日志
 我们在使用xshell的时候，可以设置日志记录。
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-cb021cdb4baea1a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-cb021cdb4baea1a7.png
 重新连接，在xshell窗口输入命令，该该窗口的所有信息都会记录到日志文件中。
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-b27f6265b4b4d5f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-b27f6265b4b4d5f8.png

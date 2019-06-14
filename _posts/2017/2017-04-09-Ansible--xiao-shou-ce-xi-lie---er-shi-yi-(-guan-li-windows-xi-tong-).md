@@ -127,10 +127,10 @@ python version：`Python 2.6.6`
 
 ##  windows 侧配置
 1. 以管理员身份打开powershell
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-4b35fd357296eb59.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-4b35fd357296eb59.png
 2. 查看当前ps版本
 ```$PSVersionTable```
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-252c48591e7bfbfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-252c48591e7bfbfb.png
 
 3. 系统自带的powershell版本是2.0，需要更新至powershell 3 以上版本
   a. 下载安装Microsoft .NET Framework 4
@@ -140,7 +140,7 @@ https://www.microsoft.com/en-us/download/details.aspx?id=34595
 选择 Windows6.1-KB2506143-x64.msu
 c.安装完，重启服务器,查看powershell版本
 ```$PSVersionTable```
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-d5a6c422988546c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-d5a6c422988546c8.png
 4. 配置winrm
 ```
 mkdir C:\work
@@ -148,7 +148,7 @@ cd C:\work
 Invoke-WebRequest -Uri https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1 -OutFile ConfigureRemotingForAnsible.ps1
 powershell -ExecutionPolicy RemoteSigned .\ConfigureRemotingForAnsible.ps1 -SkipNetworkProfileCheck
 ```
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-eec5f63a38527eab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-eec5f63a38527eab.png
 
 ## ansible manager 配置
 1. 安装ansible和pywinrm
@@ -172,12 +172,12 @@ ansible_winrm_server_cert_validation=ignore
 ```
 3. 测试通信
 ```ansible -i win_hosts windows -m win_ping```
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-bdaefc8e274ffb66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-bdaefc8e274ffb66.png
 4. 查看ip地址
 ```ansible -i win_hosts windows -m win_command -a "ipconfig"```
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-bfbb4bdc55bec3a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-bfbb4bdc55bec3a0.png
 ```ansible -i win_hosts windows -m raw -a "ipconfig"```
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-d47767a177bd86e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-d47767a177bd86e0.png
 
 修改上面的中文问题：
 对命令输出的信息进行utf-8编码，修改winrm模块的protocol.py
@@ -185,6 +185,6 @@ ansible_winrm_server_cert_validation=ignore
 sed -i "s#tdout_buffer.append(stdout)#tdout_buffer.append(stdout.decode('gbk').encode('utf-8'))#g" /usr/lib/python2.6/site-packages/winrm/protocol.py
 sed -i "s#stderr_buffer.append(stderr)#stderr_buffer.append(stderr.decode('gbk').encode('utf-8'))#g" /usr/lib/python2.6/site-packages/winrm/protocol.py
 ```
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-f45899120e0c7463.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-f45899120e0c7463.png
 修改完之后，重新运行命令，中文已正常显示。
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-1ceab5296c7d5b20.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-1ceab5296c7d5b20.png

@@ -43,7 +43,7 @@ debug模块在执行期间打印语句，并且可用于调试变量或表达式
 
 以上playbook，在执行到错误的任务时，会进入debug模式下
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-45674d3d11cfa20d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-45674d3d11cfa20d.png
 
 
 **可用命令**

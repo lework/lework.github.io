@@ -47,13 +47,13 @@ ansible all -m setup -a 'filter=ansible_*_mb'
 
 在远程主机/etc/ansible/facts.d/目录下创建.fact 结尾的文件，也可以是json、ini 或者返回json 格式数据的可执行文件，这些将被作为远程主机本地的facts 执行
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-88eb9bcb00b965b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-88eb9bcb00b965b1.png
 
 
 
 可以通过`{{ ansible_local.preferences.test.h }}`方式来使用该变量
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-c986d4114d116fd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-c986d4114d116fd7.png
 
 ## Facts 使用文件作为缓存
 ---
@@ -73,7 +73,7 @@ ansible-playbook facts.yml
 ```
 查看缓存目录
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-4eff2e24c9ec5071.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-4eff2e24c9ec5071.png
 
 
 上述文件中存储着json序列化的facts数据
@@ -111,7 +111,7 @@ ansible-playbook facts.yml
 
 查看redis内容
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-ac5640d463de3982.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-ac5640d463de3982.png
 
 
 
@@ -138,7 +138,7 @@ fact_caching_connection = localhost:11211
 ```
 查看memcached内容
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-7486b3aad3a76723.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-7486b3aad3a76723.png
 
 ---
 更多文章请看 [Ansible 专题文章总览](http://www.jianshu.com/p/c56a88b103f8)

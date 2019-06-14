@@ -122,23 +122,23 @@ service sshd restart
 添加帐号
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-07a3e6b7e458fef9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-07a3e6b7e458fef9.png
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-ddd17c72fc3c7c25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-ddd17c72fc3c7c25.png
 
 输入刚才生成的key
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-dfe5dc1c51eb43d8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-dfe5dc1c51eb43d8.png
 
 点击添加
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-716d58094fc278a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-716d58094fc278a9.png
 
 
 这时，点击完成后，可以看到没美30秒一次变换的验证码
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-79974c7012ac21d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-79974c7012ac21d5.png
 
 
 
@@ -162,19 +162,19 @@ eth0      Link encap:Ethernet  HWaddr 00:0C:29:7D:D4:7A
 
 设置登陆方法为Keyboard Interactive
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-4edaf2bf4ed76418.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-4edaf2bf4ed76418.png
 
 先输入谷歌验证码
 
-!](http://upload-images.jianshu.io/upload_images/3629406-fa7479e63a30209c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+!]/assets/images/Ansible/3629406-fa7479e63a30209c.png
 
 
 在输入root密码
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-721c7f91a014fcbc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-721c7f91a014fcbc.png
 
 成功登录
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/3629406-dfccee42a7472d73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-dfccee42a7472d73.png

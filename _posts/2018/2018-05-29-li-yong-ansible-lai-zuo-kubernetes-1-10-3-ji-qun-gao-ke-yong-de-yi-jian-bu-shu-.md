@@ -33,7 +33,7 @@ IP地址 | 主机名 | CPU|内存
 # 本次安装的集群拓扑图
 ---
 
-![image.png](https://upload-images.jianshu.io/upload_images/3629406-ccd39e6cc3daaae5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png]/assets/images/Ansible/3629406-ccd39e6cc3daaae5.png
 
 # 本次使用到的ROLE
 - [Ansible Role 系统环境 之【epel源设置】](http://www.jianshu.com/p/6d749a8012b9)
@@ -172,7 +172,7 @@ real	26m44.153s
 user	1m53.698s
 sys	0m55.509s
 ```
-[![asciicast](http://upload-images.jianshu.io/upload_images/3629406-4bdab1fccecd4185.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)](https://asciinema.org/a/1saMof2HuDhY0ujkoS2UyuSl7)
+[![asciicast]/assets/images/Ansible/3629406-4bdab1fccecd4185.png](https://asciinema.org/a/1saMof2HuDhY0ujkoS2UyuSl7)
 
 ######  验证集群版本
 ```bash

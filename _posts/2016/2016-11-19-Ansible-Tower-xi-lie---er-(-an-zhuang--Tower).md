@@ -98,20 +98,20 @@ create database awx;
 
 `https://192.168.77.128/#/`
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-d51b13d66f7ebbd5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-d51b13d66f7ebbd5.png
 
 用户名/密码为admin admin
 
 **导入license**
 没有的话，点击REQUEST LICENSE，去官方申请免费试用。
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-62c3606cdccb5870.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-62c3606cdccb5870.png
 
 提交license后，就进入了DASHBOARD页面啦
 
 
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-030c231fe3cb20a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-030c231fe3cb20a6.png
 
 ## Tower无限hosts的License修改
 ---
@@ -126,7 +126,7 @@ find / -name task_engine.pyc
 /var/lib/awx/venv/tower/lib/python2.7/site-packages/awx/main/task_engine.pyc
 ```
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-1d9703441ade7942.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-1d9703441ade7942.png
 
 
 反编译后的文件为task_engine.pyc_dis，文件重命名为task_engine.py
@@ -137,13 +137,13 @@ find / -name task_engine.pyc
 available_instances = int(self.attributes['instance_count']) 为
 `available_instances = 10000`
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-db0139247b895202.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-db0139247b895202.png
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-e1db4c32f95f4dd3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-e1db4c32f95f4dd3.png
 
 `247`行代码，把相应的功能由`False`改为`True`
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-cc80ff232ddcbb66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-cc80ff232ddcbb66.png
 
 删除task_engine.pyc task_engine.pyo ，将修改后的task_engine.py文件上传到tower上，重启tower服务
 ```
@@ -154,7 +154,7 @@ ansible-tower-service restart
 
 查看license信息
 
-![Paste_Image.png](http://upload-images.jianshu.io/upload_images/3629406-0484440406179c24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Paste_Image.png]/assets/images/Ansible/3629406-0484440406179c24.png
 
 ## 安装时遇到的错误
 ---
