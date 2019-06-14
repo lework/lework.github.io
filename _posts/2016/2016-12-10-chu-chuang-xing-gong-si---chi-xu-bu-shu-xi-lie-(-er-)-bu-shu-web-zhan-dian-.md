@@ -1,10 +1,9 @@
 ---
 layout: post
-title: 初创型公司-持续部署系列（二）部署web站点
-date: 2016-12-10 19:06:37
+title: "初创型公司-持续部署系列（二）部署web站点"
+date: "2016-12-10 19:06:37"
 categories: 初创型公司运维专题
-tags:
-excerpt: 本次使用的操作系统：Windows Server 2008 R2 Enterprise本次使用的实例代码：https://git.oschina...
+excerpt: "本次使用的操作系统：Windows Server 2008 R2 Enterprise本次使用的实例代码：https://git.oschina..."
 auth: lework
 ---
 * content

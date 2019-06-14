@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发调试 之【pdb本地调试】
-date: 2017-05-28 16:52:41
+title: "Ansible 开发调试 之【pdb本地调试】"
+date: "2017-05-28 16:52:41"
 categories: Ansible
-tags:
-excerpt: Ansible是用Python编写的，用于调试本地代码执行的工具是Python调试器 **pdb**。这个工具允许我们在Ansys中插入断点代码...
+excerpt: "Ansible是用Python编写的，用于调试本地代码执行的工具是Python调试器 **pdb**。这个工具允许我们在Ansys中插入断点代码..."
 auth: lework
 ---
 * content

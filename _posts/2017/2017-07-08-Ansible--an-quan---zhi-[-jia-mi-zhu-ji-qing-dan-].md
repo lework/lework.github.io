@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 安全 之【加密主机清单】
-date: 2017-07-08 18:15:12
+title: "Ansible 安全 之【加密主机清单】"
+date: "2017-07-08 18:15:12"
 categories: Ansible
-tags:
-excerpt: 主机清单源文件 使用1234567密码进行加密主机清单 编辑加密后的主机清单文件 使用加密文件运行任务 运行ansible时，会提示解密错误 这...
+excerpt: "主机清单源文件 使用1234567密码进行加密主机清单 编辑加密后的主机清单文件 使用加密文件运行任务 运行ansible时，会提示解密错误 这..."
 auth: lework
 ---
 * content

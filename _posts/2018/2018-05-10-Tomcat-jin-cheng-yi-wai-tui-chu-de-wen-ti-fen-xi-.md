@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Tomcat进程意外退出的问题分析
-date: 2018-05-10 16:01:25
+title: "Tomcat进程意外退出的问题分析"
+date: "2018-05-10 16:01:25"
 categories: 杂项
-tags:
-excerpt: 感谢同事宏江投递本稿。 节前某个部门的测试环境反馈tomcat会意外退出，我们到实际环境排查后发现不是jvm crash，日志里有进程销毁的记录...
+excerpt: "感谢同事宏江投递本稿。 节前某个部门的测试环境反馈tomcat会意外退出，我们到实际环境排查后发现不是jvm crash，日志里有进程销毁的记录..."
 auth: lework
 ---
 * content

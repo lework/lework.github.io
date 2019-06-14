@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 八（Yaml 语法格式）
-date: 2016-11-19 16:58:00
+title: "Ansible 小手册系列 八（Yaml 语法格式）"
+date: "2016-11-19 16:58:00"
 categories: Ansible
-tags:
-excerpt: 介绍 YAML 语言（发音 /ˈjæməl/ ）的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。 它的基本语法规则如下。 • ...
+excerpt: "介绍 YAML 语言（发音 /ˈjæməl/ ）的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。 它的基本语法规则如下。 • ..."
 auth: lework
 ---
 * content

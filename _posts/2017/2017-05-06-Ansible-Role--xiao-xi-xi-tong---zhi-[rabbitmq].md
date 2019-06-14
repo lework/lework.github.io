@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 消息系统 之【rabbitmq】
-date: 2017-05-06 11:23:19
+title: "Ansible Role 消息系统 之【rabbitmq】"
+date: "2017-05-06 11:23:19"
 categories: Ansible
-tags:
-excerpt: Ansible Role: rabbitmq 安装rabbitmq服务 介绍 RabbitMQ是一个在AMQP基础上完成的，可复用的企业消息系统...
+excerpt: "Ansible Role: rabbitmq 安装rabbitmq服务 介绍 RabbitMQ是一个在AMQP基础上完成的，可复用的企业消息系统..."
 auth: lework
 ---
 * content

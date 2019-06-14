@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 键值存储 之【etcd】
-date: 2017-03-19 15:03:47
+title: "Ansible Role 键值存储 之【etcd】"
+date: "2017-03-19 15:03:47"
 categories: Ansible
-tags:
-excerpt: Ansible Role: etcd 安装etcd 介绍 etcd是一个高可用的键值存储系统，主要用于共享配置和服务发现。etcd是由CoreO...
+excerpt: "Ansible Role: etcd 安装etcd 介绍 etcd是一个高可用的键值存储系统，主要用于共享配置和服务发现。etcd是由CoreO..."
 auth: lework
 ---
 * content

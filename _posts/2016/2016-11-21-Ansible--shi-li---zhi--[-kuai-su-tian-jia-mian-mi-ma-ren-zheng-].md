@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 实例 之 【快速添加免密码认证】
-date: 2016-11-21 20:58:27
+title: "Ansible 实例 之 【快速添加免密码认证】"
+date: "2016-11-21 20:58:27"
 categories: Ansible
-tags:
-excerpt: 第一步：将需要登陆主机得公钥添加到known_hosts 还可以使用下列简单办法： ssh在首次连接出现检查keys 的提示，通过设置 这样，在...
+excerpt: "第一步：将需要登陆主机得公钥添加到known_hosts 还可以使用下列简单办法： ssh在首次连接出现检查keys 的提示，通过设置 这样，在..."
 auth: lework
 ---
 * content

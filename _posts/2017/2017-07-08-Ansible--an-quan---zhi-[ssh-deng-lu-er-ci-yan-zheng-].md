@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 安全 之【ssh登录二次验证】
-date: 2017-07-08 18:15:47
+title: "Ansible 安全 之【ssh登录二次验证】"
+date: "2017-07-08 18:15:47"
 categories: Ansible
-tags:
-excerpt: 本次二次认证方式使用 Google 身份验证器 资源 谷歌身份验证器pamhttps://github.com/google/google-au...
+excerpt: "本次二次认证方式使用 Google 身份验证器 资源 谷歌身份验证器pamhttps://github.com/google/google-au..."
 auth: lework
 ---
 * content

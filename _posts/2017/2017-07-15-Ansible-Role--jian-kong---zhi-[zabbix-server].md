@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 监控 之【zabbix-server】
-date: 2017-07-15 12:57:15
+title: "Ansible Role 监控 之【zabbix-server】"
+date: "2017-07-15 12:57:15"
 categories: Ansible
-tags:
-excerpt: Ansible Role: zabbix-server 安装zabbix server 介绍 zabbix（音同 z?bix）是一个基于WEB界...
+excerpt: "Ansible Role: zabbix-server 安装zabbix server 介绍 zabbix（音同 z?bix）是一个基于WEB界..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 十八（Lookup 插件）
-date: 2016-11-19 21:07:33
+title: "Ansible 小手册系列 十八（Lookup 插件）"
+date: "2016-11-19 21:07:33"
 categories: Ansible
-tags:
-excerpt: file：获取文件内容 password：生成密码字符串 如果文件已存在，则不会向其写入任何数据。 如果文件有内容，那些内容将作为密码读入。 空...
+excerpt: "file：获取文件内容 password：生成密码字符串 如果文件已存在，则不会向其写入任何数据。 如果文件有内容，那些内容将作为密码读入。 空..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 安全 之【过滤危险命令】
-date: 2017-07-09 08:53:12
+title: "Ansible 安全 之【过滤危险命令】"
+date: "2017-07-09 08:53:12"
 categories: Ansible
-tags:
-excerpt: 批量执行命令时，需要把一些危险命令屏蔽掉，从而将降低使用人员的误操作。 测试环境 ansible 2.3.0.0os Centos 6.7 X6...
+excerpt: "批量执行命令时，需要把一些危险命令屏蔽掉，从而将降低使用人员的误操作。 测试环境 ansible 2.3.0.0os Centos 6.7 X6..."
 auth: lework
 ---
 * content

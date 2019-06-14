@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发专题总揽
-date: 2017-05-28 16:54:16
+title: "Ansible 开发专题总揽"
+date: "2017-05-28 16:54:16"
 categories: Ansible
-tags:
-excerpt: 官方开发文档 http://docs.ansible.com/ansible/dev_guide/index.html 非常推荐大家看官方文档 ...
+excerpt: "官方开发文档 http://docs.ansible.com/ansible/dev_guide/index.html 非常推荐大家看官方文档 ..."
 auth: lework
 ---
 * content

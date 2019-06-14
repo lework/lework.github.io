@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role  【怎么用？】
-date: 2017-03-11 12:22:32
+title: "Ansible Role  【怎么用？】"
+date: "2017-03-11 12:22:32"
 categories: Ansible
-tags:
-excerpt: 系统环境 os:  Centos 6.7 X64python: 2.6.6 安装ansible和git 设置ansible 关闭主机ssh kn...
+excerpt: "系统环境 os:  Centos 6.7 X64python: 2.6.6 安装ansible和git 设置ansible 关闭主机ssh kn..."
 auth: lework
 ---
 * content

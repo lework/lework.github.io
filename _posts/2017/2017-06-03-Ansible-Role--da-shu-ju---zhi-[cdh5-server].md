@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 大数据 之【cdh5-server】
-date: 2017-06-03 17:54:59
+title: "Ansible Role 大数据 之【cdh5-server】"
+date: "2017-06-03 17:54:59"
 categories: Ansible
-tags:
-excerpt: Ansible Role: cdh5 server 只安装cdh5 server服务，不安装hadoop集群。 要求 此角色仅在RHEL及其衍生...
+excerpt: "Ansible Role: cdh5 server 只安装cdh5 server服务，不安装hadoop集群。 要求 此角色仅在RHEL及其衍生..."
 auth: lework
 ---
 * content

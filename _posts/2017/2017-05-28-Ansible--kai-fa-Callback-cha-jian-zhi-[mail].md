@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发Callback插件之【mail】
-date: 2017-05-28 16:48:45
+title: "Ansible 开发Callback插件之【mail】"
+date: "2017-05-28 16:48:45"
 categories: Ansible
-tags:
-excerpt: 需求 任务运行失败的时候，发送邮件通知。 callback plugin 修改插件中的邮箱信息 to='to@test.com'   邮件发给谁...
+excerpt: "需求 任务运行失败的时候，发送邮件通知。 callback plugin 修改插件中的邮箱信息 to='to@test.com'   邮件发给谁..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 大数据 之【hadoop-standalone】
-date: 2017-05-14 10:29:37
+title: "Ansible Role 大数据 之【hadoop-standalone】"
+date: "2017-05-14 10:29:37"
 categories: Ansible
-tags:
-excerpt: Ansible Role: hadoop-standalone 以standalone方式安装hadoop 介绍 Hadoop是一个由Apach...
+excerpt: "Ansible Role: hadoop-standalone 以standalone方式安装hadoop 介绍 Hadoop是一个由Apach..."
 auth: lework
 ---
 * content

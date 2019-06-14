@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 七（Ad-hoc）
-date: 2016-11-19 16:31:15
+title: "Ansible 小手册系列 七（Ad-hoc）"
+date: "2016-11-19 16:31:15"
 categories: Ansible
-tags:
-excerpt: Ansible提供两种方式去完成任务,一是 ad-hoc 命令，一是写 Ansible playbook。前者可以解决一些简单的任务， 后者解决...
+excerpt: "Ansible提供两种方式去完成任务,一是 ad-hoc 命令，一是写 Ansible playbook。前者可以解决一些简单的任务， 后者解决..."
 auth: lework
 ---
 * content

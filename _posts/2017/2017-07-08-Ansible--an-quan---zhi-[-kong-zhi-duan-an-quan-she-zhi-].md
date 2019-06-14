@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 安全 之【控制端安全设置】
-date: 2017-07-08 18:16:05
+title: "Ansible 安全 之【控制端安全设置】"
+date: "2017-07-08 18:16:05"
 categories: Ansible
-tags:
-excerpt: ansible控制端作为管理其他服务器的总控制器，其所处的服务器必定存在大量的密码信息，或者有权连接远程服务器。那这种情况下，如果控制端有安全隐...
+excerpt: "ansible控制端作为管理其他服务器的总控制器，其所处的服务器必定存在大量的密码信息，或者有权连接远程服务器。那这种情况下，如果控制端有安全隐..."
 auth: lework
 ---
 * content

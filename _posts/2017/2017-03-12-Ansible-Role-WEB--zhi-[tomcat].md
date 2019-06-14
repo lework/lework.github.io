@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role WEB 之【tomcat】
-date: 2017-03-12 10:59:43
+title: "Ansible Role WEB 之【tomcat】"
+date: "2017-03-12 10:59:43"
 categories: Ansible
-tags:
-excerpt: Ansible Role: Tomcat 安装tomcat应用 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.4....
+excerpt: "Ansible Role: Tomcat 安装tomcat应用 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.4...."
 auth: lework
 ---
 * content

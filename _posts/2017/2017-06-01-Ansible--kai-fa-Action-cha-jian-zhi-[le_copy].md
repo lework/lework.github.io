@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发Action插件之【le_copy】
-date: 2017-06-01 20:43:44
+title: "Ansible 开发Action插件之【le_copy】"
+date: "2017-06-01 20:43:44"
 categories: Ansible
-tags:
-excerpt: 用于构造action 类 类名需为ActionModule，需从ActionBase继承。类中必须要有run方法。 本次实现的action需求 ...
+excerpt: "用于构造action 类 类名需为ActionModule，需从ActionBase继承。类中必须要有run方法。 本次实现的action需求 ..."
 auth: lework
 ---
 * content

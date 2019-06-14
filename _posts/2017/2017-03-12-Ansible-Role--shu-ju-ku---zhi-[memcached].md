@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 数据库 之【memcached】
-date: 2017-03-12 11:00:38
+title: "Ansible Role 数据库 之【memcached】"
+date: "2017-03-12 11:00:38"
 categories: Ansible
-tags:
-excerpt: Ansible Role: Memcached 安装Memcached 介绍 Memcached 是一个高性能的分布式内存对象缓存系统，用于动态...
+excerpt: "Ansible Role: Memcached 安装Memcached 介绍 Memcached 是一个高性能的分布式内存对象缓存系统，用于动态..."
 auth: lework
 ---
 * content

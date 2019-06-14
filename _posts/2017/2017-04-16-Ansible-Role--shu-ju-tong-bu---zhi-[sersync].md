@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 数据同步 之【sersync】
-date: 2017-04-16 18:01:09
+title: "Ansible Role 数据同步 之【sersync】"
+date: "2017-04-16 18:01:09"
 categories: Ansible
-tags:
-excerpt: Ansible Role: sersync 安装sersync 介绍 sersync主要用于服务器同步，web镜像等功能。基于boost1.43...
+excerpt: "Ansible Role: sersync 安装sersync 介绍 sersync主要用于服务器同步，web镜像等功能。基于boost1.43..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 十五（Blocks 分组）
-date: 2016-11-19 20:40:04
+title: "Ansible 小手册系列 十五（Blocks 分组）"
+date: "2016-11-19 20:40:04"
 categories: Ansible
-tags:
-excerpt: 当我们想在满足一个条件下，执行多个任务时，就需要分组了。而不再每个任务都要用when。 错误处理 block中的任务在执行中，如果有任何错误，将...
+excerpt: "当我们想在满足一个条件下，执行多个任务时，就需要分组了。而不再每个任务都要用when。 错误处理 block中的任务在执行中，如果有任何错误，将..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 日志分析 之【kibana】
-date: 2017-08-13 15:08:29
+title: "Ansible Role 日志分析 之【kibana】"
+date: "2017-08-13 15:08:29"
 categories: Ansible
-tags:
-excerpt: Ansible Role: kibana 安装kibana 介绍 Kibana 是一个为 Logstash 和 ElasticSearch 提供...
+excerpt: "Ansible Role: kibana 安装kibana 介绍 Kibana 是一个为 Logstash 和 ElasticSearch 提供..."
 auth: lework
 ---
 * content

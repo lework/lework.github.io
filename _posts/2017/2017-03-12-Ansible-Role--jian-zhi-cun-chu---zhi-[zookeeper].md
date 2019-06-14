@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 键值存储 之【zookeeper】
-date: 2017-03-12 11:04:14
+title: "Ansible Role 键值存储 之【zookeeper】"
+date: "2017-03-12 11:04:14"
 categories: Ansible
-tags:
-excerpt: Ansible Role: zookeeper 安装zookeeper 介绍 ZooKeeper是一个分布式的，开放源码的分布式应用程序协调服务...
+excerpt: "Ansible Role: zookeeper 安装zookeeper 介绍 ZooKeeper是一个分布式的，开放源码的分布式应用程序协调服务..."
 auth: lework
 ---
 * content

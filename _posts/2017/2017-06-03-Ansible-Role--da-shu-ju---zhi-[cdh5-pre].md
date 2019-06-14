@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 大数据 之【cdh5-pre】
-date: 2017-06-03 17:53:18
+title: "Ansible Role 大数据 之【cdh5-pre】"
+date: "2017-06-03 17:53:18"
 categories: Ansible
-tags:
-excerpt: Ansible Role: cdh5 pre 安装cdh5时需要做的预处理操作. 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ans...
+excerpt: "Ansible Role: cdh5 pre 安装cdh5时需要做的预处理操作. 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ans..."
 auth: lework
 ---
 * content

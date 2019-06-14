@@ -1,10 +1,9 @@
 ---
 layout: post
-title: 初创型公司-持续部署系列（六）创建发布任务
-date: 2016-12-10 19:09:36
+title: "初创型公司-持续部署系列（六）创建发布任务"
+date: "2016-12-10 19:09:36"
 categories: 初创型公司运维专题
-tags:
-excerpt: 发布任务很简单，就一个powershell脚本，用来执行后端服务器的发布bat 编译打包的流程图如下： 在jenkins上创建Deploy_de...
+excerpt: "发布任务很简单，就一个powershell脚本，用来执行后端服务器的发布bat 编译打包的流程图如下： 在jenkins上创建Deploy_de..."
 auth: lework
 ---
 * content

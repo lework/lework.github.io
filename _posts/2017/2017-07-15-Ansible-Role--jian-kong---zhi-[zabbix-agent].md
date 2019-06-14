@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 监控 之【zabbix-agent】
-date: 2017-07-15 12:57:59
+title: "Ansible Role 监控 之【zabbix-agent】"
+date: "2017-07-15 12:57:59"
 categories: Ansible
-tags:
-excerpt: Ansible Role: zabbix-agent 安装zabbix客户端 介绍 zabbix（音同 z?bix）是一个基于WEB界面的提供分...
+excerpt: "Ansible Role: zabbix-agent 安装zabbix客户端 介绍 zabbix（音同 z?bix）是一个基于WEB界面的提供分..."
 auth: lework
 ---
 * content

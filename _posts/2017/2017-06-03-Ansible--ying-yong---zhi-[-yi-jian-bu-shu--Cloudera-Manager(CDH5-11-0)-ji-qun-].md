@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 应用 之【一键部署 Cloudera Manager（CDH5.11.0）集群】
-date: 2017-06-03 21:54:54
+title: "Ansible 应用 之【一键部署 Cloudera Manager（CDH5.11.0）集群】"
+date: "2017-06-03 21:54:54"
 categories: Ansible
-tags:
-excerpt: CDH 介绍 CDH是Apache Hadoop及相关项目中最完整，且经过测试和受欢迎的发行版。 CDH提供Hadoop的核心元素 - 可扩展存...
+excerpt: "CDH 介绍 CDH是Apache Hadoop及相关项目中最完整，且经过测试和受欢迎的发行版。 CDH提供Hadoop的核心元素 - 可扩展存..."
 auth: lework
 ---
 * content

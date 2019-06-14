@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发调试 之【模块调试】
-date: 2017-05-28 16:52:07
+title: "Ansible 开发调试 之【模块调试】"
+date: "2017-05-28 16:52:07"
 categories: Ansible
-tags:
-excerpt: 本地调试 需要安装jinja2 库 使用官方提供的测试脚本调试 使下列命令调试modules test-module使用参数 远程调试 在前面的...
+excerpt: "本地调试 需要安装jinja2 库 使用官方提供的测试脚本调试 使下列命令调试modules test-module使用参数 远程调试 在前面的..."
 auth: lework
 ---
 * content

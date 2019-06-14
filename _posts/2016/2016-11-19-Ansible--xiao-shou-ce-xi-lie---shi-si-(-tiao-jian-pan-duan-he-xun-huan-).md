@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 十四（条件判断和循环）
-date: 2016-11-19 20:33:31
+title: "Ansible 小手册系列 十四（条件判断和循环）"
+date: "2016-11-19 20:33:31"
 categories: Ansible
-tags:
-excerpt: 条件判断 When 语句 在when 后面使用Jinja2 表达式，结果为True则执行任务。 若操作系统是Debian 时就执行关机操作 可以...
+excerpt: "条件判断 When 语句 在when 后面使用Jinja2 表达式，结果为True则执行任务。 若操作系统是Debian 时就执行关机操作 可以..."
 auth: lework
 ---
 * content

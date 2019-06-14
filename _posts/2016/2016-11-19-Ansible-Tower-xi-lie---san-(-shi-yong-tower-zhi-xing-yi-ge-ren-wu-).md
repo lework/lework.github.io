@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Tower系列 三（使用tower执行一个任务）
-date: 2016-11-19 21:34:08
+title: "Ansible Tower系列 三（使用tower执行一个任务）"
+date: "2016-11-19 21:34:08"
 categories: Ansible
-tags:
-excerpt: 创建playbook Tower playbook 项目默认存在  /var/lib/awx/projects/ 创建登陆凭据 创建项目 创建主...
+excerpt: "创建playbook Tower playbook 项目默认存在  /var/lib/awx/projects/ 创建登陆凭据 创建项目 创建主..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: 利用ansible来做tomcat应用的持续交付
-date: 2017-08-19 17:28:38
+title: "利用ansible来做tomcat应用的持续交付"
+date: "2017-08-19 17:28:38"
 categories: Ansible
-tags:
-excerpt: 在做持续交付这件事，想必大家都是用jenkins这款程序来做基石。当然，我们这次也是用jenkins作为承载工具，jenkins强大的插件是有目...
+excerpt: "在做持续交付这件事，想必大家都是用jenkins这款程序来做基石。当然，我们这次也是用jenkins作为承载工具，jenkins强大的插件是有目..."
 auth: lework
 ---
 * content

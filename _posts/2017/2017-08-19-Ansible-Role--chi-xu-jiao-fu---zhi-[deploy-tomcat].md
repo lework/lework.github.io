@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 持续交付 之【deploy-tomcat】
-date: 2017-08-19 17:30:16
+title: "Ansible Role 持续交付 之【deploy-tomcat】"
+date: "2017-08-19 17:30:16"
 categories: Ansible
-tags:
-excerpt: Ansible Role: deploy-tomcat 部署war包至tomcat容器 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ...
+excerpt: "Ansible Role: deploy-tomcat 部署war包至tomcat容器 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ..."
 auth: lework
 ---
 * content

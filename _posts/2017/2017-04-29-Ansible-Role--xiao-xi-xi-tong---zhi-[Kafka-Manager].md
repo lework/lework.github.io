@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 消息系统 之【Kafka Manager】
-date: 2017-04-29 18:24:36
+title: "Ansible Role 消息系统 之【Kafka Manager】"
+date: "2017-04-29 18:24:36"
 categories: Ansible
-tags:
-excerpt: Ansible Role: Kafka Manager 安装Kafka Manager服务 介绍 Kafka Manager 是 Yahoo 推...
+excerpt: "Ansible Role: Kafka Manager 安装Kafka Manager服务 介绍 Kafka Manager 是 Yahoo 推..."
 auth: lework
 ---
 * content

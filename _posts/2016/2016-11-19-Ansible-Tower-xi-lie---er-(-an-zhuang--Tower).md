@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Tower系列 二（安装 Tower）
-date: 2016-11-19 21:26:34
+title: "Ansible Tower系列 二（安装 Tower）"
+date: "2016-11-19 21:26:34"
 categories: Ansible
-tags:
-excerpt: 文档：http://docs.ansible.com/ansible-tower/ 安装前检查 python版本为2.6 保持网络畅通 内存预留...
+excerpt: "文档：http://docs.ansible.com/ansible-tower/ 安装前检查 python版本为2.6 保持网络畅通 内存预留..."
 auth: lework
 ---
 * content

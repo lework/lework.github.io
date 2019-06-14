@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 十二（Facts）
-date: 2016-11-19 17:42:24
+title: "Ansible 小手册系列 十二（Facts）"
+date: "2016-11-19 17:42:24"
 categories: Ansible
-tags:
-excerpt: Facts 是用来采集目标系统信息的，具体是用setup模块来采集得。 使用setup模块来获取目标系统信息 仅显示与ansible相关的内存信...
+excerpt: "Facts 是用来采集目标系统信息的，具体是用setup模块来采集得。 使用setup模块来获取目标系统信息 仅显示与ansible相关的内存信..."
 auth: lework
 ---
 * content

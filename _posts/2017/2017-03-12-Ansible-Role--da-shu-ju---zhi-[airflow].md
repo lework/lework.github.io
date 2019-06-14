@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 大数据 之【airflow】
-date: 2017-03-12 11:04:42
+title: "Ansible Role 大数据 之【airflow】"
+date: "2017-03-12 11:04:42"
 categories: Ansible
-tags:
-excerpt: Ansible Role: airflow 安装airflow 介绍 Airflow 被 Airbnb 内部用来创建、监控和调整数据管道。任何工...
+excerpt: "Ansible Role: airflow 安装airflow 介绍 Airflow 被 Airbnb 内部用来创建、监控和调整数据管道。任何工..."
 auth: lework
 ---
 * content

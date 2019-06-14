@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 三（命令介绍）
-date: 2016-11-19 15:48:03
+title: "Ansible 小手册系列 三（命令介绍）"
+date: "2016-11-19 15:48:03"
 categories: Ansible
-tags:
-excerpt: Ansible 版本：2.1.2.0 ansible ansible是指令核心部分，其主要用于执行ad-hoc命令，即单条命令。默认后面需要跟主...
+excerpt: "Ansible 版本：2.1.2.0 ansible ansible是指令核心部分，其主要用于执行ad-hoc命令，即单条命令。默认后面需要跟主..."
 auth: lework
 ---
 * content

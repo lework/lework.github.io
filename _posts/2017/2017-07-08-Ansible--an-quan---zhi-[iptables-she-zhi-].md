@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 安全 之【iptables设置】
-date: 2017-07-08 18:14:50
+title: "Ansible 安全 之【iptables设置】"
+date: "2017-07-08 18:14:50"
 categories: Ansible
-tags:
-excerpt: 规则 只开启ssh端口。 限制管理人员登录的ip地址。 操作步骤
+excerpt: "规则 只开启ssh端口。 限制管理人员登录的ip地址。 操作步骤"
 auth: lework
 ---
 * content

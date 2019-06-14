@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 大数据 之【superset】
-date: 2017-03-12 11:05:17
+title: "Ansible Role 大数据 之【superset】"
+date: "2017-03-12 11:05:17"
 categories: Ansible
-tags:
-excerpt: Ansible Role: superset 安装superset 介绍 Superset（Caravel）是由Airbnb（知名在线房屋短租公...
+excerpt: "Ansible Role: superset 安装superset 介绍 Superset（Caravel）是由Airbnb（知名在线房屋短租公..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 二十一（管理windows系统）
-date: 2017-04-09 13:46:10
+title: "Ansible 小手册系列 二十一（管理windows系统）"
+date: "2017-04-09 13:46:10"
 categories: Ansible
-tags:
-excerpt: windows 系统要求 PowerShell 3 或更高 不支持Cygwin 在Windows 7和Server 2008 R2计算机上，由于...
+excerpt: "windows 系统要求 PowerShell 3 或更高 不支持Cygwin 在Windows 7和Server 2008 R2计算机上，由于..."
 auth: lework
 ---
 * content

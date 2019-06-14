@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 高可用 之【haproxy】
-date: 2017-05-14 10:31:08
+title: "Ansible Role 高可用 之【haproxy】"
+date: "2017-05-14 10:31:08"
 categories: Ansible
-tags:
-excerpt: Ansible Role: haproxy 安装haproxy 介绍 HAProxy是一种免费的，非常快速和可靠的解决方案，为基于TCP和HTT...
+excerpt: "Ansible Role: haproxy 安装haproxy 介绍 HAProxy是一种免费的，非常快速和可靠的解决方案，为基于TCP和HTT..."
 auth: lework
 ---
 * content

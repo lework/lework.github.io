@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 存储 之【nfs】
-date: 2017-06-10 21:16:45
+title: "Ansible Role 存储 之【nfs】"
+date: "2017-06-10 21:16:45"
 categories: Ansible
-tags:
-excerpt: Ansible Role: nfs 配置nfs服务端 介绍 NFS（Network File System）即网络文件系统，是FreeBSD支持...
+excerpt: "Ansible Role: nfs 配置nfs服务端 介绍 NFS（Network File System）即网络文件系统，是FreeBSD支持..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 持续集成 之【nexus】
-date: 2017-08-04 11:40:40
+title: "Ansible Role 持续集成 之【nexus】"
+date: "2017-08-04 11:40:40"
 categories: Ansible
-tags:
-excerpt: Ansible Role: nexus 安装nexus 介绍 Sonatype Nexus是世界领先的仓库管理系统，在世界范围内Nexus OS...
+excerpt: "Ansible Role: nexus 安装nexus 介绍 Sonatype Nexus是世界领先的仓库管理系统，在世界范围内Nexus OS..."
 auth: lework
 ---
 * content

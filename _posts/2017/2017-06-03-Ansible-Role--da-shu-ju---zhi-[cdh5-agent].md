@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 大数据 之【cdh5-agent】
-date: 2017-06-03 17:54:14
+title: "Ansible Role 大数据 之【cdh5-agent】"
+date: "2017-06-03 17:54:14"
 categories: Ansible
-tags:
-excerpt: Ansible Role: cdh5 agent 安装cdh5 agent 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansibl...
+excerpt: "Ansible Role: cdh5 agent 安装cdh5 agent 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansibl..."
 auth: lework
 ---
 * content

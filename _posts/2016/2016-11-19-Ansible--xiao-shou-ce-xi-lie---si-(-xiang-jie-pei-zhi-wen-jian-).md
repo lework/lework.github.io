@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 四（详解配置文件）
-date: 2016-11-19 16:02:45
+title: "Ansible 小手册系列 四（详解配置文件）"
+date: "2016-11-19 16:02:45"
 categories: Ansible
-tags:
-excerpt: 配置文件存在不同的位置，但只有一个可用。在下列列表中，ansible从上往下依次检查，检查到哪个可用就用哪个 ANSIBLE_CFG  环境变量...
+excerpt: "配置文件存在不同的位置，但只有一个可用。在下列列表中，ansible从上往下依次检查，检查到哪个可用就用哪个 ANSIBLE_CFG  环境变量..."
 auth: lework
 ---
 * content

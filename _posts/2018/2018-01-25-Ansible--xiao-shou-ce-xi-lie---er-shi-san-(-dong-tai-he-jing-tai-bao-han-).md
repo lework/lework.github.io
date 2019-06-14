@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 二十三（动态和静态包含）
-date: 2018-01-25 15:35:37
+title: "Ansible 小手册系列 二十三（动态和静态包含）"
+date: "2018-01-25 15:35:37"
 categories: Ansible
-tags:
-excerpt: Ansible有两种可重用内容的操作模式：动态和静态。在Ansible 2.0阶段使用static来设置操作模式，Ansible 2.4则引入了...
+excerpt: "Ansible有两种可重用内容的操作模式：动态和静态。在Ansible 2.0阶段使用static来设置操作模式，Ansible 2.4则引入了..."
 auth: lework
 ---
 * content

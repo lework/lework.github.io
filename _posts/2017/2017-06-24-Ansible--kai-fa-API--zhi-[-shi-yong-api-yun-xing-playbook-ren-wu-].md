@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发API 之【使用api运行playbook任务】
-date: 2017-06-24 15:14:25
+title: "Ansible 开发API 之【使用api运行playbook任务】"
+date: "2017-06-24 15:14:25"
 categories: Ansible
-tags:
-excerpt: 环境 本文使用的是ansible api 2.0ansible 2.3.0.0os Centos 6.7 X64python 2.6.6 本文介...
+excerpt: "环境 本文使用的是ansible api 2.0ansible 2.3.0.0os Centos 6.7 X64python 2.6.6 本文介..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 十七（特性模块）
-date: 2016-11-19 20:53:06
+title: "Ansible 小手册系列 十七（特性模块）"
+date: "2016-11-19 20:53:06"
 categories: Ansible
-tags:
-excerpt: 异步操作和轮询 async: 1000  开启异步加载模式，超时时间1000秒。没有异步时间限制的默认值。 如果省略“async”关键字，任务将...
+excerpt: "异步操作和轮询 async: 1000  开启异步加载模式，超时时间1000秒。没有异步时间限制的默认值。 如果省略“async”关键字，任务将..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【go】
-date: 2018-03-09 14:20:05
+title: "Ansible Role 系统环境 之【go】"
+date: "2018-03-09 14:20:05"
 categories: Ansible
-tags:
-excerpt: Ansible Role: go 添加go开发环境 介绍 Go是一种编译型语言，它结合了解释型语言的游刃有余，动态类型语言的开发效率，以及静态类...
+excerpt: "Ansible Role: go 添加go开发环境 介绍 Go是一种编译型语言，它结合了解释型语言的游刃有余，动态类型语言的开发效率，以及静态类..."
 auth: lework
 ---
 * content

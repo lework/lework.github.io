@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 十六（Playbook Debug）
-date: 2016-11-19 20:44:50
+title: "Ansible 小手册系列 十六（Playbook Debug）"
+date: "2016-11-19 20:44:50"
 categories: Ansible
-tags:
-excerpt: debug模块在执行期间打印语句，并且可用于调试变量或表达式，而不必停止playbook。 打印自定义的信息 调试变量 playbook 开启d...
+excerpt: "debug模块在执行期间打印语句，并且可用于调试变量或表达式，而不必停止playbook。 打印自定义的信息 调试变量 playbook 开启d..."
 auth: lework
 ---
 * content

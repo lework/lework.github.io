@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 一（介绍）
-date: 2016-11-19 15:15:30
+title: "Ansible 小手册系列 一（介绍）"
+date: "2016-11-19 15:15:30"
 categories: Ansible
-tags:
-excerpt: 介绍 Ansible 是一个配置管理和应用部署工具，功能类似于目前业界的配置管理工具 Chef,Puppet,Saltstack。Ansible...
+excerpt: "介绍 Ansible 是一个配置管理和应用部署工具，功能类似于目前业界的配置管理工具 Chef,Puppet,Saltstack。Ansible..."
 auth: lework
 ---
 * content

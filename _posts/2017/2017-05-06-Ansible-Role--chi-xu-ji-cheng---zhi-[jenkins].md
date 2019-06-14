@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 持续集成 之【jenkins】
-date: 2017-05-06 11:24:40
+title: "Ansible Role 持续集成 之【jenkins】"
+date: "2017-05-06 11:24:40"
 categories: Ansible
-tags:
-excerpt: Ansible Role: Jenkins CI 安装Jenkins CI 介绍 Jenkins 是一个开源项目，提供了一种易于使用的持续集成系...
+excerpt: "Ansible Role: Jenkins CI 安装Jenkins CI 介绍 Jenkins 是一个开源项目，提供了一种易于使用的持续集成系..."
 auth: lework
 ---
 * content

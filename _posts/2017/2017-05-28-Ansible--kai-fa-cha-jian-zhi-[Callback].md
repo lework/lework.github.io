@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发插件之【Callback】
-date: 2017-05-28 16:49:17
+title: "Ansible 开发插件之【Callback】"
+date: "2017-05-28 16:49:17"
 categories: Ansible
-tags:
-excerpt: callback 是经常用到的插件，而且还是自定义很强的，在任务的每个状态下执行某些动作。 触发事件的列表 可以定义的状态如下，本次不考虑使用v...
+excerpt: "callback 是经常用到的插件，而且还是自定义很强的，在任务的每个状态下执行某些动作。 触发事件的列表 可以定义的状态如下，本次不考虑使用v..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【PHP】
-date: 2018-01-26 16:45:14
+title: "Ansible Role 系统环境 之【PHP】"
+date: "2018-01-26 16:45:14"
 categories: Ansible
-tags:
-excerpt: Ansible Role: php 安装php7环境, 使用php-fpm管理。 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ans...
+excerpt: "Ansible Role: php 安装php7环境, 使用php-fpm管理。 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ans..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【iptables】
-date: 2017-02-25 16:35:31
+title: "Ansible Role 系统环境 之【iptables】"
+date: "2017-02-25 16:35:31"
 categories: Ansible
-tags:
-excerpt: Ansible Role: iptables 管理CentOS的iptables 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ans...
+excerpt: "Ansible Role: iptables 管理CentOS的iptables 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ans..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 插件 之 【CMDB】
-date: 2016-11-19 22:11:01
+title: "Ansible 插件 之 【CMDB】"
+date: "2016-11-19 22:11:01"
 categories: Ansible
-tags:
-excerpt: Github地址： https://github.com/fboender/ansible-cmdb 从facts收集信息，生成主机概述 安装 ...
+excerpt: "Github地址： https://github.com/fboender/ansible-cmdb 从facts收集信息，生成主机概述 安装 ..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发模块 之【添加module的文档说明】
-date: 2017-05-28 16:50:56
+title: "Ansible 开发模块 之【添加module的文档说明】"
+date: "2017-05-28 16:50:56"
 categories: Ansible
-tags:
-excerpt: 所有模块必须按以下顺序定义以下部分： ANSIBLE_METADATA DOCUMENTATION EXAMPLES RETURNS Pytho...
+excerpt: "所有模块必须按以下顺序定义以下部分： ANSIBLE_METADATA DOCUMENTATION EXAMPLES RETURNS Pytho..."
 auth: lework
 ---
 * content

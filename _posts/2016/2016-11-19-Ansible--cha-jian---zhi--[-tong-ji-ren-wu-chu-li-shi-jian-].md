@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 插件 之 【统计任务处理时间】
-date: 2016-11-19 21:40:38
+title: "Ansible 插件 之 【统计任务处理时间】"
+date: "2016-11-19 21:40:38"
 categories: Ansible
-tags:
-excerpt: 在做性能优化之前首先需要做的是收集一些统计数据，这样才能为后面做的性能优化提供数据支持，对比优化前后的结果。非常不错的是，在 github 发现...
+excerpt: "在做性能优化之前首先需要做的是收集一些统计数据，这样才能为后面做的性能优化提供数据支持，对比优化前后的结果。非常不错的是，在 github 发现..."
 auth: lework
 ---
 * content

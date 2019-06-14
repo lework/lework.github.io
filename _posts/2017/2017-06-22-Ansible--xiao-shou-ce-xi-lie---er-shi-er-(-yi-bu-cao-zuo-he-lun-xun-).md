@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 二十二（异步操作和轮询）
-date: 2017-06-22 22:05:31
+title: "Ansible 小手册系列 二十二（异步操作和轮询）"
+date: "2017-06-22 22:05:31"
 categories: Ansible
-tags:
-excerpt: 默认情况下playbook中的任务执行时会一直保持连接,直到该任务在每个节点都执行完毕.有时这是不必要的,比如有些操作运行时间比SSH超时时间还...
+excerpt: "默认情况下playbook中的任务执行时会一直保持连接,直到该任务在每个节点都执行完毕.有时这是不必要的,比如有些操作运行时间比SSH超时时间还..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发Callback插件之【BlackHole】
-date: 2018-01-05 16:45:07
+title: "Ansible 开发Callback插件之【BlackHole】"
+date: "2018-01-05 16:45:07"
 categories: Ansible
-tags:
-excerpt: 需求 执行playbook时，什么都不显示。把回显内容丢到黑洞去。 注： 程序的警告信息还是会出现，针对ad-hoc命令无效。 callback...
+excerpt: "需求 执行playbook时，什么都不显示。把回显内容丢到黑洞去。 注： 程序的警告信息还是会出现，针对ad-hoc命令无效。 callback..."
 auth: lework
 ---
 * content

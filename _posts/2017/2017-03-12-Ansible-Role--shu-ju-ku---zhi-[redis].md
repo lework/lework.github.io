@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 数据库 之【redis】
-date: 2017-03-12 11:02:09
+title: "Ansible Role 数据库 之【redis】"
+date: "2017-03-12 11:02:09"
 categories: Ansible
-tags:
-excerpt: Ansible Role: Redis 安装redis 介绍 redis（Remote Dictionary Server）是一个key-val...
+excerpt: "Ansible Role: Redis 安装redis 介绍 redis（Remote Dictionary Server）是一个key-val..."
 auth: lework
 ---
 * content

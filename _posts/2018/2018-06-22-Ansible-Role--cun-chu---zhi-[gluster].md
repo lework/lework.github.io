@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 存储 之【gluster】
-date: 2018-06-22 15:57:46
+title: "Ansible Role 存储 之【gluster】"
+date: "2018-06-22 15:57:46"
 categories: Ansible
-tags:
-excerpt: Ansible Role: gluster 安装gluster 分布式存储集群 介绍 Gluster是一款免费的开源软件可扩展网络文件系统。 官...
+excerpt: "Ansible Role: gluster 安装gluster 分布式存储集群 介绍 Gluster是一款免费的开源软件可扩展网络文件系统。 官..."
 auth: lework
 ---
 * content

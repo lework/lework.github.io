@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发API 之【使用api运行task,自定义主机信息】
-date: 2017-06-24 15:20:38
+title: "Ansible 开发API 之【使用api运行task,自定义主机信息】"
+date: "2017-06-24 15:20:38"
 categories: Ansible
-tags:
-excerpt: 在做api开发的时候，我们获取主机清单的主机信息的方式，往往是从数据库中获取到的，而不是从文件中获取，下面的列子给出怎么自定义主机信息。 环境 ...
+excerpt: "在做api开发的时候，我们获取主机清单的主机信息的方式，往往是从数据库中获取到的，而不是从文件中获取，下面的列子给出怎么自定义主机信息。 环境 ..."
 auth: lework
 ---
 * content

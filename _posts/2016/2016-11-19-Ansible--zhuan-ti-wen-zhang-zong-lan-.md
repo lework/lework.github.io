@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 专题文章总揽
-date: 2016-11-19 15:02:02
+title: "Ansible 专题文章总揽"
+date: "2016-11-19 15:02:02"
 categories: Ansible
-tags:
-excerpt: 倾情巨献，ansible2.5版本系列视频： http://www.acfun.cn/v/ac4413997，https://www.bilib...
+excerpt: "倾情巨献，ansible2.5版本系列视频： http://www.acfun.cn/v/ac4413997，https://www.bilib..."
 auth: lework
 ---
 * content

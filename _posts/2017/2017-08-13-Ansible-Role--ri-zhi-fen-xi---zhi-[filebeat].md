@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 日志分析 之【filebeat】
-date: 2017-08-13 15:08:13
+title: "Ansible Role 日志分析 之【filebeat】"
+date: "2017-08-13 15:08:13"
 categories: Ansible
-tags:
-excerpt: Ansible Role: filebeat 安装filebeat，用于收集日志 介绍 filebeat最初是基于logstash-forwar...
+excerpt: "Ansible Role: filebeat 安装filebeat，用于收集日志 介绍 filebeat最初是基于logstash-forwar..."
 auth: lework
 ---
 * content

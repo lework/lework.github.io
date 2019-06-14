@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role WEB 之【nginx】
-date: 2017-03-12 18:39:41
+title: "Ansible Role WEB 之【nginx】"
+date: "2017-03-12 18:39:41"
 categories: Ansible
-tags:
-excerpt: Ansible Role: Nginx 安装Nginx 介绍 Nginx ("engine x") 是一个高性能的HTTP和反向代理服务器，也是...
+excerpt: "Ansible Role: Nginx 安装Nginx 介绍 Nginx (\"engine x\") 是一个高性能的HTTP和反向代理服务器，也是..."
 auth: lework
 ---
 * content

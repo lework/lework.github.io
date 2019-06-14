@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 认证 之【kerberos-server】
-date: 2017-05-20 11:14:05
+title: "Ansible Role 认证 之【kerberos-server】"
+date: "2017-05-20 11:14:05"
 categories: Ansible
-tags:
-excerpt: Ansible Role: kerberos server 安装kerberos server服务 介绍 Kerberos：网络认证协议（Ker...
+excerpt: "Ansible Role: kerberos server 安装kerberos server服务 介绍 Kerberos：网络认证协议（Ker..."
 auth: lework
 ---
 * content

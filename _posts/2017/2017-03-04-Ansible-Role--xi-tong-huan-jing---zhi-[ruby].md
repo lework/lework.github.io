@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【ruby】
-date: 2017-03-04 15:59:13
+title: "Ansible Role 系统环境 之【ruby】"
+date: "2017-03-04 15:59:13"
 categories: Ansible
-tags:
-excerpt: Ansible Role: ruby 安装ruby 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.2.1.0os ...
+excerpt: "Ansible Role: ruby 安装ruby 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.2.1.0os ..."
 auth: lework
 ---
 * content

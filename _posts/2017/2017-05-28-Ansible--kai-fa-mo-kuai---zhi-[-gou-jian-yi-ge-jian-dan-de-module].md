@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发模块 之【构建一个简单的module】
-date: 2017-05-28 16:51:19
+title: "Ansible 开发模块 之【构建一个简单的module】"
+date: "2017-05-28 16:51:19"
 categories: Ansible
-tags:
-excerpt: 需求 该模块的目的是在远程主机上将源文件复制到目标文件 步骤 将这个模块放在library目录下，命名为remote_copy可以使用 ANSI...
+excerpt: "需求 该模块的目的是在远程主机上将源文件复制到目标文件 步骤 将这个模块放在library目录下，命名为remote_copy可以使用 ANSI..."
 auth: lework
 ---
 * content

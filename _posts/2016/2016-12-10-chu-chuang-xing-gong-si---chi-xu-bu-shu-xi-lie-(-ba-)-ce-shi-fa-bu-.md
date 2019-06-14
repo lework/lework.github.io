@@ -1,10 +1,9 @@
 ---
 layout: post
-title: 初创型公司-持续部署系列（八）测试发布
-date: 2016-12-10 19:10:09
+title: "初创型公司-持续部署系列（八）测试发布"
+date: "2016-12-10 19:10:09"
 categories: 初创型公司运维专题
-tags:
-excerpt: 执行编译任务 jenkins任务信息 在后端服务器可以看到D:\Packages\online目录下已经存在了一个压缩文件 执行发布任务 在li...
+excerpt: "执行编译任务 jenkins任务信息 在后端服务器可以看到D:\\Packages\\online目录下已经存在了一个压缩文件 执行发布任务 在li..."
 auth: lework
 ---
 * content

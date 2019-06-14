@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发插件之【插件说明】
-date: 2017-05-28 16:49:40
+title: "Ansible 开发插件之【插件说明】"
+date: "2017-05-28 16:49:40"
 categories: Ansible
-tags:
-excerpt: action action插件是在同名的modules之前运行的，且是在本地执行。目录提供的一些action插件在/usr/lib/python...
+excerpt: "action action插件是在同名的modules之前运行的，且是在本地执行。目录提供的一些action插件在/usr/lib/python..."
 auth: lework
 ---
 * content

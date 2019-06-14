@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【nodejs】
-date: 2017-03-04 15:58:22
+title: "Ansible Role 系统环境 之【nodejs】"
+date: "2017-03-04 15:58:22"
 categories: Ansible
-tags:
-excerpt: Ansible Role: nodejs 安装nodejs 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.2.1....
+excerpt: "Ansible Role: nodejs 安装nodejs 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.2.1...."
 auth: lework
 ---
 * content

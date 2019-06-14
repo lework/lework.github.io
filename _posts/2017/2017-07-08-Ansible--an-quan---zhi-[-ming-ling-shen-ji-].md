@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 安全 之【命令审计】
-date: 2017-07-08 18:15:30
+title: "Ansible 安全 之【命令审计】"
+date: "2017-07-08 18:15:30"
 categories: Ansible
-tags:
-excerpt: 服务器记录命令 实现该功能要求如下:1.接受审计的登录用户默认shell必须为bash2.bash版本至少3.00或以上 需要该要求的原因是实现...
+excerpt: "服务器记录命令 实现该功能要求如下:1.接受审计的登录用户默认shell必须为bash2.bash版本至少3.00或以上 需要该要求的原因是实现..."
 auth: lework
 ---
 * content

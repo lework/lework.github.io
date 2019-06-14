@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【java】
-date: 2017-03-04 15:57:14
+title: "Ansible Role 系统环境 之【java】"
+date: "2017-03-04 15:57:14"
 categories: Ansible
-tags:
-excerpt: Ansible Role: java 添加jdk1.7版本 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.3.0....
+excerpt: "Ansible Role: java 添加jdk1.7版本 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.3.0...."
 auth: lework
 ---
 * content

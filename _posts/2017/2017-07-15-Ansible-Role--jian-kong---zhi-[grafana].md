@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 监控 之【grafana】
-date: 2017-07-15 15:50:45
+title: "Ansible Role 监控 之【grafana】"
+date: "2017-07-15 15:50:45"
 categories: Ansible
-tags:
-excerpt: Ansible Role: grafana 安装grafana 介绍 Grafana 是 Graphite 和 InfluxDB 仪表盘和图形编...
+excerpt: "Ansible Role: grafana 安装grafana 介绍 Grafana 是 Graphite 和 InfluxDB 仪表盘和图形编..."
 auth: lework
 ---
 * content

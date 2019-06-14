@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 日志分析 之【elasticsearch】
-date: 2017-08-13 15:07:14
+title: "Ansible Role 日志分析 之【elasticsearch】"
+date: "2017-08-13 15:07:14"
 categories: Ansible
-tags:
-excerpt: Ansible Role: elasticsearch 安装elasticsearch集群 介绍 ElasticSearch是一个基于Lucen...
+excerpt: "Ansible Role: elasticsearch 安装elasticsearch集群 介绍 ElasticSearch是一个基于Lucen..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发模块 之【module的返回值】
-date: 2017-05-28 16:50:33
+title: "Ansible 开发模块 之【module的返回值】"
+date: "2017-05-28 16:50:33"
 categories: Ansible
-tags:
-excerpt: 共同的返回值 内部使用 这些值是ansible内部定义的。
+excerpt: "共同的返回值 内部使用 这些值是ansible内部定义的。"
 auth: lework
 ---
 * content

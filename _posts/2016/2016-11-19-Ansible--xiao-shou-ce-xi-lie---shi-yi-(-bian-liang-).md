@@ -1,10 +1,9 @@
----
+﻿---
 layout: post
-title: Ansible 小手册系列 十一（变量）
-date: 2016-11-19 17:36:18
+title: "Ansible 小手册系列 十一（变量）"
+date: "2016-11-19 17:36:18"
 categories: Ansible
-tags:
-excerpt: 变量名约束 变量名称应为字母，数字和下划线。 变量应始终以字母开头。 变量名不应与python属性和方法名冲突。 变量使用 通过命令行传递变量（...
+excerpt: "变量名约束 变量名称应为字母，数字和下划线。 变量应始终以字母开头。 变量名不应与python属性和方法名冲突。 变量使用 通过命令行传递变量（..."
 auth: lework
 ---
 * content
@@ -102,12 +101,12 @@ roles:
 
 |变量名称|说明|使用|
 |:---|:-----|:---|
-|hostvars|包含主机得fcats信息|{{ hostvars['db.example.com'].ansible_eth0.ipv4.address }}|
-|inventory_hostname|	当前主机的名称|	{{ hostvars[inventory_hostname] }}|
-|groups_name	|当前主机所在组的主机列表|	{% if 'webserver' in group_names %}# some part of a configuration file that only applies to webservers{% endif %}|
-|groups	|包含设备清单组内的所有主机|	{% for host in groups[‘db_servers’] %} {{ host }}{% endfor %}|
-|play_hosts	|在当前playbook中处于活动状态的主机名列表|	{{play_hosts}}|
-|ansible_version	|ansible版本信息|	{{ansible_version}}|
+|hostvars|包含主机得fcats信息|`{{ hostvars['db.example.com'].ansible_eth0.ipv4.address }}`|
+|inventory_hostname|	当前主机的名称|	`{{ hostvars[inventory_hostname] }}`|
+|groups_name	|当前主机所在组的主机列表|	`\{\% if 'webserver' in group_names \%\}# some part of a configuration file that only applies to webservers\{\% endif \%\}`|
+|groups	|包含设备清单组内的所有主机|	`{% for host in groups['db_servers'] %} {{ host }}{% endfor %}`|
+|play_hosts	|在当前playbook中处于活动状态的主机名列表|	`{{play_hosts}}`|
+|ansible_version	|ansible版本信息|	`{{ansible_version}}`|
 
 ## 变量优先级
 ---

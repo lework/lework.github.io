@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 容器 之【docker-swarm】
-date: 2018-04-04 17:28:37
+title: "Ansible Role 容器 之【docker-swarm】"
+date: "2018-04-04 17:28:37"
 categories: Ansible
-tags:
-excerpt: Ansible Role:docker-swarm 安装docker-swarm集群 介绍 swarm是Docker公司在2014年12月初发布...
+excerpt: "Ansible Role:docker-swarm 安装docker-swarm集群 介绍 swarm是Docker公司在2014年12月初发布..."
 auth: lework
 ---
 * content

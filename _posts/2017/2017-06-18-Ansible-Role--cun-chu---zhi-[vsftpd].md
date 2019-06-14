@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 存储 之【vsftpd】
-date: 2017-06-18 17:50:30
+title: "Ansible Role 存储 之【vsftpd】"
+date: "2017-06-18 17:50:30"
 categories: Ansible
-tags:
-excerpt: Ansible Role: vsftp 配置ftp服务端 介绍 vsftpd 是“very secure FTP daemon”的缩写，安全性是...
+excerpt: "Ansible Role: vsftp 配置ftp服务端 介绍 vsftpd 是“very secure FTP daemon”的缩写，安全性是..."
 auth: lework
 ---
 * content

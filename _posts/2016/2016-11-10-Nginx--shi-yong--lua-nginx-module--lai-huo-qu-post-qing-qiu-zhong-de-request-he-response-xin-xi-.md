@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Nginx 使用 lua-nginx-module 来获取post请求中的request和response信息
-date: 2016-11-10 21:35:19
+title: "Nginx 使用 lua-nginx-module 来获取post请求中的request和response信息"
+date: "2016-11-10 21:35:19"
 categories: Nginx
-tags:
-excerpt: 1. 软件版本 系统  centos6.7X86_64 nginx   1.11.5 lua-nginx-module  0.10.7 PHP ...
+excerpt: "1. 软件版本 系统  centos6.7X86_64 nginx   1.11.5 lua-nginx-module  0.10.7 PHP ..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role系统环境 之【erlang】
-date: 2017-04-23 08:18:19
+title: "Ansible Role系统环境 之【erlang】"
+date: "2017-04-23 08:18:19"
 categories: Ansible
-tags:
-excerpt: Ansible Role: erlang 添加erlang环境 介绍 Erlang(['ə:læŋ])是一种通用的面向并发的编程语言，它由瑞典电...
+excerpt: "Ansible Role: erlang 添加erlang环境 介绍 Erlang(['ə:læŋ])是一种通用的面向并发的编程语言，它由瑞典电..."
 auth: lework
 ---
 * content

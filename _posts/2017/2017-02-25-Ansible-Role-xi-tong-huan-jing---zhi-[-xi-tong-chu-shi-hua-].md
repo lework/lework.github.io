@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role系统环境 之【系统初始化】
-date: 2017-02-25 15:14:39
+title: "Ansible Role系统环境 之【系统初始化】"
+date: "2017-02-25 15:14:39"
 categories: Ansible
-tags:
-excerpt: Ansible Role: OS INIT 安装CentOS系统后，进行一些初始化操作。 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境...
+excerpt: "Ansible Role: OS INIT 安装CentOS系统后，进行一些初始化操作。 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 专题总揽
-date: 2017-03-02 12:57:46
+title: "Ansible Role 专题总揽"
+date: "2017-03-02 12:57:46"
 categories: Ansible
-tags:
-excerpt: 欢迎大家来QQ群【425931784】交流 帮助 Ansible Role【怎么用？】 统计 总共： 68 个角色 环境 Ansible Rol...
+excerpt: "欢迎大家来QQ群【425931784】交流 帮助 Ansible Role【怎么用？】 统计 总共： 68 个角色 环境 Ansible Rol..."
 auth: lework
 ---
 * content

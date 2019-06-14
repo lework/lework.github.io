@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发插件之【动态主机清单】
-date: 2017-05-28 16:46:40
+title: "Ansible 开发插件之【动态主机清单】"
+date: "2017-05-28 16:46:40"
 categories: Ansible
-tags:
-excerpt: ansible 可以从动态源（包括云资源）中获取主机清单。我们只需要创建一个脚本或程序，可以在正确的参数输入时已正确的格式打印json字符串，就...
+excerpt: "ansible 可以从动态源（包括云资源）中获取主机清单。我们只需要创建一个脚本或程序，可以在正确的参数输入时已正确的格式打印json字符串，就..."
 auth: lework
 ---
 * content

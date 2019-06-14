@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 二（安装）
-date: 2016-11-19 15:22:56
+title: "Ansible 小手册系列 二（安装）"
+date: "2016-11-19 15:22:56"
 categories: Ansible
-tags:
-excerpt: 通过yum(CentOS, RHEL)安装 注：上列是centos 6.7的安装步骤，目前yum的版本是2.1的。 通过apt(Ubuntu )...
+excerpt: "通过yum(CentOS, RHEL)安装 注：上列是centos 6.7的安装步骤，目前yum的版本是2.1的。 通过apt(Ubuntu )..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发调试 之【pycharm远程调试】
-date: 2017-05-28 16:52:24
+title: "Ansible 开发调试 之【pycharm远程调试】"
+date: "2017-05-28 16:52:24"
 categories: Ansible
-tags:
-excerpt: 介绍 PyCharm是一种Python IDE，带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、Proj...
+excerpt: "介绍 PyCharm是一种Python IDE，带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、Proj..."
 auth: lework
 ---
 * content

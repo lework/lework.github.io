@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 日志分析 之【logstash】
-date: 2017-08-13 15:07:48
+title: "Ansible Role 日志分析 之【logstash】"
+date: "2017-08-13 15:07:48"
 categories: Ansible
-tags:
-excerpt: Ansible Role: logstash 安装logstash 介绍 Logstash 是一个应用程序日志、事件的传输、处理、管理和搜索的平...
+excerpt: "Ansible Role: logstash 安装logstash 介绍 Logstash 是一个应用程序日志、事件的传输、处理、管理和搜索的平..."
 auth: lework
 ---
 * content

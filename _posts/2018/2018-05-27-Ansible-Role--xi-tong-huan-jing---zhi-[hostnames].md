@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【hostnames】
-date: 2018-05-27 12:52:55
+title: "Ansible Role 系统环境 之【hostnames】"
+date: "2018-05-27 12:52:55"
 categories: Ansible
-tags:
-excerpt: Ansible Role: hostnames 配置hosts文件的主机名和ip的对应关系。 要求 此角色仅在RHEL及其衍生产品上运行。 测试...
+excerpt: "Ansible Role: hostnames 配置hosts文件的主机名和ip的对应关系。 要求 此角色仅在RHEL及其衍生产品上运行。 测试..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 日志分析 之【grokdebug】
-date: 2017-08-13 15:08:46
+title: "Ansible Role 日志分析 之【grokdebug】"
+date: "2017-08-13 15:08:46"
 categories: Ansible
-tags:
-excerpt: Ansible Role: grokdebug 安装grokdebug 介绍 用于调试logstash中grok表达式。 要求 此角色仅在RHE...
+excerpt: "Ansible Role: grokdebug 安装grokdebug 介绍 用于调试logstash中grok表达式。 要求 此角色仅在RHE..."
 auth: lework
 ---
 * content

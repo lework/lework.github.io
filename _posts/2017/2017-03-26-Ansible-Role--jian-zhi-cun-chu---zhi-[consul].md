@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 键值存储 之【consul】
-date: 2017-03-26 19:34:38
+title: "Ansible Role 键值存储 之【consul】"
+date: "2017-03-26 19:34:38"
 categories: Ansible
-tags:
-excerpt: Ansible Role: consul 安装consul 介绍 consul是HashiCorp公司推出的一款开源工具，用于实现分布式系统的服...
+excerpt: "Ansible Role: consul 安装consul 介绍 consul是HashiCorp公司推出的一款开源工具，用于实现分布式系统的服..."
 auth: lework
 ---
 * content

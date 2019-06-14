@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发Filters插件之【split】
-date: 2017-05-31 22:36:14
+title: "Ansible 开发Filters插件之【split】"
+date: "2017-05-31 22:36:14"
 categories: Ansible
-tags:
-excerpt: 需求 实现python的字符串分割 实现re的正则表达式分割 Filter 类 所有的filter类都是上诉构造 filter_name  是 ...
+excerpt: "需求 实现python的字符串分割 实现re的正则表达式分割 Filter 类 所有的filter类都是上诉构造 filter_name  是 ..."
 auth: lework
 ---
 * content

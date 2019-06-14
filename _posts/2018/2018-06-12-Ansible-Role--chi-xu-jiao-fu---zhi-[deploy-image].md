@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 持续交付 之【deploy-image】
-date: 2018-06-12 11:40:38
+title: "Ansible Role 持续交付 之【deploy-image】"
+date: "2018-06-12 11:40:38"
 categories: Ansible
-tags:
-excerpt: Ansible Role: deploy-image 部署docker image 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 an...
+excerpt: "Ansible Role: deploy-image 部署docker image 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 an..."
 auth: lework
 ---
 * content

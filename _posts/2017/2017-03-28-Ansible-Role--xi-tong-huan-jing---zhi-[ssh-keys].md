@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【ssh-keys】
-date: 2017-03-28 10:28:39
+title: "Ansible Role 系统环境 之【ssh-keys】"
+date: "2017-03-28 10:28:39"
 categories: Ansible
-tags:
-excerpt: Ansible Role: ssh keys 在主机之间实现免密码登录。 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible...
+excerpt: "Ansible Role: ssh keys 在主机之间实现免密码登录。 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible..."
 auth: lework
 ---
 * content

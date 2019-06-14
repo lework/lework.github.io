@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发模块 之【连接华为交换机】
-date: 2017-05-31 21:40:42
+title: "Ansible 开发模块 之【连接华为交换机】"
+date: "2017-05-31 21:40:42"
 categories: Ansible
-tags:
-excerpt: 需求 远程在switch上执行命令 实现想法 使用ssh连接到switch上，远程输入命令到switch，获取返回结果。 测试环境 华为的s57...
+excerpt: "需求 远程在switch上执行命令 实现想法 使用ssh连接到switch上，远程输入命令到switch，获取返回结果。 测试环境 华为的s57..."
 auth: lework
 ---
 * content

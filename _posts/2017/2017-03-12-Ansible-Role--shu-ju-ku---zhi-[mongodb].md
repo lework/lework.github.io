@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 数据库 之【mongodb】
-date: 2017-03-12 11:01:31
+title: "Ansible Role 数据库 之【mongodb】"
+date: "2017-03-12 11:01:31"
 categories: Ansible
-tags:
-excerpt: Ansible Role: Mongodb 安装Mongodb 介绍 MongoDB是一个基于分布式文件存储的数据库。由C++语言编写。旨在为W...
+excerpt: "Ansible Role: Mongodb 安装Mongodb 介绍 MongoDB是一个基于分布式文件存储的数据库。由C++语言编写。旨在为W..."
 auth: lework
 ---
 * content

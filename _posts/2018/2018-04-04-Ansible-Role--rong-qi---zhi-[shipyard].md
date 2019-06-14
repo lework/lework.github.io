@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 容器 之【shipyard】
-date: 2018-04-04 16:09:27
+title: "Ansible Role 容器 之【shipyard】"
+date: "2018-04-04 16:09:27"
 categories: Ansible
-tags:
-excerpt: Ansible Role:shipyard 安装shipyard 介绍 简化对横跨多个主机的Docker容器集群进行管理, 目前作者已不再维护 ...
+excerpt: "Ansible Role:shipyard 安装shipyard 介绍 简化对横跨多个主机的Docker容器集群进行管理, 目前作者已不再维护 ..."
 auth: lework
 ---
 * content

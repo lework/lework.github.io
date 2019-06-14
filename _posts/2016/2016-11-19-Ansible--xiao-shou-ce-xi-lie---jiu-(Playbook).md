@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 九（Playbook）
-date: 2016-11-19 17:06:00
+title: "Ansible 小手册系列 九（Playbook）"
+date: "2016-11-19 17:06:00"
 categories: Ansible
-tags:
-excerpt: playbook是由一个或多个"play"组成的列表。play的主要功能在于将事先归并为一组的主机装扮成事先通过ansible中的task定义好...
+excerpt: "playbook是由一个或多个play组成的列表。play的主要功能在于将事先归并为一组的主机装扮成事先通过ansible中的task定义好..."
 auth: lework
 ---
 * content

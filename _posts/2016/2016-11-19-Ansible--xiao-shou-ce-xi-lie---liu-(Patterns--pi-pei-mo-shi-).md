@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 六（Patterns 匹配模式）
-date: 2016-11-19 16:19:08
+title: "Ansible 小手册系列 六（Patterns 匹配模式）"
+date: "2016-11-19 16:19:08"
 categories: Ansible
-tags:
-excerpt: Patterns 是定义Ansible要管理的主机。但是在playbook中它指的是对应主机应用特定的配置或IT流程。 命令格式 命令行 ans...
+excerpt: "Patterns 是定义Ansible要管理的主机。但是在playbook中它指的是对应主机应用特定的配置或IT流程。 命令格式 命令行 ans..."
 auth: lework
 ---
 * content

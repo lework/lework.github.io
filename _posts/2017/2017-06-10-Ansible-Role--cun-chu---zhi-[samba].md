@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 存储 之【samba】
-date: 2017-06-10 21:17:16
+title: "Ansible Role 存储 之【samba】"
+date: "2017-06-10 21:17:16"
 categories: Ansible
-tags:
-excerpt: Ansible Role: samba 配置Samba服务端 介绍 Samba是在Linux和UNIX系统上实现SMB协议的一个免费软件，由服务...
+excerpt: "Ansible Role: samba 配置Samba服务端 介绍 Samba是在Linux和UNIX系统上实现SMB协议的一个免费软件，由服务..."
 auth: lework
 ---
 * content

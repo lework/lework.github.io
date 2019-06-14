@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 容器 之【docker】
-date: 2018-02-08 16:56:06
+title: "Ansible Role 容器 之【docker】"
+date: "2018-02-08 16:56:06"
 categories: Ansible
-tags:
-excerpt: Ansible Role: docker 安装docker 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.4.2....
+excerpt: "Ansible Role: docker 安装docker 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.4.2...."
 auth: lework
 ---
 * content

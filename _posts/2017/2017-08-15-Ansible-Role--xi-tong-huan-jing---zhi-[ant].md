@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【ant】
-date: 2017-08-15 19:58:40
+title: "Ansible Role 系统环境 之【ant】"
+date: "2017-08-15 19:58:40"
 categories: Ansible
-tags:
-excerpt: Ansible Role: ant 添加ant编译环境 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.3.1.0o...
+excerpt: "Ansible Role: ant 添加ant编译环境 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.3.1.0o..."
 auth: lework
 ---
 * content

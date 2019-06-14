@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role系统环境 之【epel源设置】
-date: 2017-02-25 14:28:38
+title: "Ansible Role系统环境 之【epel源设置】"
+date: "2017-02-25 14:28:38"
 categories: Ansible
-tags:
-excerpt: Ansible Role: EPEL Repository EPEL使用中国科学技术大学 作为yum源，并工作在RHEL/CentOS操作系统上...
+excerpt: "Ansible Role: EPEL Repository EPEL使用中国科学技术大学 作为yum源，并工作在RHEL/CentOS操作系统上..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 数据库 之【mysql57】
-date: 2017-10-24 14:31:14
+title: "Ansible Role 数据库 之【mysql57】"
+date: "2017-10-24 14:31:14"
 categories: Ansible
-tags:
-excerpt: Ansible Role: Mysql 5.7 安装mysql 5.7 介绍 MySQL是一个关系型数据库管理系统，由瑞典MySQL AB 公司...
+excerpt: "Ansible Role: Mysql 5.7 安装mysql 5.7 介绍 MySQL是一个关系型数据库管理系统，由瑞典MySQL AB 公司..."
 auth: lework
 ---
 * content

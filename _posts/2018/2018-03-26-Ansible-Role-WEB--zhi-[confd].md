@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role WEB 之【confd】
-date: 2018-03-26 15:50:26
+title: "Ansible Role WEB 之【confd】"
+date: "2018-03-26 15:50:26"
 categories: Ansible
-tags:
-excerpt: Ansible Role: confd 安装confd confd是一个统一配置管理工具，目前仍在开发中，基于本地文件存储的部署方式已经可以用于...
+excerpt: "Ansible Role: confd 安装confd confd是一个统一配置管理工具，目前仍在开发中，基于本地文件存储的部署方式已经可以用于..."
 auth: lework
 ---
 * content

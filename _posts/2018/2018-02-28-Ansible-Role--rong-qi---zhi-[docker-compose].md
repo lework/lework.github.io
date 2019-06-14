@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 容器 之【docker-compose】
-date: 2018-02-28 11:57:02
+title: "Ansible Role 容器 之【docker-compose】"
+date: "2018-02-28 11:57:02"
 categories: Ansible
-tags:
-excerpt: Ansible Role: docker-compose 安装docker-compose 要求 此角色仅在RHEL及其衍生产品上运行。 测试环...
+excerpt: "Ansible Role: docker-compose 安装docker-compose 要求 此角色仅在RHEL及其衍生产品上运行。 测试环..."
 auth: lework
 ---
 * content

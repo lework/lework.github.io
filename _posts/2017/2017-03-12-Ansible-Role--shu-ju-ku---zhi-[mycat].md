@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 数据库 之【mycat】
-date: 2017-03-12 11:03:33
+title: "Ansible Role 数据库 之【mycat】"
+date: "2017-03-12 11:03:33"
 categories: Ansible
-tags:
-excerpt: Ansible Role: mycat 安装mycat 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.2.1.0o...
+excerpt: "Ansible Role: mycat 安装mycat 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.2.1.0o..."
 auth: lework
 ---
 * content

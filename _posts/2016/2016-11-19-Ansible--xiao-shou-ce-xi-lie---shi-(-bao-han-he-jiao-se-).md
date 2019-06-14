@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 十（包含和角色）
-date: 2016-11-19 17:29:16
+title: "Ansible 小手册系列 十（包含和角色）"
+date: "2016-11-19 17:29:16"
 categories: Ansible
-tags:
-excerpt: 包含 使用include模块来包含foo文件 include 还允许传递变量 动态包含 循环引用3次 还可以使用动态变量引入task文件 动态包...
+excerpt: "包含 使用include模块来包含foo文件 include 还允许传递变量 动态包含 循环引用3次 还可以使用动态变量引入task文件 动态包..."
 auth: lework
 ---
 * content

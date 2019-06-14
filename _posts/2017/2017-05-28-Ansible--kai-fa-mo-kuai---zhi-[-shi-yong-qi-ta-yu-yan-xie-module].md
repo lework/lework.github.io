@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发模块 之【使用其他语言写module】
-date: 2017-05-28 16:49:59
+title: "Ansible 开发模块 之【使用其他语言写module】"
+date: "2017-05-28 16:49:59"
 categories: Ansible
-tags:
-excerpt: 语言 使用bash语言开发modules 功能实现 创建一个文件。 module 返回值一定是json dumps的字符串。ansible的参数...
+excerpt: "语言 使用bash语言开发modules 功能实现 创建一个文件。 module 返回值一定是json dumps的字符串。ansible的参数..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 数据库 之【codis】
-date: 2017-03-12 11:02:51
+title: "Ansible Role 数据库 之【codis】"
+date: "2017-03-12 11:02:51"
 categories: Ansible
-tags:
-excerpt: Ansible Role: Codis 安装Codis集群 介绍 Codis 是一个分布式 Redis 解决方案, 对于上层的应用来说, 连接到...
+excerpt: "Ansible Role: Codis 安装Codis集群 介绍 Codis 是一个分布式 Redis 解决方案, 对于上层的应用来说, 连接到..."
 auth: lework
 ---
 * content

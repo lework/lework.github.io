@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 数据同步 之【rsync】
-date: 2017-04-16 17:59:28
+title: "Ansible Role 数据同步 之【rsync】"
+date: "2017-04-16 17:59:28"
 categories: Ansible
-tags:
-excerpt: Ansible Role: rsync 安装rsync服务 介绍 rsync是类unix系统下的数据镜像备份工具——remote sync。一款...
+excerpt: "Ansible Role: rsync 安装rsync服务 介绍 rsync是类unix系统下的数据镜像备份工具——remote sync。一款..."
 auth: lework
 ---
 * content

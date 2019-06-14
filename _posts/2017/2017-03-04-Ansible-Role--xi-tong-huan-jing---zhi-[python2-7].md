@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【python2.7】
-date: 2017-03-04 15:59:53
+title: "Ansible Role 系统环境 之【python2.7】"
+date: "2017-03-04 15:59:53"
 categories: Ansible
-tags:
-excerpt: Ansible Role: python2.7 Centos 6.7版本中的python2.6升级到2.7 要求 此角色仅在RHEL及其衍生产品...
+excerpt: "Ansible Role: python2.7 Centos 6.7版本中的python2.6升级到2.7 要求 此角色仅在RHEL及其衍生产品..."
 auth: lework
 ---
 * content

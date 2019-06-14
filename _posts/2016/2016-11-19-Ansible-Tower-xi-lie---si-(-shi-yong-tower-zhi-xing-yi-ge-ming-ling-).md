@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Tower系列 四（使用tower执行一个命令）
-date: 2016-11-19 21:35:58
+title: "Ansible Tower系列 四（使用tower执行一个命令）"
+date: "2016-11-19 21:35:58"
 categories: Ansible
-tags:
-excerpt: 在主机清单页面中，选择一个主机清单，进入后，选择hosts里的主机 点击 RUN COMMANDS MODULE 选择 commandARGUM...
+excerpt: "在主机清单页面中，选择一个主机清单，进入后，选择hosts里的主机 点击 RUN COMMANDS MODULE 选择 commandARGUM..."
 auth: lework
 ---
 * content

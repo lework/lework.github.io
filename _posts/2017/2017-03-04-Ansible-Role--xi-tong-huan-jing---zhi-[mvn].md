@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【mvn】
-date: 2017-03-04 15:57:56
+title: "Ansible Role 系统环境 之【mvn】"
+date: "2017-03-04 15:57:56"
 categories: Ansible
-tags:
-excerpt: Ansible Role: mvn 添加mvn编译环境 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.2.1.0o...
+excerpt: "Ansible Role: mvn 添加mvn编译环境 要求 此角色仅在RHEL及其衍生产品上运行。 测试环境 ansible 2.2.1.0o..."
 auth: lework
 ---
 * content

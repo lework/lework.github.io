@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【supervisor】
-date: 2017-03-11 11:39:11
+title: "Ansible Role 系统环境 之【supervisor】"
+date: "2017-03-11 11:39:11"
 categories: Ansible
-tags:
-excerpt: Ansible Role: supervisor 安装supervisor 介绍 Supervisor是一个进程监控程序。 满足的需求是：我现在...
+excerpt: "Ansible Role: supervisor 安装supervisor 介绍 Supervisor是一个进程监控程序。 满足的需求是：我现在..."
 auth: lework
 ---
 * content

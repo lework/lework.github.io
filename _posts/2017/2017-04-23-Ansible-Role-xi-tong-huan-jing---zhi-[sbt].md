@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role系统环境 之【sbt】
-date: 2017-04-23 08:19:53
+title: "Ansible Role系统环境 之【sbt】"
+date: "2017-04-23 08:19:53"
 categories: Ansible
-tags:
-excerpt: Ansible Role: sbt 添加Scala编译环境 说明 SBT = (not so) Simple Build Tool,是scala...
+excerpt: "Ansible Role: sbt 添加Scala编译环境 说明 SBT = (not so) Simple Build Tool,是scala..."
 auth: lework
 ---
 * content

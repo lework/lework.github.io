@@ -1,10 +1,9 @@
 ---
 layout: post
-title: 利用ansible来做kubernetes 1.10.3集群高可用的一键部署
-date: 2018-05-29 10:51:08
+title: "利用ansible来做kubernetes 1.10.3集群高可用的一键部署"
+date: "2018-05-29 10:51:08"
 categories: Ansible
-tags:
-excerpt: 请读者务必保持环境一致 安装过程中需要下载所需系统包，请务必使所有节点连上互联网。 本次安装的集群节点信息 实验环境：VMware的虚拟机 另外...
+excerpt: "请读者务必保持环境一致 安装过程中需要下载所需系统包，请务必使所有节点连上互联网。 本次安装的集群节点信息 实验环境：VMware的虚拟机 另外..."
 auth: lework
 ---
 * content

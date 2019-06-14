@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role WEB 之【openresty】
-date: 2017-08-04 11:31:52
+title: "Ansible Role WEB 之【openresty】"
+date: "2017-08-04 11:31:52"
 categories: Ansible
-tags:
-excerpt: Ansible Role: openresty 安装openresty 介绍 OpenResty® 是一个基于 Nginx 与 Lua 的高性能...
+excerpt: "Ansible Role: openresty 安装openresty 介绍 OpenResty® 是一个基于 Nginx 与 Lua 的高性能..."
 auth: lework
 ---
 * content

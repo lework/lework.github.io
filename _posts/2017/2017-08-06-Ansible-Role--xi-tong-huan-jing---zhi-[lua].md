@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 系统环境 之【lua】
-date: 2017-08-06 21:20:17
+title: "Ansible Role 系统环境 之【lua】"
+date: "2017-08-06 21:20:17"
 categories: Ansible
-tags:
-excerpt: Ansible Role: lua 添加lua语言环境 介绍 Lua 是一种轻量小巧的脚本语言，用标准C语言编写并以源代码形式开放， 其设计目的...
+excerpt: "Ansible Role: lua 添加lua语言环境 介绍 Lua 是一种轻量小巧的脚本语言，用标准C语言编写并以源代码形式开放， 其设计目的..."
 auth: lework
 ---
 * content

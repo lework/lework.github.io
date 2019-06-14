@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 持续交付 之【deploy-supervisor】
-date: 2018-04-28 14:55:23
+title: "Ansible Role 持续交付 之【deploy-supervisor】"
+date: "2018-04-28 14:55:23"
 categories: Ansible
-tags:
-excerpt: Ansible Role: deploy-supervisor 部署spring boot 应用, spring boot由supervisor...
+excerpt: "Ansible Role: deploy-supervisor 部署spring boot 应用, spring boot由supervisor..."
 auth: lework
 ---
 * content

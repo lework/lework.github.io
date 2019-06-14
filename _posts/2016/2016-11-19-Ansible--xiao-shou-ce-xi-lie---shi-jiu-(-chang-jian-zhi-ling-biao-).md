@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 十九（常见指令表）
-date: 2016-11-19 21:07:55
+title: "Ansible 小手册系列 十九（常见指令表）"
+date: "2016-11-19 21:07:55"
 categories: Ansible
-tags:
-excerpt: Play Role Block Task 更多文章请看 Ansible 专题文章总览
+excerpt: "Play Role Block Task 更多文章请看 Ansible 专题文章总览"
 auth: lework
 ---
 * content

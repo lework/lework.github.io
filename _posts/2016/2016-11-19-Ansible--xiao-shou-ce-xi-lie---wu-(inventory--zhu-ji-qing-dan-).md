@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 小手册系列 五（inventory 主机清单）
-date: 2016-11-19 16:10:03
+title: "Ansible 小手册系列 五（inventory 主机清单）"
+date: "2016-11-19 16:10:03"
 categories: Ansible
-tags:
-excerpt: Ansible 可同时操作属于一个组的多台主机,组和主机之间的关系通过 inventory 文件配置. 默认的文件路径为 /etc/ansibl...
+excerpt: "Ansible 可同时操作属于一个组的多台主机,组和主机之间的关系通过 inventory 文件配置. 默认的文件路径为 /etc/ansibl..."
 auth: lework
 ---
 * content

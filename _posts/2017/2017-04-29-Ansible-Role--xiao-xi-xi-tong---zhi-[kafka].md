@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role 消息系统 之【kafka】
-date: 2017-04-29 18:23:51
+title: "Ansible Role 消息系统 之【kafka】"
+date: "2017-04-29 18:23:51"
 categories: Ansible
-tags:
-excerpt: Ansible Role: kafka 安装kafka集群 介绍 kafka是HashiCorp公司推出的一款开源工具，用于实现分布式系统的服务...
+excerpt: "Ansible Role: kafka 安装kafka集群 介绍 kafka是HashiCorp公司推出的一款开源工具，用于实现分布式系统的服务..."
 auth: lework
 ---
 * content

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible 开发API 之【使用api运行task任务】
-date: 2017-06-24 15:09:53
+title: "Ansible 开发API 之【使用api运行task任务】"
+date: "2017-06-24 15:09:53"
 categories: Ansible
-tags:
-excerpt: ansible 依赖于子进程，因此API不是线程安全的。 环境 本文使用的是ansible api 2.0ansible 2.3.0.0os C...
+excerpt: "ansible 依赖于子进程，因此API不是线程安全的。 环境 本文使用的是ansible api 2.0ansible 2.3.0.0os C..."
 auth: lework
 ---
 * content

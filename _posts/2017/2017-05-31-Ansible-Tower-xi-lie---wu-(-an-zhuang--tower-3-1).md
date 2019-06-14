@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Tower系列 五（安装 tower 3.1）
-date: 2017-05-31 21:58:27
+title: "Ansible Tower系列 五（安装 tower 3.1）"
+date: "2017-05-31 21:58:27"
 categories: Ansible
-tags:
-excerpt: 系统要求 RHEL 7，CentOS 7或Ubuntu 14.04 LTS或16.04 LTS上，并且是64位操作系统 内存最小 2 GB RA...
+excerpt: "系统要求 RHEL 7，CentOS 7或Ubuntu 14.04 LTS或16.04 LTS上，并且是64位操作系统 内存最小 2 GB RA..."
 auth: lework
 ---
 * content

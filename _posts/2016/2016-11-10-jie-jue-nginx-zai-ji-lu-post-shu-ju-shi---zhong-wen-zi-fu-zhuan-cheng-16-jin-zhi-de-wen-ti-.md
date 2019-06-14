@@ -1,10 +1,9 @@
 ---
 layout: post
-title: 解决nginx在记录post数据时 中文字符转成16进制的问题
-date: 2016-11-10 21:49:26
+title: "解决nginx在记录post数据时 中文字符转成16进制的问题"
+date: "2016-11-10 21:49:26"
 categories: Nginx
-tags:
-excerpt: 1. 问题描述 nginx 在获取post数据时候，如果是中文，则转换成16进制显示在日志文件中，如下图所示。 日志格式为： log_forma...
+excerpt: "1. 问题描述 nginx 在获取post数据时候，如果是中文，则转换成16进制显示在日志文件中，如下图所示。 日志格式为： log_forma..."
 auth: lework
 ---
 * content

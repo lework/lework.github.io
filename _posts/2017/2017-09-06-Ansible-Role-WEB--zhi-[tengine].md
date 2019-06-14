@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Ansible Role WEB 之【tengine】
-date: 2017-09-06 18:06:20
+title: "Ansible Role WEB 之【tengine】"
+date: "2017-09-06 18:06:20"
 categories: Ansible
-tags:
-excerpt: Ansible Role: tengine 安装tengine 介绍 Tengine是由淘宝网发起的Web服务器项目。它在Nginx的基础上，针...
+excerpt: "Ansible Role: tengine 安装tengine 介绍 Tengine是由淘宝网发起的Web服务器项目。它在Nginx的基础上，针..."
 auth: lework
 ---
 * content

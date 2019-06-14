@@ -1,10 +1,9 @@
 ---
 layout: post
-title: ssh连接远程主机执行脚本的环境变量问题
-date: 2017-09-12 14:43:05
+title: "ssh连接远程主机执行脚本的环境变量问题"
+date: "2017-09-12 14:43:05"
 categories: 杂项
-tags:
-excerpt: 说明，本文所使用的机器是：SUSE Linux Enterprise。 问题定位 这看起来像是环境变量引起的问题，为了证实这一猜想，我在这条命令...
+excerpt: "说明，本文所使用的机器是：SUSE Linux Enterprise。 问题定位 这看起来像是环境变量引起的问题，为了证实这一猜想，我在这条命令..."
 auth: lework
 ---
 * content
