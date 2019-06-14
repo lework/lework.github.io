@@ -218,7 +218,7 @@ chown nginx.nginx /web/index.php
 
 使用postman工具来发送post请求
 
-![Paste_Image.png]/assets/images/Nginx/3629406-42b51ef7b121d677.png
+![Paste_Image.png](/assets/images/Nginx/3629406-42b51ef7b121d677.png)
 
 查看日志
 
@@ -226,7 +226,7 @@ chown nginx.nginx /web/index.php
 cat  /tmp/nginx_access.log
 ```
 
-![Paste_Image.png]/assets/images/Nginx/3629406-3484725c836a316c.png
+![Paste_Image.png](/assets/images/Nginx/3629406-3484725c836a316c.png)
 
 已经记录post请求的request 和response数据了。
 

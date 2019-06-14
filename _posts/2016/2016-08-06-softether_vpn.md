@@ -59,18 +59,18 @@ auth: lework
 
 1. 安装软件，选择安装 `SoftEther VPN Server`。
 
-	![vpngate-win-server01](/assets/images/vpn/vpngate-win-server01.jpg)
+	![vpngate-win-server01]((/assets/images/vpn/vpngate-win-server01.jpg)
 
 1. 安装完成后，双击 “本地主题（此服务器）” ，输入管理员密码。
 
-	![vpngate-win-server02](/assets/images/vpn/vpngate-win-server02.jpg)
+	![vpngate-win-server02]((/assets/images/vpn/vpngate-win-server02.jpg)
 
-	![vpngate-win-server04](/assets/images/vpn/vpngate-win-server04.jpg)
+	![vpngate-win-server04]((/assets/images/vpn/vpngate-win-server04.jpg)
 
 1. 选择”远程访问 VPN Server”安装方式。
 
 
-	![vpngate-win-server05](/assets/images/vpn/vpngate-win-server05.jpg)
+	![vpngate-win-server05]((/assets/images/vpn/vpngate-win-server05.jpg)
 
 
 1. 动态DNS功能，选择退出即可。
@@ -79,7 +79,7 @@ auth: lework
 
 1. 选择 “启用 L2TP 服务器功能( L2TP over ipsec)”。
 
-	![vpngate-win-server09](/assets/images/vpn/vpngate-win-server09.jpg)
+	![vpngate-win-server09]((/assets/images/vpn/vpngate-win-server09.jpg)
 
 1. 禁用VPN Azure功能。
 
@@ -87,15 +87,15 @@ auth: lework
 
 1. 创建用户。
 
-	![vpngate-win-server12](/assets/images/vpn/vpngate-win-server12.jpg)
+	![vpngate-win-server12]((/assets/images/vpn/vpngate-win-server12.jpg)
 
 1. 设置本地网桥，这里我选择的是我外网网卡。
 
-	![vpngate-win-server13](/assets/images/vpn/vpngate-win-server13.jpg)
+	![vpngate-win-server13]((/assets/images/vpn/vpngate-win-server13.jpg)
 
 1. 设置NAT和DHCP在管理器界面选择”管理虚拟HUB”,选择”虚拟NAT和虚拟DHCP服务器”,选择 “设置DHCP”。
 
-	![vpngate-win-server16](/assets/images/vpn/vpngate-win-server16.jpg)
+	![vpngate-win-server16]((/assets/images/vpn/vpngate-win-server16.jpg)
 
 1. 启用NAT和DHCP。
 
@@ -106,19 +106,19 @@ auth: lework
 
 1. 安装VPN Client，选择SoftEther VPN Client。
 
-	![vpngate-win-client01](/assets/images/vpn/vpngate-win-client01.jpg)
+	![vpngate-win-client01]((/assets/images/vpn/vpngate-win-client01.jpg)
 
 1. 选择”添加新的vpn链接”，然后创建一个虚拟网络适配器，输入虚拟适配器的名称。
 
-	![vpngate-win-client04](/assets/images/vpn/vpngate-win-client04.jpg)
+	![vpngate-win-client04]((/assets/images/vpn/vpngate-win-client04.jpg)
 
 1. 设置VPN链接属性。
 
-	![vpngate-win-client05](/assets/images/vpn/vpngate-win-client05.jpg)
+	![vpngate-win-client05]((/assets/images/vpn/vpngate-win-client05.jpg)
 
 1. 完成后，双击test链接，完成链接vpn，下图是分配的ip。
 
-	![vpngate-win-client06](/assets/images/vpn/vpngate-win-client06.jpg)
+	![vpngate-win-client06]((/assets/images/vpn/vpngate-win-client06.jpg)
 
 ### 效果检验
 ---
@@ -128,14 +128,14 @@ auth: lework
 显示网卡信息
 	
 	
-![vpngate-win-client07](/assets/images/vpn/vpngate-win-client07.jpg)
+![vpngate-win-client07]((/assets/images/vpn/vpngate-win-client07.jpg)
 	
 访问百度网页
 
-![vpngate-win-client08](/assets/images/vpn/vpngate-win-client08.jpg)
+![vpngate-win-client08]((/assets/images/vpn/vpngate-win-client08.jpg)
 	
 #### Server
 	
 查看vpn会话
 	
-![vpngate-win-server17](/assets/images/vpn/vpngate-win-server17.jpg)
+![vpngate-win-server17]((/assets/images/vpn/vpngate-win-server17.jpg)

@@ -90,7 +90,7 @@ iptables: Applying firewall rules:                         [  OK  ]
 
 windows 平台下使用
 
-![anon](/assets/images/git/tgit_anon.png)
+![anon]((/assets/images/git/tgit_anon.png)
 
 Linux 平台下使用
 

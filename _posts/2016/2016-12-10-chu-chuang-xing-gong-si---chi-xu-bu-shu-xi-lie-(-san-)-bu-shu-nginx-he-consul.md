@@ -165,10 +165,10 @@ nginx
 
 ### 查看consul web信息
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-b06e4f8991245559.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-b06e4f8991245559.png)
 
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-e1e83ebff55d38e9.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-e1e83ebff55d38e9.png)
 
 
 ###  查看通过consul添加的后端服务
@@ -181,7 +181,7 @@ server 192.168.77.140:80 weight=2 max_fails=2 fail_timeout=10s;
 
 访问nginx，测试下是否代理到后端服务
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-1e1fb3cce9ca5270.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-1e1fb3cce9ca5270.png)
 
 
 real地址就是后端服务器的地址。

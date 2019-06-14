@@ -23,8 +23,8 @@ auth: lework
 华为的s5700交换机
 
 没有实体机的话，可以使用ensp，下图是我的测试环境
-![image.png]/assets/images/Ansible/3629406-7e056b989c3ba6c2.png
-![image.png]/assets/images/Ansible/3629406-b38449e24bad39c0.png
+![image.png](/assets/images/Ansible/3629406-7e056b989c3ba6c2.png)
+![image.png](/assets/images/Ansible/3629406-b38449e24bad39c0.png)
 
 
 
@@ -660,8 +660,8 @@ localhost ansible_connection=local
 ```
 执行结果
 
-![image.png]/assets/images/Ansible/3629406-0e2b53612861c5d5.png
+![image.png](/assets/images/Ansible/3629406-0e2b53612861c5d5.png)
 
 原图
-http://upload-images.jianshu.io/upload_images/3629406-0e2b53612861c5d5.png
+http://upload-images.jianshu.io/upload_images/3629406-0e2b53612861c5d5.png)
 {% endraw %}

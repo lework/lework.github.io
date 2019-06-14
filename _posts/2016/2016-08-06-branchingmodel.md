@@ -11,7 +11,7 @@ auth: lework
 
 在这篇文章中，我提出一个开发模型。我已经将这个开发模型引入到我所有的项目里（无论在工作还是私人）已经一年有余，并且它被证明是非常成功的。我打算写这些已经很久了，但我一直找不到时间来做，现在终于有时间了。我不会讲任何项目的具体细节，仅是关于分支策略和释放管理相关内容。
 
-![git-model](/assets/images/git/git-model@2x.png)
+![git-model]((/assets/images/git/git-model@2x.png)
 
 它主要体现了Git对我们源代码版本的管理。
 
@@ -32,7 +32,7 @@ auth: lework
 
 对于这种分支模型，我们设置了一个版本库，它运转良好，这是一个"事实上" 版本库。不过请注意，这个版本库只是被认为是中心版本库（因为`Git`是一个分布式版本管理系统，从技术上来讲，并没有一个中心版本库）。我们将把这个版本库称为原始库，这个名字对所有的`Git`用户来说都很容易理解。
 
-![centr-decentr](/assets/images/git/centr-decentr@2x.png)
+![centr-decentr]((/assets/images/git/centr-decentr@2x.png)
 
 
 每个开发者都对`origin`库拉代码和提交代码。但是除了集中式的存取代码关系，每个开发者也可以从子团队的其他队友那里获得代码版本变更。例如，对于2个或多个开发者一起完成的大版本变更，为了防止过早地向`origin`库提交工作内容，这种机制就变得非常有用。在上述途中，有如下子团队：Alice和Bob，Alice和David，Clair和David。
@@ -42,7 +42,7 @@ auth: lework
 ### 主分支
 ---
 
-![main-branches](/assets/images/git/main-branches@2x.png)
+![main-branches]((/assets/images/git/main-branches@2x.png)
 
 在核心部分，研发模型很大程度上靠其他现有模型支撑的。中心库有2个可一直延续的分支：
 
@@ -78,7 +78,7 @@ auth: lework
 
 ### 功能分支
 ---
-![fb](/assets/images/git/fb@2x.png)
+![fb]((/assets/images/git/fb@2x.png)
 
 功能分支是`develop`分支的分支版本,最终必须合并到`develop`分支中。
 
@@ -115,7 +115,7 @@ $ git push origin develop
 
 使用`--no-ff`标志会导致合并操作创建一个新`commit`对象，即使该合并操作可以`fast-forward`。这避免了丢失这个功能分支存在的历史信息，将该功能的所有提交组合在一起。 下面来比较下这两种:
 
-![merge-without-ff](/assets/images/git/merge-without-ff@2x.png)
+![merge-without-ff]((/assets/images/git/merge-without-ff@2x.png)
 
 后一种情况，不可能从Git历史中看到哪些提交实现了一个功能——你必须手工阅读全部的日志信息。如果对整个功能进行回退 (比如一组提交)，后一种方式会是一种真正头痛的问题，而使用`--no-ff`标志的情况则很容易。
 
@@ -196,7 +196,7 @@ Deleted branch release-1.2 (was ff452fe).
 ### 热修复分支
 ---
 
-![hotfix-branches](/assets/images/git/hotfix-branches@2x.png)
+![hotfix-branches]((/assets/images/git/hotfix-branches@2x.png)
 
 
 热修复分支基于`master`分支分离而来，必须合并回`develop`和`master`分支, 分支名约定：`hotfix-*`。
@@ -272,7 +272,7 @@ Deleted branch hotfix-1.2.1 (was abbe5d6).
 
 这里提供一份高质量PDF格式图表。去吧，把它挂载墙上以便能随时快速参考。
 
-[Git-branching-model](/assets/images/git/Git-branching-model.pdf)
+[Git-branching-model]((/assets/images/git/Git-branching-model.pdf)
 
 **更新** ： 如果有人需要: 这是主图表的[gitflow-model.src.key](http://github.com/downloads/nvie/gitflow/Git-branching-model-src.key.zip) (Apple Keynote格式).
 

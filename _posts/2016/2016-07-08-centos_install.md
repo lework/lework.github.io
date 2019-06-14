@@ -48,7 +48,7 @@ git version 1.7.1
 在安装TortoiseGit的时候，默认还会安装有Puttygen.exe这个程序，这个程序是可以生成putty密钥的。
 Puttygen默认路径在C:\Program Files\TortoiseGit\bin\puttygen.exe，启动后按照下图所示进行操作。
 
-![puttykey](/assets/images/git/puttykey.png)
+![puttykey]((/assets/images/git/puttykey.png)
 
 #### 然后在服务器上添加客户端的公钥信息
 
@@ -73,12 +73,12 @@ Initialized empty Git repository in /svn_data/sample.git/
 
 使用TortoiseGit克隆远程仓库
 
-![clone](/assets/images/git/tclone.png)
+![clone]((/assets/images/git/tclone.png)
 
 
 克隆成功的提示信息
 
-![sucess](/assets/images/git/tclone_success.png)
+![sucess]((/assets/images/git/tclone_success.png)
 
 
 ### 扩展

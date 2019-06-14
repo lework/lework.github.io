@@ -13,7 +13,7 @@ auth: lework
 
 nginx 在获取post数据时候，如果是中文，则转换成16进制显示在日志文件中，如下图所示。
 
-![Paste_Image.png]/assets/images/Nginx/3629406-258e95a7aa96d037.png
+![Paste_Image.png](/assets/images/Nginx/3629406-258e95a7aa96d037.png)
 
 日志格式为： `log_format postdata '$remote_addr | $request_body | $resp_body';`
 
@@ -33,7 +33,7 @@ log_format postdata escape=json '$remote_addr | $request_body | $resp_body';
 
 日志输出
 
-![image.png]/assets/images/Nginx/3629406-26b4f01326af08b9.png
+![image.png](/assets/images/Nginx/3629406-26b4f01326af08b9.png)
 
 
 第一条日志是不加`escape=json` 参数后，`log_format`输出的
@@ -61,7 +61,7 @@ log_format postdata escape=json '$remote_addr | $request_body | $resp_body';
 此次搜索关键字： `nginx log 中文 16进制`
 
 
-![Paste_Image.png]/assets/images/Nginx/3629406-eee916903c9419df.png
+![Paste_Image.png](/assets/images/Nginx/3629406-eee916903c9419df.png)
 
 出处：https://groups.google.com/forum/#!topic/openresty/PYvvfj5RKCg
 
@@ -80,7 +80,7 @@ log_format postdata escape=json '$remote_addr | $request_body | $resp_body';
 
 从这个关键字便发现了下面得信息
 
-![Paste_Image.png]/assets/images/Nginx/3629406-5ee329c72e7c56eb.png
+![Paste_Image.png](/assets/images/Nginx/3629406-5ee329c72e7c56eb.png)
 
 
 
@@ -97,7 +97,7 @@ log_format postdata escape=json '$remote_addr | $request_body | $resp_body';
 
 通过这个关键字找到了下列有用信息。
 
-![Paste_Image.png]/assets/images/Nginx/3629406-48dd738387dafa3d.png
+![Paste_Image.png](/assets/images/Nginx/3629406-48dd738387dafa3d.png)
 
 
 
@@ -194,7 +194,7 @@ ngx_http_log_escape(u_char *dst, u_char *src, size_t size)
 
 修改源码如下图所示，
 
-![Paste_Image.png]/assets/images/Nginx/3629406-780384b318f0b920.png
+![Paste_Image.png](/assets/images/Nginx/3629406-780384b318f0b920.png)
 
 
 然后重新编译，安装nginx
@@ -207,10 +207,10 @@ make -j2 && make install
 
 再次post 数据到nginx里
 
-![Paste_Image.png]/assets/images/Nginx/3629406-39914a00031a685e.png
+![Paste_Image.png](/assets/images/Nginx/3629406-39914a00031a685e.png)
 
 查看日志会发现中文不在转换16进制了。
-![Paste_Image.png]/assets/images/Nginx/3629406-917ef01b22b63f06.png
+![Paste_Image.png](/assets/images/Nginx/3629406-917ef01b22b63f06.png)
 
 第1-2行，是没有修改源码前，向nginx url post数据，中文被转换成16进制。
 第3-5行，修改源码后，中文就不会转换为16进制了。也没有什么乱码。

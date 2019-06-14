@@ -105,7 +105,7 @@ ansible.cfg配置中有两个选项可用于静态包括：
 
 **文件结构如下**
 
-![Paste_Image.png]/assets/images/Ansible/3629406-2f960202a9b3b8d1.png
+![Paste_Image.png](/assets/images/Ansible/3629406-2f960202a9b3b8d1.png)
 
 
 
@@ -144,7 +144,7 @@ ansible.cfg配置中有两个选项可用于静态包括：
 
 **如果区分环境使用角色，可以使用下列文档结构**
 
-![Paste_Image.png]/assets/images/Ansible/3629406-56284ed25795ae17.png
+![Paste_Image.png](/assets/images/Ansible/3629406-56284ed25795ae17.png)
 
 
 - production/inventory 主机清单
@@ -243,7 +243,7 @@ dependencies:
 
 实际测试，`2.1`，`2.2`版本的ansible，无论加不加这个设置，就只会执行第一次依赖角色，后续的则不执行。
 
-![Paste_Image.png]/assets/images/Ansible/3629406-bd5b4079152d1077.png
+![Paste_Image.png](/assets/images/Ansible/3629406-bd5b4079152d1077.png)
 
 ## 例子
 ---

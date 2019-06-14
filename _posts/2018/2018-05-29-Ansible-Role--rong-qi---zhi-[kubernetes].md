@@ -209,7 +209,7 @@ centos 7.3 以上版本
         
 ## 运行日志
 
-[![asciicast]/assets/images/Ansible/3629406-851beba0877cfc73.png](https://asciinema.org/a/1saMof2HuDhY0ujkoS2UyuSl7)
+[![asciicast](/assets/images/Ansible/3629406-851beba0877cfc73.png)](https://asciinema.org/a/1saMof2HuDhY0ujkoS2UyuSl7)
 
 
 ## 检查集群状态

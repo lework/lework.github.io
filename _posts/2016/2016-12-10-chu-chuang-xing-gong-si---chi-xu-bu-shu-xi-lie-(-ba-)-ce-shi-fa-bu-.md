@@ -65,7 +65,7 @@ Microsoft (R) 生成引擎版本 14.0.23107.0
 
 在后端服务器可以看到D:\Packages\online目录下已经存在了一个压缩文件
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-a82bbcfc3a655b70.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-a82bbcfc3a655b70.png)
 	
 ### 执行发布任务
 	
@@ -161,5 +161,5 @@ HTTP/1.1 200 OK
 	
 linux下持续访问效果
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-f71dac6e911ed02e.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-f71dac6e911ed02e.png)
 

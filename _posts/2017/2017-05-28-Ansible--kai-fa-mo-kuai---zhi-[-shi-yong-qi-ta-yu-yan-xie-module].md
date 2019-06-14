@@ -63,6 +63,6 @@ cat hosts
 ## 执行结果
 ---
 
-![image.png]/assets/images/Ansible/3629406-d77a4e11b6dfe42d.png
+![image.png](/assets/images/Ansible/3629406-d77a4e11b6dfe42d.png)
 
 文件已被创建

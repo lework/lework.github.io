@@ -35,7 +35,7 @@ ansible -m setup --tree out/ all
 ansible-cmdb out/ > overview.html
 ```
 
-![Paste_Image.png]/assets/images/Ansible/3629406-afafa21b010daca0.png
+![Paste_Image.png](/assets/images/Ansible/3629406-afafa21b010daca0.png)
 
 默认模板采用html_fancy，文件存放在/usr/local/lib/ansible-cmdb/ansiblecmdb/data/tpl/html_fancy.tpl
 
@@ -47,7 +47,7 @@ ansible-cmdb -f /path/to/facts/dir > overview.html
 以资产列表得形式统计出ansible主机信息。
 ansible-cmdb -t txt_table --columns name,os,ip,mem,cpus out/
 
-![Paste_Image.png]/assets/images/Ansible/3629406-69d31f2d27ca04e2.png
+![Paste_Image.png](/assets/images/Ansible/3629406-69d31f2d27ca04e2.png)
 
 
 输出csv格式的主机信息
@@ -55,7 +55,7 @@ ansible-cmdb -t txt_table --columns name,os,ip,mem,cpus out/
 ansible-cmdb -t csv  -i hosts out/
 ```
 
-![Paste_Image.png]/assets/images/Ansible/3629406-71ba789243f1db33.png
+![Paste_Image.png](/assets/images/Ansible/3629406-71ba789243f1db33.png)
 
 输出sql文件，导入数据到mysql或者SQLite
 ```

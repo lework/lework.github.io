@@ -28,10 +28,10 @@ cd ansible/hacking/
 ```
 python test-module -m /usr/lib/python2.6/site-packages/ansible/modules/system/ping.py
 ```
-![image.png]/assets/images/Ansible/3629406-7effbb75d94d244a.png
+![image.png](/assets/images/Ansible/3629406-7effbb75d94d244a.png)
 
 test-module使用参数
-![image.png]/assets/images/Ansible/3629406-da9731851cd8c13f.png
+![image.png](/assets/images/Ansible/3629406-da9731851cd8c13f.png)
 
 
 ## 远程调试

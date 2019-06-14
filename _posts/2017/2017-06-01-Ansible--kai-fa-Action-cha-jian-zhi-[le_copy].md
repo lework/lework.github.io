@@ -412,7 +412,7 @@ if __name__ == '__main__':
 ---
 
 
-![image.png]/assets/images/Ansible/3629406-8bfc68022b8ceeb2.png
+![image.png](/assets/images/Ansible/3629406-8bfc68022b8ceeb2.png)
 
 ## github
 

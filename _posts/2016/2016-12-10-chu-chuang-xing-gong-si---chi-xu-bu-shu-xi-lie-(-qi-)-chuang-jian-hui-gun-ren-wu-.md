@@ -13,15 +13,15 @@ auth: lework
 
 回滚流程图：
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-f74e39ad88814565.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-f74e39ad88814565.png)
 
 ### 在jenkins上创建Deploy_rollback_demo任务
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-eb52be105df6d870.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-eb52be105df6d870.png)
 
 添加构建
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-9639dfa9815bf561.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-9639dfa9815bf561.png)
 
 ```powershell
 [string]$xmldocpath = "D:\scriptes\config.xml"

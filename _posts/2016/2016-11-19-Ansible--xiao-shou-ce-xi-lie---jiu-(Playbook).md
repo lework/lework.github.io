@@ -72,7 +72,7 @@ ansible-playbook -i hosts test.yml
 
 输出结果
 
-![Paste_Image.png]/assets/images/Ansible/3629406-1895c3c1c3d062e2.png
+![Paste_Image.png](/assets/images/Ansible/3629406-1895c3c1c3d062e2.png)
 
 
 ** 在执行playbook前，可以做些检查**

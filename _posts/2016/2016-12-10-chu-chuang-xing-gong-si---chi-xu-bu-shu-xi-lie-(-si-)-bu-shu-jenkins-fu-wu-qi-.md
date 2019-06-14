@@ -18,28 +18,28 @@ http://mirror.xmission.com/jenkins/windows-stable/jenkins-2.19.4.zip
 
 ### 安装jenkins
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-31fffbffe145796b.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-31fffbffe145796b.png)
 
 都默认设置就可以。
 
 ### 设置jenkins服务的启动权限
 进入服务-右键Jenkins-属性-登录
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-29aadd85a8dcf332.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-29aadd85a8dcf332.png)
 
 需要重启服务
 
 ### 访问8080端口，输入密钥，解锁jenkins
 
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-b3e86b8abc5128e4.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-b3e86b8abc5128e4.png)
 
 ### 选择默认安装方式
 > 如果网络差的话，可以自定义把插件都取消掉，登陆系统后在选择安装，如果安装还是失败，可以先去官网现在插件，通过jenkins后台上传插件即可。
 
 
 
-![]/assets/images/初创型公司运维专题/3629406-c46b49ab7923cda6.png
+![](/assets/images/初创型公司运维专题/3629406-c46b49ab7923cda6.png)
 
  
 ### 完成后，再次安装插件
@@ -66,6 +66,6 @@ msbuild路径：`C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe`
 
 ### 配置git，msbuild插件的路径
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-a0753c00de674af1.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-a0753c00de674af1.png)
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-4da0c09d64e103db.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-4da0c09d64e103db.png)

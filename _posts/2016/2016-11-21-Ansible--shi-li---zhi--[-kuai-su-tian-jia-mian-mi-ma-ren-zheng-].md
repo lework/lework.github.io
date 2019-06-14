@@ -64,7 +64,7 @@ ssh-keygen -t rsa -b 2048 -P '' -f /root/.ssh/id_rsa
 ansible-playbook -i hosts ssh-addkey.yml
 ```
 
-![Paste_Image.png]/assets/images/Ansible/3629406-dc2512a268b0464b.png
+![Paste_Image.png](/assets/images/Ansible/3629406-dc2512a268b0464b.png)
 
 这样，管理节点的公钥就会添加到节点得authorized_keys文件中，再把主机清单里的ansible_ssh_pass去掉，执行ansible all -m ping 就不需要密码了。
 

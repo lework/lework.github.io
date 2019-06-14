@@ -13,7 +13,7 @@ auth: lework
 
 测试环境持续交付的流程：
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-8b02efea67659148.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-8b02efea67659148.png)
 
 
 
@@ -52,7 +52,7 @@ winrm quickconfig
 
 ** 创建一个名为192.168.77.140-test 视图** 
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-23ddab796b818d7a.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-23ddab796b818d7a.png)
 
 > 目的是为了区分多个测试环境的任务。一个测试环境的发布任务都放在一个视图中。
 
@@ -62,7 +62,7 @@ winrm quickconfig
 
 
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-65d5b626df2e1467.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-65d5b626df2e1467.png)
 
 
 
@@ -70,17 +70,17 @@ winrm quickconfig
 
 选择参数化构建，点击添加参数，选择Git Parameter
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-31e0a858f52d067d.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-31e0a858f52d067d.png)
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-a19310a1762da690.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-a19310a1762da690.png)
 
 ** 配置源码管理** 
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-19b8b8c3fd830dec.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-19b8b8c3fd830dec.png)
 
 ** 配置编译脚本** 
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-7db0c6503a2169b2.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-7db0c6503a2169b2.png)
 
 ```
 /t:clean /t:rebuild /p:Configuration=release  /p:WebProjectOutputDir=d:\test\build_code\demo /p:OutputPath=d:\test\build_code\demo\bin
@@ -88,7 +88,7 @@ winrm quickconfig
 
 ** 配置编译发布脚本** 
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-0dbd1fe5b8fb6abf.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-0dbd1fe5b8fb6abf.png)
 
 ```powershell
 function GetRequest($url)
@@ -158,7 +158,7 @@ GetRequest 'http://192.168.77.140'
  点击任务的Build with Parametes, 选择dev-pages分支编译发布
 
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-959207a9f90f3a3d.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-959207a9f90f3a3d.png)
 
 
 

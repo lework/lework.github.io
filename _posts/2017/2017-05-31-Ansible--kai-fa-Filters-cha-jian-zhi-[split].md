@@ -72,7 +72,7 @@ localhost ansible_connection=local
 ```
 
 ## 运行playbook
-![image.png]/assets/images/Ansible/3629406-54adbf9e627ff068.png
+![image.png](/assets/images/Ansible/3629406-54adbf9e627ff068.png)
 {% endraw %}
 
 

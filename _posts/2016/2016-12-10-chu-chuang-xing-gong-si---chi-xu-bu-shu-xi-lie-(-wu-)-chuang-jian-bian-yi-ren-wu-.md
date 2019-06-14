@@ -12,7 +12,7 @@ auth: lework
 编译打包的流程图如下：
 
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-a12d7f92220300b1.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-a12d7f92220300b1.png)
 
 
 ### 在jenkins服务器上创建目录
@@ -25,15 +25,15 @@ auth: lework
 
 ### 在jenkins上创建Build_demo任务
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-bdc3b8ffe8da98e1.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-bdc3b8ffe8da98e1.png)
 
 配置源码管理
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-43f40df52c2bf351.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-43f40df52c2bf351.png)
 
 配置构建
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-0368c72f3f7b73d5.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-0368c72f3f7b73d5.png)
 
 
 cmd命令：
@@ -43,7 +43,7 @@ cmd命令：
 
 配置打包程序的脚本
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-f61ff4ff0d6f39a8.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-f61ff4ff0d6f39a8.png)
 
 ```powershell
 $datetime=Get-Date -Format 'yyyyMMddHHmmss'  #定义日期
@@ -53,7 +53,7 @@ D:\tools\7z.exe a D:\Packages\upload\demo-$datetime.7z D:\build_code\demo\*    �
 
 配置发送压缩文件到后端服务器的脚本
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-fd2dd9e1a09fcbba.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-fd2dd9e1a09fcbba.png)
 
 ```powershell
 [string]$xmldocpath = "D:\scripts\config.xml"         #读取xml配置文件
@@ -106,7 +106,7 @@ D:\scriptes\config.xml 内容
 如果想要发送完成后邮件通知，可以配置
 
 
-![Paste_Image.png]/assets/images/初创型公司运维专题/3629406-185269f6a5caa18e.png
+![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-185269f6a5caa18e.png)
 
 
 

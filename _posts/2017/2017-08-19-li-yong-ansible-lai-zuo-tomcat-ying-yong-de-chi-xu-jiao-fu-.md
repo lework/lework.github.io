@@ -18,7 +18,7 @@ auth: lework
 
 本次使用的应用架构是常见的负载均衡实例。
 
-![image.png]/assets/images/Ansible/3629406-83bed54dc6debcb4.png
+![image.png](/assets/images/Ansible/3629406-83bed54dc6debcb4.png)
 
 ## 软件版本
 ---
@@ -139,63 +139,63 @@ ansible_ssh_pass=123456
 **登录jenkins之后，设置工具**
 点击“系统管理”==》“Global Tool Configuration”
 
-![image.png]/assets/images/Ansible/3629406-6cb1c49217015393.png
+![image.png](/assets/images/Ansible/3629406-6cb1c49217015393.png)
 
-![image.png]/assets/images/Ansible/3629406-6b8235de45e91003.png
+![image.png](/assets/images/Ansible/3629406-6b8235de45e91003.png)
 
-![image.png]/assets/images/Ansible/3629406-fd46196dcb799b2c.png
+![image.png](/assets/images/Ansible/3629406-fd46196dcb799b2c.png)
 
 
 **创建发布项目**
-![image.png]/assets/images/Ansible/3629406-8879cadf761da721.png
+![image.png](/assets/images/Ansible/3629406-8879cadf761da721.png)
 
 配置参数化构建
-![image.png]/assets/images/Ansible/3629406-e329100b334ca355.png
+![image.png](/assets/images/Ansible/3629406-e329100b334ca355.png)
 
 配置源码仓库地址
-![image.png]/assets/images/Ansible/3629406-8121b503685875e2.png
+![image.png](/assets/images/Ansible/3629406-8121b503685875e2.png)
 
 > repo: https://github.com/lework/AntSpringMVC.git
 
 
 配置构建环境
-![image.png]/assets/images/Ansible/3629406-d3c2e9ae3a3c4210.png
+![image.png](/assets/images/Ansible/3629406-d3c2e9ae3a3c4210.png)
 
 配置编译
 
-![image.png]/assets/images/Ansible/3629406-c79ab16e4c9d68a1.png
+![image.png](/assets/images/Ansible/3629406-c79ab16e4c9d68a1.png)
 
 
 配置`ansible`
-![image.png]/assets/images/Ansible/3629406-a34c7e8b3f0d267e.png
+![image.png](/assets/images/Ansible/3629406-a34c7e8b3f0d267e.png)
 
 
 配置ansible变量
-![image.png]/assets/images/Ansible/3629406-9dad672c8a038c05.png
+![image.png](/assets/images/Ansible/3629406-9dad672c8a038c05.png)
 
 
 这里就不配置邮件通知了。
 
 **创建回滚项目**
 
-![image.png]/assets/images/Ansible/3629406-a5e4c6f0b95cb1f4.png
+![image.png](/assets/images/Ansible/3629406-a5e4c6f0b95cb1f4.png)
 配置参数化构建
-![image.png]/assets/images/Ansible/3629406-fb26e628e34daee8.png
+![image.png](/assets/images/Ansible/3629406-fb26e628e34daee8.png)
 
 配置构建环境
-![image.png]/assets/images/Ansible/3629406-7dfd1eb2756a0422.png
+![image.png](/assets/images/Ansible/3629406-7dfd1eb2756a0422.png)
 
 配置`ansible`
-![image.png]/assets/images/Ansible/3629406-5e00c52575293913.png
+![image.png](/assets/images/Ansible/3629406-5e00c52575293913.png)
 配置`anisble`变量
-![image.png]/assets/images/Ansible/3629406-77e5f415cd983248.png
+![image.png](/assets/images/Ansible/3629406-77e5f415cd983248.png)
 
 
 ## 测试
 ---
 **执行tomcat_deploy任务**
 
-![]/assets/images/Ansible/3629406-dec48f19a8a3d7e0.png
+![](/assets/images/Ansible/3629406-dec48f19a8a3d7e0.png)
 >选择发布的节点，默认all
 
 任务执行的日志
@@ -424,7 +424,7 @@ Finished: SUCCESS
 ```
 **执行tomcat_rollback任务**
 
-![image.png]/assets/images/Ansible/3629406-598eee8dc9bfa337.png
+![image.png](/assets/images/Ansible/3629406-598eee8dc9bfa337.png)
 
 > 选择回滚的节点，默认all
 

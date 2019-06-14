@@ -82,7 +82,7 @@ if __name__ == '__main__':
 ```
 这里我们使用了一个任务，来使源文件一直存在。
 
-![image.png]/assets/images/Ansible/3629406-5d0b77bcaef5ee6a.png
+![image.png](/assets/images/Ansible/3629406-5d0b77bcaef5ee6a.png)
 
 ## module 提供 fact 数据
 ---
@@ -99,7 +99,7 @@ module.exit_json(changed=True, ansible_facts=remote_facts)
 ```
 运行playbook查看返回的数据
 
-![image.png]/assets/images/Ansible/3629406-fd71b55d8a6b2644.png
+![image.png](/assets/images/Ansible/3629406-fd71b55d8a6b2644.png)
 
 ## 检查模式
 ---
@@ -120,4 +120,4 @@ if not module.check_mode:
   shutil.copy(module.params['source'], module.params['dest'])
 ```
 在进行检查模式的时候，不执行拷贝动作，看下列运行状态。
-![image.png]/assets/images/Ansible/3629406-64bb87858d4c8c28.png
+![image.png](/assets/images/Ansible/3629406-64bb87858d4c8c28.png)

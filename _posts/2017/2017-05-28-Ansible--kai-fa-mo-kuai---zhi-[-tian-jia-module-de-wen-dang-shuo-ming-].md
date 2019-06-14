@@ -61,7 +61,7 @@ ANSIBLE_METADATA = {'metadata_version': '1.0',
 ```
 module.exit_json(changed=True, source=module.params['source'], dest=module.params['dest'])
 ```
-![image.png]/assets/images/Ansible/3629406-9422d6d897457601.png
+![image.png](/assets/images/Ansible/3629406-9422d6d897457601.png)
 
 定义RETURN
 	```
