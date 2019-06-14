@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: mycat
 
@@ -46,3 +47,4 @@ https://github.com/lework/Ansible-roles/tree/master/mycat
 	- hosts: servers
 	  roles:
 		- mycat
+{% endraw %}

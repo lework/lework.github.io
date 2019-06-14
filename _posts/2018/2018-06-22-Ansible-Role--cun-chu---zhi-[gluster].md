@@ -8,7 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
-
+{% raw %}
 # Ansible Role: gluster
 
 安装gluster 分布式存储集群
@@ -114,4 +114,4 @@ https://github.com/lework/Ansible-roles/tree/master/gluster
 yum -y install glusterfs-fuse
 mount -t glusterfs data-node1:/gluster_data /mnt
 ```
-
+{% endraw %}

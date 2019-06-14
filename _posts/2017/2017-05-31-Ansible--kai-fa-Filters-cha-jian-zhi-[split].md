@@ -14,7 +14,7 @@ auth: lework
 
 1. 实现python的字符串分割
 2. 实现re的正则表达式分割
-
+{% raw %}
 ## Filter 类
 ---
 ```
@@ -73,6 +73,6 @@ localhost ansible_connection=local
 
 ## 运行playbook
 ![image.png]/assets/images/Ansible/3629406-54adbf9e627ff068.png
-
+{% endraw %}
 
 

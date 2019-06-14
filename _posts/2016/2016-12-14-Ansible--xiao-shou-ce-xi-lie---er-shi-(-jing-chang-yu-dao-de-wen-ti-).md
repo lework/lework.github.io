@@ -8,7 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
-
+{% raw %}
 (1). 怎么为任务设置环境变量？
 
 ```yml
@@ -349,3 +349,4 @@ ansible 的ssh登陆属于交互式的非登陆shell
 ```
 ---
 更多文章请看 [Ansible 专题文章总览](http://www.jianshu.com/p/c56a88b103f8)
+{% endraw %}

@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: java
 
@@ -54,3 +55,4 @@ https://github.com/lework/Ansible-roles/tree/master/java
 	- hosts: node1
 	  roles:
 	   - { role: java ,java_version: "1.8" }
+{% endraw %}

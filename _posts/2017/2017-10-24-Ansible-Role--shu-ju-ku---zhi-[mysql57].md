@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: Mysql 5.7
 
@@ -241,3 +242,4 @@ https://github.com/lework/Ansible-roles/tree/master/mysql57
 关闭命令：`systemctl stop mysql3306`
 
 重启命令：`systemctl restart mysql3306`
+{% endraw %}

@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: zabbix-server
 
@@ -156,3 +157,4 @@ https://github.com/lework/Ansible-roles/tree/master/zabbix-server
 Usage: /etc/init.d/zabbix-server {start|stop|status|restart|try-restart|force-reload}
 
 ```
+{% endraw %}

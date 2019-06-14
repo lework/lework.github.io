@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: logstash
 
@@ -173,3 +174,4 @@ https://github.com/lework/Ansible-roles/tree/master/logstash
 service logstash-mysqlslow
 Usage:  {start|stop|force-stop|status|restart}
 ```
+{% endraw %}

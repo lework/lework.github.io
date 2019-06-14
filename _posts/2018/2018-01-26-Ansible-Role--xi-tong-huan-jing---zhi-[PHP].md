@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: php
 
@@ -196,3 +197,4 @@ https://github.com/lework/Ansible-roles/tree/master/php
 systemctl start php-fpm
 systemctl stop php-fpm
 ```
+{% endraw %}

@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: cdh5 server
 
@@ -112,3 +113,4 @@ http://master:7180/cmf/login
 默认用户名/密码: admin/admin
 
 然后跟着web页面一步一步的部署hadoop集群
+{% endraw %}

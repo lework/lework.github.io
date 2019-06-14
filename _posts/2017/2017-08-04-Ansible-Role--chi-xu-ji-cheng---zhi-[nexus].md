@@ -8,7 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
-
+{% raw %}
 # Ansible Role: nexus
 
 安装nexus
@@ -95,3 +95,4 @@ systemctl stop nexus
 # web login
 admin/admin123
 ```
+{% endraw %}

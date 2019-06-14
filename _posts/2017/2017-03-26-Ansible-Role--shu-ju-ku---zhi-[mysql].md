@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: Mysql
 
@@ -117,3 +118,4 @@ https://github.com/lework/Ansible-roles/tree/master/mysql
 
 启动命令：/mysql_data/3306/mysql3306.sh start
 关闭命令：/mysql_data/3306/mysql3306.sh stop
+{% endraw %}

@@ -8,7 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
-
+{% raw %}
 # Ansible Role: deploy-image
 
 部署docker image
@@ -171,3 +171,4 @@ https://github.com/lework/Ansible-roles/tree/master/deploy-image
          - "/var/log/test:/usr/local/tomcat/logs"
       roles:
         - deploy-image
+{% endraw %}

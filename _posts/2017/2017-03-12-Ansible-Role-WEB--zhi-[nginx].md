@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: Nginx
 
@@ -192,3 +193,4 @@ https://github.com/lework/Ansible-roles/tree/master/nginx
 /etc/init.d/nginx 
 Usage: /etc/init.d/nginx {start|stop|reload|configtest|status|force-reload|upgrade|restart|reopen_logs}
 ```
+{% endraw %}

@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: Jenkins CI
 
@@ -108,3 +109,4 @@ https://github.com/lework/Ansible-roles/tree/master/jenkins
 ## 使用
 service jenkins
 Usage: /etc/init.d/jenkins {start|stop|status|try-restart|restart|force-reload|reload|probe}
+{% endraw %}

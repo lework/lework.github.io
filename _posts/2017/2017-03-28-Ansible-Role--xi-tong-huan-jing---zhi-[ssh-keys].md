@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: ssh keys
 
@@ -43,3 +44,4 @@ https://github.com/lework/Ansible-roles/tree/master/ssh-keys
     - hosts: node1 node2 node3
 	  roles:
 	   - { role: ssh-keys, ssh_keys_host: '192.168.77.129' }
+{% endraw %}

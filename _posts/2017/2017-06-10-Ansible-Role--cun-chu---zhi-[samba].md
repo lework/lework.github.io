@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: samba
 
@@ -109,3 +110,4 @@ Usage: /etc/init.d/smb {start|stop|restart|reload|configtest|status|condrestart}
 ~]# /etc/init.d/nmb 
 Usage：/etc/init.d/nmb {start|stop|restart|reload|status|condrestart}
 ```
+{% endraw %}

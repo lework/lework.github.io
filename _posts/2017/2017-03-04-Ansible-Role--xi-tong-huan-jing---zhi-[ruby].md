@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: ruby
 
@@ -50,3 +51,4 @@ https://github.com/lework/Ansible-roles/tree/master/ruby
 	- hosts: server
       roles:
         - { role: ruby, ruby_install_from_source: true}
+{% endraw %}

@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: kerberos client
 
@@ -92,3 +93,4 @@ https://github.com/lework/Ansible-roles/tree/master/kerberos-client
 
 修改renewlife
 `modprinc -maxrenewlife 1week krbtgt/HADOOP.COM@HADOOP.COM`
+{% endraw %}

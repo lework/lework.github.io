@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: OS INIT
 
@@ -50,3 +51,4 @@ https://github.com/lework/Ansible-roles/tree/master/os-init
     - hosts: servers
       roles:
         - os-init
+{% endraw %}

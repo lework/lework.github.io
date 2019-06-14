@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: Redis
 
@@ -148,3 +149,4 @@ https://github.com/lework/Ansible-roles/tree/master/redis
        roles:
         - { role: redis, redis_port: 7002}
         - { role: redis, redis_port: 7005, redis_cluster_replicas: '1 172.19.204.246:7000 172.19.204.245:7001 172.19.204.244:7002 172.19.204.246:7003 172.19.204.245:7004 172.19.204.244:7005'}
+{% endraw %}

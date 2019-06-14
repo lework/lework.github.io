@@ -8,7 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
-
+{% raw %}
 # Ansible Role: hostnames
 
 配置hosts文件的主机名和ip的对应关系。
@@ -52,3 +52,4 @@ https://github.com/lework/Ansible-roles/tree/master/hostnames
 		  '192.168.77.132': 'node3'
       roles:
         - hostnames
+{% endraw %}

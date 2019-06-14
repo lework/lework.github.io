@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: go
 
@@ -56,3 +57,4 @@ https://github.com/lework/Ansible-roles/tree/master/go
     - hosts: node1
       roles:
         - { role: go, go_version: '1.9.4' }
+{% endraw %}

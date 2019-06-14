@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: lua
 
@@ -81,3 +82,4 @@ https://github.com/lework/Ansible-roles/tree/master/lua
         - install_luajit: true
       roles:
         - lua
+{% endraw %}

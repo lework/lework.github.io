@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: mvn
 
@@ -51,3 +52,4 @@ https://github.com/lework/Ansible-roles/tree/master/mvn
 	- hosts: servers
       roles:
         - { role: mvn, mvn_version: '3.2.5' }
+{% endraw %}

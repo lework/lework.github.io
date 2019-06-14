@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: erlang
 
@@ -55,3 +56,4 @@ https://github.com/lework/Ansible-roles/tree/master/erlang
 	- hosts: node1
       roles:
         - { role: erlang, erlang_version: '19.3' }
+{% endraw %}

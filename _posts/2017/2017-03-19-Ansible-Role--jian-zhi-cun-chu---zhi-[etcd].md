@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: etcd
 
@@ -133,3 +134,4 @@ https://github.com/lework/Ansible-roles/tree/master/etcd
 ## 使用
 
 启动命令： etcd --config-file /etcd_data/data/etcd.conf
+{% endraw %}

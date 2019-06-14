@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: zookeeper
 
@@ -112,3 +113,4 @@ Usage: /etc/init.d/zookeeper {start|stop|status|sstatus|restart|condrestart}
 关闭命令：/etc/init.d/zookeeper stop
 查看状态命令：/etc/init.d/zookeeper sstatus
 客户端命令：zkCli.sh -server localhost:2181
+{% endraw %}

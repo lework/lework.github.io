@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: consul
 
@@ -107,3 +108,4 @@ https://github.com/lework/Ansible-roles/tree/master/consul
 	  roles:
 	   - { role: python2.7 }
 	   - { role: supervisor }
+{% endraw %}

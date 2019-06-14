@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: grafana
 
@@ -72,3 +73,4 @@ https://github.com/lework/Ansible-roles/tree/master/grafana
 Usage: /etc/init.d/grafana-server {start|stop|restart|force-reload|status}
 
 ```
+{% endraw %}

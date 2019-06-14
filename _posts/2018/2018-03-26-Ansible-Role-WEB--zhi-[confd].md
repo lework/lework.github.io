@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: confd
 
@@ -84,3 +85,4 @@ nginx家目录地址： `/usr/local/nginx`
 ```
 systemctl start confd
 ```
+{% endraw %}

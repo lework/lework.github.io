@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: Mongodb
 安装Mongodb
@@ -100,3 +101,4 @@ https://github.com/lework/Ansible-roles/tree/master/mongodb
 	  roles:
 		- { role: mongodb, mongodb_port: 27031}
 		- { role: mongodb, mongodb_port: 27032, mongodb_replSet_exec: true}
+{% endraw %}

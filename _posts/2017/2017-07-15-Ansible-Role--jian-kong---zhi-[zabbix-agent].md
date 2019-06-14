@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: zabbix-agent
 
@@ -93,3 +94,4 @@ Usage: /etc/init.d/zabbix-agent {start|stop|status|restart|help}
 	restart		- restart zabbix_agentd if running by sending a SIGHUP or start if not running
 	help		- this screen
 ```
+{% endraw %}

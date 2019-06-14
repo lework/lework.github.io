@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: haproxy
 
@@ -159,3 +160,4 @@ https://github.com/lework/Ansible-roles/tree/master/haproxy
 ## 使用
 /etc/init.d/haproxy
 Usage: haproxy {start|stop|restart|reload|condrestart|status|check}
+{% endraw %}

@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: deploy-tomcat
 
@@ -77,3 +78,4 @@ https://github.com/lework/Ansible-roles/tree/master/deploy-tomcat
     - hosts: node1
       roles:
         - role: { role: deploy-tomcat, deploy_rollback: true }
+{% endraw %}

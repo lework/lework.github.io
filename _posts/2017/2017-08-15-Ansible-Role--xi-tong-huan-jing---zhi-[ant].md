@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: ant
 
@@ -46,3 +47,4 @@ https://github.com/lework/Ansible-roles/tree/master/ant
     - hosts: node1
       roles:
         - ant
+{% endraw %}

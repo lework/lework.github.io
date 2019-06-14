@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: nodejs
 
@@ -56,3 +57,4 @@ https://github.com/lework/Ansible-roles/tree/master/nodejs
 	- hosts: server
       roles:
         - { role: nodejs, nodejs_version: "0.12.9"}
+{% endraw %}

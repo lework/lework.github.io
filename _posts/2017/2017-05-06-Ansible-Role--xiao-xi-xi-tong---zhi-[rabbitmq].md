@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: rabbitmq
 
@@ -102,3 +103,4 @@ su -l rabbitmq -s /bin/sh -c 'rabbitmqctl start_app'
 查看集群状态
 su -l rabbitmq -s /bin/sh -c 'rabbitmqctl cluster_status'
 ```
+{% endraw %}

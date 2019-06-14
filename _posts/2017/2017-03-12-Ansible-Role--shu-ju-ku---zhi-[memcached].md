@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: Memcached
 
@@ -68,3 +69,4 @@ https://github.com/lework/Ansible-roles/tree/master/memcached
 	- hosts: node1
 	  roles:
 	   - { role: memcached, memcached_port: 11222 }
+{% endraw %}

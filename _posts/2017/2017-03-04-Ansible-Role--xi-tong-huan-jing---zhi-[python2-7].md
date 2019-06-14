@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: python2.7
 
@@ -52,3 +53,4 @@ https://github.com/lework/Ansible-roles/tree/master/python2.7
 	- hosts: server
       roles:
         - { role: python2.7, python_version: "2.7.13"}
+{% endraw %}

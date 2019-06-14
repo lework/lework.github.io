@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: Kafka Manager
 
@@ -82,3 +83,4 @@ https://github.com/lework/Ansible-roles/tree/master/kafka-manager
 ## 使用
 service kafka-manager 
 Usage: /etc/init.d/kafka-manager {start|stop|status|restart|reload|force-reload|condrestart}
+{% endraw %}

@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: docker
 
@@ -58,3 +59,4 @@ systemctl start docker
 systemctl stop docker
 systemctl status docker
 ```
+{% endraw %}

@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: sbt
 
@@ -60,3 +61,4 @@ https://github.com/lework/Ansible-roles/tree/master/sbt
 	- hosts: node1
       roles:
         - { role: sbt, sbt_version: '0.13.15' }
+{% endraw %}

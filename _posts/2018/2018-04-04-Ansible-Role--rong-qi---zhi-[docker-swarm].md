@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role:docker-swarm
 
@@ -64,3 +65,4 @@ https://github.com/lework/Ansible-roles/tree/master/docker-swarm
 ```
 docker node ls
 ```
+{% endraw %}

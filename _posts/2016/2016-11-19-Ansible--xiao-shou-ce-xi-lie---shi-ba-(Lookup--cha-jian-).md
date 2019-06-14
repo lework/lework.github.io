@@ -8,7 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
-
+{% raw %}
 ## file：获取文件内容
 ---
 ```
@@ -142,3 +142,4 @@ tasks:
 
 ---
 更多文章请看 [Ansible 专题文章总览](http://www.jianshu.com/p/c56a88b103f8)
+{% endraw %}

@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: airflow
 
@@ -75,3 +76,4 @@ https://github.com/lework/Ansible-roles/tree/master/airflow
 	   - { role: python2.7 }
 	   - { role: airflow }
 	   - { role: supervisor }
+{% endraw %}

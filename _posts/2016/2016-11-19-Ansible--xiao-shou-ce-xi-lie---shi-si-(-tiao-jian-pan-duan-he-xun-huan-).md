@@ -8,7 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
-
+{% raw %}
 ## 条件判断
 ---
 
@@ -496,3 +496,4 @@ with_sequence以递增的数字顺序生成项序列。 您可以指定开始，
 
 ---
 更多文章请看 [Ansible 专题文章总览](http://www.jianshu.com/p/c56a88b103f8)
+{% endraw %}

@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: sersync
 
@@ -88,3 +89,4 @@ https://github.com/lework/Ansible-roles/tree/master/sersync
 	  - role: sersync
 ## 使用
 /usr/local/sersync/bin/sersync -r -d -o /usr/local/sersync/conf/confxml.xml
+{% endraw %}

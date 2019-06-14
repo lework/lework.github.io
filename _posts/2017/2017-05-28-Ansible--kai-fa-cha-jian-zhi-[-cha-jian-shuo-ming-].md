@@ -8,7 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
-
+{% raw %}
 ## action
 ---
 
@@ -76,3 +76,4 @@ filter插件允许你在playbook和模版内操作数据，ansible使用filter p
 	'./action_plugins'
 	'./cache_plugins'
 ```
+{% endraw %}

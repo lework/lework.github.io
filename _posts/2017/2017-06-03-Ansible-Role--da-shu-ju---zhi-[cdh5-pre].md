@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: cdh5 pre
 
@@ -61,3 +62,4 @@ https://github.com/lework/Ansible-roles/tree/master/cdh5-pre
 
 	  roles:
 	   - { role: cdh5-pre }
+{% endraw %}

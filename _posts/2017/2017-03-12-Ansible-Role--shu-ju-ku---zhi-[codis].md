@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: Codis
 
@@ -173,3 +174,4 @@ https://github.com/lework/Ansible-roles/tree/master/codis
 	  roles:
 	   - { role: codis, install: false, codis_server_sentinel_port: 26381}
 	   - { role: codis, install: false, codis_admin: true }
+{% endraw %}

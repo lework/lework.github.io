@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: cdh5 agent
 
@@ -61,3 +62,4 @@ https://github.com/lework/Ansible-roles/tree/master/cdh5-agent
 # service cloudera-scm-agent 
 Usage: cloudera-scm-agent {start|stop|restart|clean_start|hard_stop|hard_restart|clean_restart|status|condrestart}
 ```
+{% endraw %}

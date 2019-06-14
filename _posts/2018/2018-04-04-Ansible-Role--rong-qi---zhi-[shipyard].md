@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role:shipyard
 
@@ -74,3 +75,4 @@ https://github.com/lework/Ansible-roles/tree/master/shipyard
 ```
 docker ps -a
 ```
+{% endraw %}

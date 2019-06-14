@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: grokdebug
 
@@ -73,3 +74,4 @@ https://github.com/lework/Ansible-roles/tree/master/grokdebug
 # service grokdebug
 Usage:  {start|stop|force-stop|status|restart}
 ```
+{% endraw %}

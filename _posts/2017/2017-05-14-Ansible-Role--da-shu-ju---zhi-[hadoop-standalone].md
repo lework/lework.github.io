@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: hadoop-standalone
 
@@ -55,3 +56,4 @@ https://github.com/lework/Ansible-roles/tree/master/hadoop-standalone
 	- hosts: node1
 	  roles:
 		- { role: hadoop-standalone }
+{% endraw %}

@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: rsync
 
@@ -71,3 +72,4 @@ https://github.com/lework/Ansible-roles/tree/master/rsync
 
 ## 使用
 启动 rsync --daemon --config=/etc/rsyncd.conf
+{% endraw %}

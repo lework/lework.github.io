@@ -8,7 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
-
+{% raw %}
 # Ansible Role: deploy-supervisor
 
 部署spring boot 应用, spring boot由supervisor管理
@@ -100,3 +100,4 @@ https://github.com/lework/Ansible-roles/tree/master/deploy-supervisor
             - deploy_verify_uri: "/"
           roles:
             - deploy-supervisor
+{% endraw %}

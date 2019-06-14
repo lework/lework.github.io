@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: EPEL Repository
 
@@ -49,3 +50,4 @@ https://github.com/lework/Ansible-roles/tree/master/repo-epel
 	- host： servers
 	  roles:
 	    - {role: repo-epel, epel_source_url: "https://mirrors.tuna.tsinghua.edu.cn" }
+{% endraw %}

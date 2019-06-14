@@ -8,7 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
-
+{% raw %}
 # Ansible Role: kubernetes
 
 以Static Pods方式安装kubernetes 1.10.3 ha 集群。
@@ -246,3 +246,4 @@ cat ~/k8s_addons_access
 - grafana_url: `https://{{kubernetes_apiserver_vip}}:{{ kubernetes_apiserver_port }}/api/v1/namespaces/kube-system/services/monitoring-grafana/proxy/`
 - elasticsearch_url: `https://{{kubernetes_apiserver_vip}}:{{ kubernetes_apiserver_port }}/api/v1/namespaces/kube-system/services/elasticsearch-logging/proxy/`
 - kibana_url: `https://{{kubernetes_apiserver_vip}}:{{ kubernetes_apiserver_port }}/api/v1/namespaces/kube-system/services/kibana-logging/proxy/`
+{% endraw %}

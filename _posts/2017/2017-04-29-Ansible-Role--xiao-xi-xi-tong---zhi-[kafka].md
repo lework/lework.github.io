@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: kafka
 
@@ -78,3 +79,4 @@ https://github.com/lework/Ansible-roles/tree/master/kafka
 ## 使用
 service kafka
 Usage: /etc/init.d/kafka {start|stop|status|restart|reload|force-reload|condrestart}
+{% endraw %}

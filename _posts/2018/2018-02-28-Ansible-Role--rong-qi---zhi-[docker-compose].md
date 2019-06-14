@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: docker-compose
 
@@ -48,3 +49,4 @@ https://github.com/lework/Ansible-roles/tree/master/docker-compose
 ```
 docker-compose --help
 ```
+{% endraw %}

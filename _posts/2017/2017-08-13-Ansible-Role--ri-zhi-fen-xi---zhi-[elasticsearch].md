@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: elasticsearch
 
@@ -154,3 +155,4 @@ https://github.com/lework/Ansible-roles/tree/master/elasticsearch
 ~]# service elasticsearch
 Usage: /etc/init.d/elasticsearch {start|stop|status|restart|condrestart|try-restart|reload|force-reload}
 ```
+{% endraw %}

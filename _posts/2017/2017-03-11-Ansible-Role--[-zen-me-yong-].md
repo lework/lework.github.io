@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # 系统环境
 os:  `Centos 6.7 X64`
@@ -200,3 +201,4 @@ Python 2.7.12
 ```
 
 至此，ansible role怎么使用大家都明白了把。如果有疑问的话，欢迎大家来QQ群【425931784】交流
+{% endraw %}

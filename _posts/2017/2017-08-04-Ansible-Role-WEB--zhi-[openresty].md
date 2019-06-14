@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: openresty
 
@@ -201,3 +202,4 @@ https://github.com/lework/Ansible-roles/tree/master/openresty
 Usage: /etc/init.d/openresty {start|stop|reload|configtest|status|force-reload|upgrade|restart|reopen_logs}
 
 ```
+{% endraw %}

@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: tengine
 
@@ -196,3 +197,4 @@ https://github.com/lework/Ansible-roles/tree/master/tengine
 /etc/init.d/tengine 
 Usage: /etc/init.d/tengine {start|stop|reload|configtest|status|force-reload|upgrade|restart|reopen_logs}
 ```
+{% endraw %}

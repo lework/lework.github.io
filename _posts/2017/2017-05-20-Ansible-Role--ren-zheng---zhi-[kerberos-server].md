@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: kerberos server
 
@@ -99,3 +100,4 @@ kadmind：`749` `464`
 
 修改renewlife
 `modprinc -maxrenewlife 1week krbtgt/HADOOP.COM@HADOOP.COM`
+{% endraw %}

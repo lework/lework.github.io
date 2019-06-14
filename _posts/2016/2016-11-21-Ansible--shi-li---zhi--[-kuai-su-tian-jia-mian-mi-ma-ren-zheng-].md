@@ -8,7 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
-
+{% raw %}
 ## 第一步：将需要登陆主机得公钥添加到known_hosts
 ---
 ```
@@ -69,3 +69,4 @@ ansible-playbook -i hosts ssh-addkey.yml
 这样，管理节点的公钥就会添加到节点得authorized_keys文件中，再把主机清单里的ansible_ssh_pass去掉，执行ansible all -m ping 就不需要密码了。
 
 更多文章请看 [Ansible 专题文章总览](http://www.jianshu.com/p/c56a88b103f8)
+{% endraw %}

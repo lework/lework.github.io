@@ -8,6 +8,7 @@ auth: lework
 ---
 * content
 {:toc}
+{% raw %}
 
 # Ansible Role: kibana
 
@@ -97,3 +98,4 @@ https://github.com/lework/Ansible-roles/tree/master/kibana
 service kibana
 Usage:  {start|stop|force-stop|status|restart}
 ```
+{% endraw %}
