@@ -24,9 +24,9 @@ auth: lework
 
 1. 安装ruby环境
 
-   下载地址：https://rubyinstaller.org/
+   下载地址：`https://rubyinstaller.org/`
 
-   选择带devkit的当前版本，比如：https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.5.5-1/rubyinstaller-devkit-2.5.5-1-x64.exe
+   选择带devkit的当前版本，比如：`https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.5.5-1/rubyinstaller-devkit-2.5.5-1-x64.exe`
 
    下完之后在本地windows环境进行安装即可。
 
@@ -56,11 +56,10 @@ auth: lework
 
 ## jekyll资源
 
-1. 官网 <https://jekyllrb.com/>
-2. 中文官网 <https://www.jekyll.com.cn/>  [http://jekyllcn.com](http://jekyllcn.com/)
-3. github <https://github.com/jekyll/jekyll>
-
-4.  模板资源 <http://jekyllthemes.org/>
+1. 官网 [https://jekyllrb.com/](https://jekyllrb.com/) 
+2. 中文官网 [https://www.jekyll.com.cn/](https://www.jekyll.com.cn/)  [http://jekyllcn.com](http://jekyllcn.com/)
+3. github [https://github.com/jekyll/jekyll](https://github.com/jekyll/jekyll) 
+4. 模板资源 [http://jekyllthemes.org/](http://jekyllthemes.org/) 
 
 
 

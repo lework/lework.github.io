@@ -200,7 +200,7 @@ while True:
 4. 将脚本与简书下载的压缩包同目录存放
 
    ```
-   jianshu_to_jeyll.py
+   jianshu_to_jekyll.py
    user-3629406-1560475792
    user-3629406-1560475792.rar
    ```
@@ -208,7 +208,7 @@ while True:
 5. 执行脚本
 
    ```
-   E:\04.开发\python\venv\Scripts\python.exe E:/04.开发/python/jianshu_to_jeyll.py
+   E:\04.开发\python\venv\Scripts\python.exe E:/04.开发/python/jianshu_to_jekyll.py
    URL: https://www.jianshu.com/u/ace85431b4bb?order_by=added_at&page=1
    Title: Ansible Role 存储 之【gluster】
    File: ./user-3629406-1560475790/Ansible/Ansible-Role-存储-之【gluster】.md ==> ./_posts/2018\2018-06-22-Ansible-Role--cun-chu---zhi-[gluster].md
