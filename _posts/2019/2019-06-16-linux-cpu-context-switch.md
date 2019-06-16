@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Linux性能优化]2.理解linux的CPU上下文
+title: "[Linux性能优化]2.理解linux的CPU上下文"
 date: 2019年6月16日 10:07:58
 category: linux
 tags: linux cpu

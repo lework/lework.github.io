@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Linux性能优化]1.理解linux的"平均负载"
+title: "[Linux性能优化]1.理解linux的\"平均负载\""
 date: 2019-06-15 18:36:23
 category: linux
 tags: linux load
