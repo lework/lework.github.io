@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 理解linux的“平均负载”
+title: [Linux性能优化]1.理解linux的"平均负载"
 date: 2019-06-15 18:36:23
 category: linux
 tags: linux load
@@ -87,21 +87,21 @@ rpm -ivh sysstat-12.1.5-1.x86_64.rpm
 
 模拟cpu使用
 ```
-stress --cpu $(grep processor /proc/cpuinfo | wc -l) --timeout 600
+# stress --cpu $(grep processor /proc/cpuinfo | wc -l) --timeout 600
 stress: info: [1121] dispatching hogs: 2 cpu, 0 io, 0 vm, 0 hdd
 ```
 
 监控负载情况
 ```
 # -d 参数表示高亮显示变化的区域
-watch -d uptime
+# watch -d uptime
 ..., load average: 2.19,1.00, 0.75
 ```
 
 查看cpu使用情况
 ```
 # -P ALL 表示监控所有CPU，后面数字5表示间隔5秒后输出一组数据, 1是输出1组
-mpstat -P ALL 5 1
+# mpstat -P ALL 5 1
 Linux 3.10.0-693.el7.x86_64 (k8s-m1) 	2019年06月15日 	_x86_64_	(2 CPU)
 
 20时32分45秒  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
@@ -119,7 +119,7 @@ Linux 3.10.0-693.el7.x86_64 (k8s-m1) 	2019年06月15日 	_x86_64_	(2 CPU)
 查看哪个进程
 ```
 # 间隔 5 秒后输出一组数据
-pidstat -u 5 1
+# pidstat -u 5 1
 Linux 3.10.0-693.el7.x86_64 (node74-1) 	2019年06月15日 	_x86_64_	(2 CPU)
 
 20时33分17秒   UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
@@ -139,20 +139,20 @@ Linux 3.10.0-693.el7.x86_64 (node74-1) 	2019年06月15日 	_x86_64_	(2 CPU)
 ### 场景二：I/O 密集型进程
 模拟io压力
 ```
-stress -i 1 -d 1 --timeout 600
+# stress -i 1 -d 1 --timeout 600
 stress: info: [1480] dispatching hogs: 0 cpu, 1 io, 0 vm, 1 hdd
 ```
 
 监控负载情况
 ```
-watch -d uptime
+# watch -d uptime
 ..., load average: 1.23, 1.16, 0.68
 ```
 
 查看cpu使用率的变化
 ```
 # 显示所有 CPU 的指标，并在间隔 5 秒输出一组数据
-mpstat -P ALL 5 1
+# mpstat -P ALL 5 1
 Linux 3.10.0-693.el7.x86_64 (node74-1) 	2019年06月15日 	_x86_64_	(2 CPU)
 
 20时34分34秒  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
@@ -171,7 +171,7 @@ Linux 3.10.0-693.el7.x86_64 (node74-1) 	2019年06月15日 	_x86_64_	(2 CPU)
 查看是哪个进程导致的io问题
 ```
 # 间隔 5 秒后输出一组数据，-u表示CPU指标 -d表示io指标
-pidstat -u -d 5 1
+# pidstat -u -d 5 1
 Linux 3.10.0-693.el7.x86_64 (node74-1) 	2019年06月15日 	_x86_64_	(2 CPU)
 
 20时41分06秒   UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
@@ -223,7 +223,7 @@ stress -c 8 --timeout 600
 
 监控负载情况
 ```
-watch -d uptime
+# watch -d uptime
 ..., load average: 7.85, 6.61, 5.42
 ```
 由于系统只有2个CPU，明显比8个进程要少得多，因而，系统的CPU处于严重过载状态，平均负载高达7.85：
@@ -231,7 +231,7 @@ watch -d uptime
 使用pidstat查看进程情况
 ```
 # 间隔 5 秒后输出一组数据
-pidstat -u 5 1
+# pidstat -u 5 1
 Linux 3.10.0-693.el7.x86_64 (node74-1) 	2019年06月15日 	_x86_64_	(2 CPU)
 
 20时29分13秒   UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
