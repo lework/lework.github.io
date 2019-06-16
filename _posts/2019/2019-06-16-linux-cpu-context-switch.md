@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "[Linux性能优化]2.理解linux的CPU上下文"
-date: 2019年6月16日 10:07:58
-category: linux
+date: 2019-6-16 10:07:58
+category: Linux性能优化
 tags: linux cpu
 author: lework
 ---
@@ -13,6 +13,8 @@ Linux 是一个多任务操作系统,它支持远大于CPU数量的任务同时�
 需要系统事先帮它设置好**CPU寄存器**和**程序计数器**（Program Counter，PC）。
 
 **CPU寄存器**，是CPU内置的容量小、但速度极快的内存。而**程序计数器**，则是用来存储CPU 正在执行的指令位置、或者即将执行的下一条指令位置。它们都是CPU在运行任何任务前，必须的依赖环境，因此也被叫做**CPU上下文**。
+
+
 
 
 ```
