@@ -49,7 +49,7 @@ IP地址 | 主机名 | CPU|内存
 - Nginx 0.15.0
 - Docker CE latest version
 
-![image.png]/assets/images/kubernetes/3629406-ccd39e6cc3daaae5.png
+![image.png](/assets/images/kubernetes/3629406-ccd39e6cc3daaae5.png)
 
 # 安装前准备
 
@@ -223,6 +223,8 @@ yum -y install git
 git clone https://github.com/lework/kubernetes-manual.git /opt/kubernetes-manual
 cp -rf /opt/kubernetes-manual/v1.10/conf/kubernetes /etc/kubernetes
 ```
+
+
 # 建立CA和证书
 
 **在k8s-m1节点上操作**
