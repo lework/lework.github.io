@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "全手工使用hyperkube二进制安装Kubernetes v14.3 ha集群"
-date: "2019-06-25 20:58:27"
+date: "2019-06-30 20:58:27"
 category: kubernetes
 tags: kubernetes k8s ha
 author: lework
@@ -686,7 +686,7 @@ openssl rsa -in sa.key -pubout -out sa.pub
 
 ```
 
-**生成用于加密静态`Secret`数据的配置文件`encryption.yaml**`
+**生成用于加密静态`Secret`数据的配置文件`encryption.yaml`**
 
 ```
 cat <<EOF> /etc/kubernetes/encryption.yaml
@@ -705,7 +705,7 @@ EOF
 
 ```
 
-**生成`apiserver RBAC`审计配置文件`audit-policy.yaml**`
+**生成`apiserver RBAC`审计配置文件`audit-policy.yaml`**
 
 ```
 cat <<EOF> /etc/kubernetes/audit-policy.yaml
@@ -1236,45 +1236,45 @@ calicoctl                                  1/1     Running   0          1m
 ```
 kubectl exec -ti -n kube-system calicoctl -- /calicoctl get profiles -o wide
 NAME                                                 LABELS                                                                                        
-kns.default                                          map[]                                                                                         
-kns.kube-node-lease                                  map[]                                                                                         
-kns.kube-public                                      map[]                                                                                         
-kns.kube-system                                      map[]                                                                                         
-ksa.default.default                                  map[]                                                                                         
-ksa.kube-node-lease.default                          map[]                                                                                         
-ksa.kube-public.default                              map[]                                                                                         
-ksa.kube-system.attachdetach-controller              map[]                                                                                         
-ksa.kube-system.bootstrap-signer                     map[]                                                                                         
-ksa.kube-system.calico-kube-controllers              map[]                                                                                         
-ksa.kube-system.calico-node                          map[]                                                                                         
-ksa.kube-system.calicoctl                            map[]                                                                                         
-ksa.kube-system.certificate-controller               map[]                                                                                         
-ksa.kube-system.clusterrole-aggregation-controller   map[]                                                                                         
+kns.default                                          map[] 
+kns.kube-node-lease                                  map[] 
+kns.kube-public                                      map[] 
+kns.kube-system                                      map[] 
+ksa.default.default                                  map[] 
+ksa.kube-node-lease.default                          map[] 
+ksa.kube-public.default                              map[] 
+ksa.kube-system.attachdetach-controller              map[] 
+ksa.kube-system.bootstrap-signer                     map[] 
+ksa.kube-system.calico-kube-controllers              map[] 
+ksa.kube-system.calico-node                          map[] 
+ksa.kube-system.calicoctl                            map[] 
+ksa.kube-system.certificate-controller               map[] 
+ksa.kube-system.clusterrole-aggregation-controller   map[] 
 ksa.kube-system.coredns                              map[pcsa.addonmanager.kubernetes.io/mode:Reconcile pcsa.kubernetes.io/cluster-service:true]   
-ksa.kube-system.cronjob-controller                   map[]                                                                                         
-ksa.kube-system.daemon-set-controller                map[]                                                                                         
-ksa.kube-system.default                              map[]                                                                                         
-ksa.kube-system.deployment-controller                map[]                                                                                         
-ksa.kube-system.disruption-controller                map[]                                                                                         
-ksa.kube-system.endpoint-controller                  map[]                                                                                         
-ksa.kube-system.expand-controller                    map[]                                                                                         
-ksa.kube-system.generic-garbage-collector            map[]                                                                                         
-ksa.kube-system.horizontal-pod-autoscaler            map[]                                                                                         
-ksa.kube-system.job-controller                       map[]                                                                                         
+ksa.kube-system.cronjob-controller                   map[] 
+ksa.kube-system.daemon-set-controller                map[] 
+ksa.kube-system.default                              map[] 
+ksa.kube-system.deployment-controller                map[] 
+ksa.kube-system.disruption-controller                map[] 
+ksa.kube-system.endpoint-controller                  map[] 
+ksa.kube-system.expand-controller                    map[] 
+ksa.kube-system.generic-garbage-collector            map[] 
+ksa.kube-system.horizontal-pod-autoscaler            map[] 
+ksa.kube-system.job-controller                       map[] 
 ksa.kube-system.kube-proxy                           map[pcsa.addonmanager.kubernetes.io/mode:Reconcile]                                           
-ksa.kube-system.namespace-controller                 map[]                                                                                         
-ksa.kube-system.node-controller                      map[]                                                                                         
-ksa.kube-system.persistent-volume-binder             map[]                                                                                         
-ksa.kube-system.pod-garbage-collector                map[]                                                                                         
-ksa.kube-system.pv-protection-controller             map[]                                                                                         
-ksa.kube-system.pvc-protection-controller            map[]                                                                                         
-ksa.kube-system.replicaset-controller                map[]                                                                                         
-ksa.kube-system.replication-controller               map[]                                                                                         
-ksa.kube-system.resourcequota-controller             map[]                                                                                         
-ksa.kube-system.service-account-controller           map[]                                                                                         
-ksa.kube-system.service-controller                   map[]                                                                                         
-ksa.kube-system.statefulset-controller               map[]                                                                                         
-ksa.kube-system.token-cleaner                        map[]                                                                                         
+ksa.kube-system.namespace-controller                 map[] 
+ksa.kube-system.node-controller                      map[] 
+ksa.kube-system.persistent-volume-binder             map[] 
+ksa.kube-system.pod-garbage-collector                map[] 
+ksa.kube-system.pv-protection-controller             map[] 
+ksa.kube-system.pvc-protection-controller            map[] 
+ksa.kube-system.replicaset-controller                map[] 
+ksa.kube-system.replication-controller               map[] 
+ksa.kube-system.resourcequota-controller             map[] 
+ksa.kube-system.service-account-controller           map[] 
+ksa.kube-system.service-controller                   map[] 
+ksa.kube-system.statefulset-controller               map[] 
+ksa.kube-system.token-cleaner                        map[] 
 ksa.kube-system.ttl-controller                       map[]
 
 kubectl -n kube-system exec calicoctl -- calicoctl get node -o wide                 
@@ -1519,6 +1519,7 @@ https://192.168.77.140:6443/api/v1/namespaces/kube-system/services/https:kuberne
 使用ingress代理进行访问
 
 > 绑定hosts即可使用域名访问
+
 ```
 192.168.77.140 kubernetes-dashboard.k8s.local
 ```
@@ -1834,11 +1835,11 @@ k8s-n2   Ready    worker   1h    v1.14.3
 
 
 kubectl get cs
-NAME                 STATUS      MESSAGE                                                                                           ERROR
-controller-manager   Healthy     ok                                                                                                
-scheduler            Healthy     ok                                                                                                
-etcd-0               Healthy     {"health":"true"}                                                                                 
-etcd-1               Healthy     {"health":"true"}                                                                                 
+NAME                 STATUS      MESSAGE    ERROR
+controller-manager   Healthy     ok
+scheduler            Healthy     ok
+etcd-0               Healthy     {"health":"true"} 
+etcd-1               Healthy     {"health":"true"}  
 etcd-2               Unhealthy   Get https://192.168.77.132:2379/health: dial tcp 192.168.77.132:2379: connect: no route to host 
 ```
 
