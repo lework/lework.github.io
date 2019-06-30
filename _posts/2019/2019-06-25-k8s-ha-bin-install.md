@@ -230,6 +230,7 @@ bash ./check-config.sh
 ### 升级内核
 
 > 可选, Centos 7 符合docker要求的最低内核版本
+
 ```
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
@@ -244,6 +245,7 @@ grubby --args="user_namespace.enable=1" --update-kernel="$(grubby --default-kern
 ## 免密登录其他节点
 
 在`ks8-m1`操作
+
 ```
 yum install sshpass -y
 ssh-keygen -t rsa -P '' -f /root/.ssh/id_rsa
