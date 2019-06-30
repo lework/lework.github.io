@@ -438,6 +438,7 @@ cfssl gencert -initca ca-csr.json | cfssljson -bare ca
 **建立API Server Certificate**
 
 > 此凭证将被用于 API Server 与 Kubelet Client 通信使用
+
 ```
 echo '{"CN":"kube-apiserver","key":{"algo":"rsa","size":2048},"names":[{"C":"CN","ST":"Shanghai","L":"Shanghai","O":"Kubernetes","OU":"Kubernetes System"}]}' > apiserver-csr.json 
 
@@ -460,6 +461,7 @@ cfssl gencert \
 **Front Proxy Certificate**
 
 > 此凭证将被用于Authenticating Proxy的功能上，而该功能主要是提供API Aggregation的认证。首先通过以下命令创建CA：
+
 ```
 echo '{"CN":"kubernetes","key":{"algo":"rsa","size":2048}}' > front-proxy-ca-csr.json
 cfssl gencert -initca front-proxy-ca-csr.json | cfssljson -bare front-proxy-ca
@@ -523,6 +525,7 @@ cfssl gencert \
 **Master Kubelet Certificate**
 
 > 这边使用Node authorizer来让节点的kubelet能够存取如services、endpoints等API，而使用Node authorizer需定义system:nodes群组(凭证的Organization)，并且包含system:node:<nodeName>的使用者名称(凭证的Common Name)。
+
 ```
 echo '{"CN":"system:node:$NODE","key":{"algo":"rsa","size":2048},"names":[{"C":"CN","L":"Shanghai","ST":"Shanghai","O":"system:nodes","OU":"Kubernetes System"}]}' > kubelet-csr.json
 
@@ -559,6 +562,7 @@ done
 ```
 KUBE_APISERVER="https://127.0.0.1:6443"    # 修改kubernetes的server地址
 ```
+
 > 本次使用的ha方式是node节点的本地代理，所以ip是`127.0.0.1`地址
 
 **生成admin.conf的kubeconfig**
@@ -675,6 +679,7 @@ done
 **Service Account Key**
 
 > Kubernetes Controller Manager利用Key pair来产生与签署Service Account的 tokens，而这边不通过CA做认证，而是建立一组公私钥来让API Server与Controller Manager 使用：
+
 ```
 openssl genrsa -out sa.key 2048
 openssl rsa -in sa.key -pubout -out sa.pub
