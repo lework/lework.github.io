@@ -22,6 +22,8 @@ author: lework
 
 ## module编写
 
+可以直接使用 [github地址](https://github.com/lework/Ansible-dev/blob/master/library/wechat.py)
+
 ```
 cat /usr/share/ansible/plugins/modules/wechat.py
 #!/usr/bin/python
