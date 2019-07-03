@@ -40,7 +40,7 @@ Ansible 开发分为两大模块，一是`modules`，而是`plugins`。
 
 ## ansible执行ping模块的过程。
 ----
-![ansible运行过程.jpg](/assets/images/Ansible/3629406-cdde75580732a013.jpg
+![ansible运行过程.jpg](/assets/images/Ansible/3629406-cdde75580732a013.jpg)
 
 图片看不清，移步http://upload-images.jianshu.io/upload_images/3629406-cdde75580732a013.jpg
 
@@ -50,7 +50,7 @@ Ansible 开发分为两大模块，一是`modules`，而是`plugins`。
 ---
 所有的脚本文件，插件，模块都会放在这个仓库中。
 
-https://github.com/lework/Ansible-dev
+[https://github.com/lework/Ansible-dev](https://github.com/lework/Ansible-dev)
 
 ## 调试
 ----
@@ -66,6 +66,7 @@ https://github.com/lework/Ansible-dev
 - [Ansible 开发模块 之【使用其他语言写module】](http://www.jianshu.com/p/6676377b6e25)
 - [Ansible 开发模块 之【module的返回值】](http://www.jianshu.com/p/6771cd8851e6)
 - [Ansible 开发模块 之【连接华为交换机】](http://www.jianshu.com/p/f72b79b0d3f9)
+- [Ansible 开发模块 之【企业微信通知】](https://lework.github.io/2019/07/03/ansible-wechat-module)
 
 ## plugins 开发
 ----
