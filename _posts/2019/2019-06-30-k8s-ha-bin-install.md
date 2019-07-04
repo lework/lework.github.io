@@ -805,6 +805,8 @@ ETCDCTL_API=3 etcdctl \
 f0fc135244de5511, started, k8s-m2, https://192.168.77.131:2380, https://192.168.77.131:2379
 ```
 
+### 配置kubernetes组件
+
 分发kubernetes组件配置文件
 ```
 ETCD_SERVERS='https://192.168.77.130:2379,https://192.168.77.131:2379,https://192.168.77.132:2379'
