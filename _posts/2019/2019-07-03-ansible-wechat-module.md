@@ -2,8 +2,8 @@
 layout: post
 title: "Ansible 开发模块 之【企业微信通知】"
 date: "2019-07-03 22:05:49"
-category: ansible
-tags:  ansible module
+category: Ansible
+tags:  Ansible module
 author: lework
 ---
 * content
