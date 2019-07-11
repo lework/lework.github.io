@@ -268,7 +268,7 @@ done
 
 在`k8s-m1`节点上执行
 ```
-yum -y install 7z
+yum -y install p7zip
 7za x v1.14.3.7z -r -o/opt/
 find /opt/v1.14.3/images/all/ -type f -name '*.tgz' -exec sh -c 'docker load < {}' \;
 find /opt/v1.14.3/images/master/ -type f -name '*.tgz' -exec sh -c 'docker load < {}' \;
