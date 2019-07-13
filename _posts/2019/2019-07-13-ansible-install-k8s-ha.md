@@ -245,3 +245,6 @@ dig @192.168.77.141 A scope.weave.k8s.local +noall +answer
 > 集群部署完成后，建议重启集群所有节点。
 
 > 如遇到问题，请加QQ群咨询： `425931784`  (已满)   `756527917`
+
+如果你想手动的一步一步的安装集群，请看 [全手工使用hyperkube二进制安装Kubernetes v14.3 ha集群
+](https://lework.github.io/2019/06/30/k8s-ha-bin-install/)

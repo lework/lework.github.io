@@ -11,6 +11,9 @@ author: lework
 
 本次使用全手工的方式以二进制形式部署kubernetes的ha集群，ha方式选择node节点代理apiserver的方式。
 
+> 如果不想手动，或者想学习自动化部署的，可以看看[Ansible 应用 之 【使用ansible来做kubernetes 1.14.3集群高可用的一键部署
+】](https://lework.github.io/2019/07/13/ansible-install-k8s-ha/) 文章。
+
 > hyperkube是Kubernetes服务器组件的一体化二进制文件。
 
 ![k8s-node-ha](/assets/images/kubernetes/k8s-node-ha.png)
@@ -1860,3 +1863,6 @@ nginx                    1/1     Running   0          35s
 ```
 
 > 测试完成之后，重启集群所有节点。
+
+> 累了吧，试试一键部署[Ansible 应用 之 【使用ansible来做kubernetes 1.14.3集群高可用的一键部署
+】](https://lework.github.io/2019/07/13/ansible-install-k8s-ha/) 
