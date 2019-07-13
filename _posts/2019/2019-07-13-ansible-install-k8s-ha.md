@@ -2,7 +2,7 @@
 layout: post
 title: "使用ansible来做kubernetes 1.14.3集群高可用的一键部署"
 date: "2019-07-13 09:22:33"
-category: Ansible kubernetes
+category: kubernetes
 tags: ansible kubernetes
 author: lework
 ---
@@ -51,6 +51,7 @@ author: lework
 - [Ansible Role 容器 之【kubernetes-bin】](https://github.com/lework/Ansible-roles/tree/master/kubernetes-bin)
 
 > ansible role怎么用请看下面文章
+
 - [ Ansible Role【怎么用？】](http://www.jianshu.com/p/585303ab4b02)
 
 ## 集群安装方式
@@ -64,7 +65,7 @@ OS： `CentOS Linux release 7.4.1708 (Core)`
 ansible:  `2.8.1`
 
 ###  安装Ansible
-```bash
+```
 # yum -y install ansible
 # ansible --version
 ansible 2.8.1
@@ -75,12 +76,12 @@ ansible 2.8.1
   python version = 2.7.5 (default, Aug  4 2017, 00:39:18) [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)]
 ```
 ###  配置ansible
-```bash
+```
 # sed -i 's|#host_key_checking|host_key_checking|g' /etc/ansible/ansible.cfg
 ```
 
 ###  下载role
-```bash
+```
 # yum -y install git
 # git clone https://github.com/lework/Ansible-roles.git /etc/ansible/roles
 ```
@@ -90,14 +91,14 @@ ansible 2.8.1
 
 文件下载链接：`https://pan.baidu.com/s/1eBPPI6kDxvbynH43--ly5g` 密码：`y39z`
 
-```bash
+```
 # yum -y install p7zip
 # 7za x k8s-v1.14.3.7za -r -o/opt/
 # cp -rf  v1.14.3/* /etc/ansible/roles/kubernetes-bin/files/
 ```
 
 ###  配置主机信息
-```bash
+```
 # cat /etc/ansible/hosts
 [k8s_master]
 192.168.77.130
@@ -117,7 +118,7 @@ ansible_ssh_pass=123456
 > 请注意, 主机名称请用小写字母, 大写字母会出现找不到主机的问题。
 
 ###  配置playbook
-```bash
+```
 # cat /etc/ansible/k8s.yml
 ---
 # 初始化节点
@@ -177,7 +178,7 @@ ansible_ssh_pass=123456
 更多变量设置请看默认变量文件`/etc/ansible/roles/kubernetes-bin/defaults/main.yml`
 
 ###  执行playbook
-```bash
+```
 # time ansible-playbook /etc/ansible/k8s.yml
 ......
 real    25m17.295s
@@ -186,15 +187,15 @@ sys     1m46.286s
 ```
 [![asciicast](https://asciinema.org/a/257020.svg)](https://asciinema.org/a/257020)
 
-######  验证集群版本
-```bash
+###  验证集群版本
+```
 # kubectl version
 Client Version: version.Info{Major:"1", Minor:"14", GitVersion:"v1.14.3", GitCommit:"5e53fd6bc17c0dec8434817e69b04a25d8ae0ff0", GitTreeState:"clean", BuildDate:"2019-06-06T01:36:19Z", GoVersion:"go1.12.5", Compiler:"gc", Platform:"linux/amd64"}
 Server Version: version.Info{Major:"1", Minor:"14", GitVersion:"v1.14.3", GitCommit:"5e53fd6bc17c0dec8434817e69b04a25d8ae0ff0", GitTreeState:"clean", BuildDate:"2019-06-06T01:36:19Z", GoVersion:"go1.12.5", Compiler:"gc", Platform:"linux/amd64"}
 ```
 
-######  验证集群状态
-```bash
+###  验证集群状态
+```
 kubectl get cs
 kubectl get csr
 kubectl get nodes
@@ -207,9 +208,10 @@ ipvsadm -Ln
 ```
 > 这里就不写结果了。
 
-######  查看addons访问信息
+### 查看addons访问信息
 
 > 在第一台master服务器上
+
 ```
 cat ~/k8s-addons-access.md
 
