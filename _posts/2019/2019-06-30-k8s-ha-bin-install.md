@@ -1239,7 +1239,8 @@ calicoctl                                  1/1     Running   0          1m
 
 ```
 kubectl exec -ti -n kube-system calicoctl -- /calicoctl get profiles -o wide
-NAME                                                 LABELS                                                                                        
+NAME                                                 LABELS
+
 kns.default                                          map[] 
 kns.kube-node-lease                                  map[] 
 kns.kube-public                                      map[] 
@@ -1406,6 +1407,7 @@ kubectl apply -f ExtraAddons/external-dns/
 kubectl apply -f ExtraAddons/external-dns/coredns/
 kubectl apply -f ExtraAddons/external-dns/external-dns/
 ```
+> 目前还不支持`nodePort`方式的`service`,预计在`0.6`版本加入
 
 验证服务
 ```
