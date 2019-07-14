@@ -14,16 +14,16 @@ auth: lework
 ##   本次采用最基础的可扩展的集群架构
 
 
-![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-f2da1dc4086c0f00.png)
+![Paste_Image.png](/assets/images/ops/3629406-f2da1dc4086c0f00.png)
 
 
 这也是我建议初创型公司使用的架构，网站静态页面使用cdn缓存，与后端交互则走nginx负载层。nginx把外网流量均衡到后端各个服务器，服务器连接后端数据库，处理数据后并返回给用户。
 
 
-** 如果预算允许的话，还可以加强下高可用性，比如使用下列架构。**
+**如果预算允许的话，还可以加强下高可用性，比如使用下列架构。**
 
 
-![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-cb6feeca4cae2190.png)
+![Paste_Image.png](/assets/images/ops/3629406-cb6feeca4cae2190.png)
 
 
 面开始介绍线上环境持续交付的操作。测试环境稍后会说明。任何复杂的事情，画画流程图就显得清晰明了。下面请看线上持续交付的流程图
@@ -31,9 +31,9 @@ auth: lework
 
 分为两步骤操作
 
-** 第一步：编译打包** 
+**第一步：编译打包**
 
-![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-42d1d70d467a89aa.png)
+![Paste_Image.png](/assets/images/ops/3629406-42d1d70d467a89aa.png)
 
 
 编译任务由jenkins操作，而不是由开发操作，一是为了节省开发的时间，而是确保版本控制里的代码是正确的，可编译得。
@@ -48,7 +48,7 @@ auth: lework
 **第二步：发布**
 
 
-![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-d38505975c3f2802.png)
+![Paste_Image.png](/assets/images/ops/3629406-d38505975c3f2802.png)
 
 打包和发布分开来的原因，一是减少代码发布时间，而是避免在发布过程中出现问题，我们在初创型公司也知道，到处都是坑，随时都会出现问题。
 

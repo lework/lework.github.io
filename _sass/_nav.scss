@@ -1,0 +1,79 @@
+.page[nav] {
+    .left {
+        width: 75%;
+		h2 {
+		  margin: 25px 0 25px;
+		  span {
+		    border-bottom: 2px solid #777;
+		  }
+		}
+        a {
+            color: #4d6dad;
+            transition: 0.5s ease;
+            &:hover {
+                color: #223253;
+                background-color: #f4efeb;
+            }
+        }
+		table {
+			border-collapse: collapse;
+			border-top: 0px solid #777;
+			border-bottom: 0px solid #777;
+		}
+		tr {
+			background-color: transparent;
+		}
+    }
+	.right {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+        top: 0;
+        .fixed {
+            position: fixed;
+            top: 20px;
+        }
+        .scroll-bottom {
+            position: absolute;
+            bottom: 190px;
+        }
+        .side {
+            box-sizing: border-box;
+            background-color: #f8f8fd;
+            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
+            padding-bottom: 1px;
+            -ms-word-break: break-all;
+            word-break: break-all;
+            /* Non standard for webkit */
+            // word-break: break-word;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            >div {
+                padding: 12px 15px;
+
+                // margin-right: -10px;
+                border-bottom: 1px solid #c0c0c0;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            a {
+                color: #4d6dad;
+                transition: 0.5s ease;
+                &:hover {
+                    color: #223253;
+                }
+            }
+        }
+        .content-ul {
+            overflow-y: auto;
+            padding-right: 10px;
+            line-height: 1.8;
+            padding-left: 35px;
+            ul {
+                padding-left: 20px;
+            }
+        }
+    }
+}

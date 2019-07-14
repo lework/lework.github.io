@@ -1,0 +1,45 @@
+---
+layout: nav
+title: Nav
+permalink: /nav/
+icon: location-arrow
+type: page
+---
+<div class="left">
+{% for item in site.data.nav.toc %}
+    <h2 id="{{ item.title }}"><span>{{ item.title }}</span></h3>
+    <table>
+	  <tbody>
+		<tr>
+        {% for entry in item.items %}
+		{% assign rows = forloop.index0 | modulo: 9 %}
+		{% if rows == 0  %}
+		</tr>
+		<tr>
+		{% endif %}
+          <td><a href="{{ entry.url }}?src=lework" target="_blank" title="{{ entry.desc }}">{{ entry.name }}</a></td>
+        {% endfor %}
+		</tr>
+    </ul>
+	</table>
+  {% endfor %}
+</div>
+<div class="right">
+	<div class="wrap">
+
+		<!-- Content -->
+		<div class="side content">
+			<div>
+				索引
+			</div>
+			<ul id="content-side" class="content-ul">
+			{% for item in site.data.nav.toc %}
+			  <li><a href="#{{ item.title }}">{{ item.title }}</a></li>
+			{% endfor %}
+			</ul>
+		</div>
+		<!-- 其他div框放到这里 -->
+		<!-- <div class="side">bbbb</div> -->
+	</div>
+</div>
+{% include comments.html %}

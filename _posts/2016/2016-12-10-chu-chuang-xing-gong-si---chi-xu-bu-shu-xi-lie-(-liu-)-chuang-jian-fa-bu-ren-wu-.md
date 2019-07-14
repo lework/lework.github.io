@@ -14,17 +14,17 @@ auth: lework
 编译打包的流程图如下：
 
 
-![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-dd300b4ec40dc30d.png)
+![Paste_Image.png](/assets/images/ops/3629406-dd300b4ec40dc30d.png)
 
 
 
 ### 在jenkins上创建Deploy_demo任务
 
-![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-25113df66686bce4.png)
+![Paste_Image.png](/assets/images/ops/3629406-25113df66686bce4.png)
 
 添加构建
 
-![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-d11aa77cfbaf9b07.png)
+![Paste_Image.png](/assets/images/ops/3629406-d11aa77cfbaf9b07.png)
 
 ```powershell
 [string]$xmldocpath = "D:\scripts\config.xml"
@@ -90,7 +90,7 @@ Set-Item wsman:\localhost\Client\TrustedHosts -value 192.168.77.*
 winrm quickconfig
 ```
 
-![Paste_Image.png](/assets/images/初创型公司运维专题/3629406-85fc74c84d486680.png)
+![Paste_Image.png](/assets/images/ops/3629406-85fc74c84d486680.png)
 
 
 
@@ -105,7 +105,8 @@ winrm quickconfig
 
 
 在D:\scripts 目录下创建脚本文件deploy.bat
-```bat
+
+```
 @echo off
 setlocal ENABLEDELAYEDEXPANSION
 

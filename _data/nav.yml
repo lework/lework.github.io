@@ -1,0 +1,366 @@
+toc:
+  - title: 热门
+    items:
+      - name: Zabbix
+        url: https://www.zabbix.com/
+        desc: zabbix监控
+      - name: Gitlab
+        url: https://about.gitlab.com/
+        desc: 代码仓库
+      - name: Docker
+        url: https://www.docker.com/
+        desc: 容器
+      - name: Kubernetes
+        url: https://kubernetes.io
+        desc: 容器编排
+      - name: ELK
+        url: https://www.elastic.co/
+        desc: 日志分析
+      - name: Ansible
+        url: https://www.ansible.com/
+        desc: 任务编排
+      - name: Jenkins
+        url: https://jenkins.io/zh/
+        desc: 持续集成/持续交付
+      - name: jumpserver
+        url: http://www.jumpserver.org/
+        desc: 堡垒机
+      - name: MySql
+        url: https://www.mysql.com/cn/
+        desc: mysql关系型数据库
+      - name: MongoDB
+        url: https://www.mongodb.com/cn
+        desc: nosql
+      - name: Redis
+        url: https://redis.io/
+        desc: nosql
+      - name: Python
+        url: https://www.python.org/
+        desc: 程序语言
+      - name: 阿里云
+        url: https://www.aliyun.com/
+        desc: 公有云
+      - name: Nginx
+        url: https://nginx.org/
+        desc: 反向代理和web服务器
+  - title: 软件镜像
+    items:
+      - name: 华北-清华
+        url: https://mirror.tuna.tsinghua.edu.cn/
+        desc: 清华大学开源镜像站
+      - name: 华北-北京理工
+        url: http://mirror.bit.edu.cn/web/
+        desc: 北京理工大学开源镜像站
+      - name: 华东-中国科学技术
+        url: http://mirrors.ustc.edu.cn/
+        desc: 中国科学技术大学开源软件镜像
+      - name: 华东-浙江大学
+        url: http://mirrors.zju.edu.cn/
+        desc: 浙江大学开源软件镜像
+      - name: 华中-华中科技
+        url: http://mirror.hust.edu.cn/
+        desc: 华中科技大学开源镜像站
+      - name: 西北-兰州
+        url: http://mirror.lzu.edu.cn/
+        desc: 兰州大学开源镜像站
+      - name: 东北-东北大学
+        url: http://mirror.neu.edu.cn/
+        desc: 东北大学开源软件镜像
+      - name: 东北-东软信息
+        url: http://mirrors.neusoft.edu.cn/
+        desc: 东软信息学院开源镜像站
+      - name: 西南-重庆
+        url: http://mirrors.cqu.edu.cn/
+        desc: 重庆大学开源软件镜像
+      - name: 网易
+        url: http://mirrors.cn99.com/
+        desc: 网易开源镜像站
+      - name: 阿里云
+        url: http://mirrors.aliyun.com
+        desc: 阿里云开源软件镜像
+      - name: 搜狐
+        url: http://mirrors.sohu.com/
+        desc: 搜狐开源软件镜像
+      - name: pypi-豆瓣
+        url: http://pypi.doubanio.com/
+        desc: pypi-豆瓣软件镜像
+      - name: 华为
+        url: https://mirrors.huaweicloud.com/
+        desc: 华为开源镜像站
+      - name: 微软azure
+        url: http://mirror.azure.cn/
+        desc: 微软azure开源镜像站
+      - name: 腾讯
+        url: https://mirrors.cloud.tencent.com/index.html
+        desc: 腾讯开源软件镜像
+      - name: npm-淘宝
+        url: http://npm.taobao.org/
+        desc: npm-淘宝软件镜像
+  - title: 科学上网
+    items:
+      - name: jsproxy
+        url: https://jsproxy.gq/
+        desc: 使用js代理节点访问国外网站
+      - name: 谷歌镜像
+        url: http://ac.scmor.com/
+        desc: 谷歌镜像网站
+      - name: 谷歌镜像
+        url: http://www.liu16.com/g.html
+        desc: 谷歌镜像网站
+      - name: 免费ssr
+        url: https://lncn.org/
+        desc: 免费ssr地址
+      - name: ssr订阅地址
+        url: https://raw.githubusercontent.com/voken100g/AutoSSR/master/stable
+        desc: 免费ssr地址
+  - title: ip查询
+    items:
+      - name: cip.cc
+        url: http://www.cip.cc/
+        desc: cip.cc
+      - name: ping.pe
+        url: https://ping.pe/
+        desc: ping.pe
+      - name: ipip.net
+        url: https://www.ipip.net/
+        desc: ipip.net
+      - name: 纯真ip
+        url: http://www.cz88.net/ip/
+        desc: 纯真ip
+      - name: 淘宝ip
+        url: http://ip.taobao.com/ipSearch.html
+        desc: 淘宝ip
+      - name: geoip
+        url: https://geoip.com/
+        desc: geoip
+      - name: ip138
+        url: http://www.ip138.com/
+        desc: ip138
+      - name: ip地址查询库
+        url: https://github.com/lionsoul2014/ip2region
+        desc: ip地址查询库
+  - title: 数据库
+    items:
+      - name: MySql
+        url: https://www.mysql.com/cn/
+        desc: mysql关系型数据库
+      - name: PostgreSQL
+        url: https://www.postgresql.org/
+        desc: mysql关系型数据库
+      - name: MariaDB
+        url: https://mariadb.org/
+        desc: mysql关系型数据库
+      - name: MyCat
+        url: http://www.mycat.io/
+        desc: 数据库中间件
+      - name: Atlas
+        url: https://github.com/Qihoo360/Atlas/
+        desc: 360-数据库中间件
+      - name: Cobar
+        url: https://github.com/alibaba/cobar
+        desc: 数据库中间件
+      - name: mysql-router
+        url: https://dev.mysql.com/doc/mysql-router/8.0/en/
+        desc: mysql数据库中间件
+      - name: MongoDB
+        url: https://www.mongodb.com/cn
+        desc: nosql
+      - name: Redis
+        url: https://redis.io/
+        desc: nosql
+      - name: Codis
+        url: https://redis.io/
+        desc: redis 集群
+  - title: 容器
+    items:
+      - name: Docker
+        url: https://www.docker.com/
+        desc: 容器
+      - name: Kubernetes
+        url: https://kubernetes.io
+        desc: 容器
+      - name: Istio
+        url: https://istio.io/zh/
+        desc: 用于连接、保护、控制和观测服务。
+      - name: Linkerd
+        url: https://linkerd.io/
+        desc: Linkerd是Kubernetes的超轻服务网。它为您提供可观察性，可靠性和安全性，而无需任何代码更改。
+  - title: 监控
+    items:
+      - name: Zabbix
+        url: https://www.zabbix.com/
+        desc: zabbix监控
+      - name: Nagios
+        url: https://www.nagios.org/
+        desc: Nagios监控
+      - name: Open-Falcon
+        url: http://open-falcon.org/
+        desc: 小米Open-Falcon监控
+      - name: elk
+        url: https://www.elastic.co/
+        desc: 日志分析
+  - title: 代理
+    items:
+      - name: Lvs
+        url: http://www.linuxvirtualserver.org
+        desc: 4层反向代理
+      - name: Nginx
+        url: https://nginx.org/
+        desc: 反向代理和web服务器
+      - name: haproxy
+        url: http://www.haproxy.org/
+        desc: 反向代理和web服务器
+  - title: 高可用
+    items:
+      - name: Heartbeat
+        url: http://linux-ha.org/wiki/Heartbeat
+        desc: 基于主机或网络的服务的高可用方式
+      - name: keepalived
+        url: https://www.keepalived.org/
+        desc: 基于vrrp协议方式实现高可用
+  - title: Web服务器
+    items:
+      - name: apache
+        url: https://nginx.org/
+        desc: 反向代理和web服务器
+      - name: Tomcat
+        url: http://tomcat.apache.org/
+        desc: 反向代理和web服务器
+      - name: resin
+        url: https://caucho.com/
+        desc: 反向代理和web服务器
+  - title: 版本控制
+    items:
+      - name: Gitlab
+        url: https://about.gitlab.com/
+        desc: git代码仓库
+      - name: gogs
+        url: https://gogs.io/
+        desc: git代码仓库
+      - name: Gitea
+        url: https://gitea.io/zh-cn/
+        desc: git代码仓库
+      - name: allura
+        url: http://allura.apache.org/
+        desc: 代码仓库
+      - name: gitblit
+        url: http://gitblit.com/
+        desc: git代码仓库
+      - name: svn
+        url: https://subversion.apache.org/
+        desc: svn代码仓库
+  - title: 任务编排
+    items:
+      - name: ansible
+        url: https://www.ansible.com/
+        desc: 任务编排
+      - name: Saltatack
+        url: http://saltstack.com/
+        desc: 任务编排
+      - name: Puppet
+        url: https://puppet.com/
+        desc: 任务编排
+      - name: Chef
+        url: https://www.chef.io/
+        desc: 任务编排
+  - title: CI/CD
+    items:
+      - name: jenkins
+        url: https://jenkins.io/zh/
+        desc: 持续集成/持续交付
+      - name: walle
+        url: https://www.walle-web.io/
+        desc: 持续集成/持续交付
+      - name: Travis CI
+        url: https://travis-ci.org/
+        desc: 云平台-持续集成/持续交付
+      - name: Circle CI
+        url: https://circleci.com/
+        desc: 云平台-持续集成/持续交付
+      - name: AppVeyor
+        url: https://www.appveyor.com/
+        desc: 云平台-持续集成/持续交付
+      - name: Drone
+        url: https://drone.io/
+        desc: 持续集成/持续交付
+  - title: 堡垒机
+    items:
+      - name: Jumpserver
+        url: http://www.jumpserver.org/
+        desc: Jumpserver 是全球首款完全开源的堡垒机，多云环境下更好用的堡垒机，使用GNU GPL v2.0开源协议，是符合 4A 的专业运维安全审计系统。
+      - name: TELEPORT
+        url: https://tp4a.com/
+        desc: Teleport是一款简单易用的堡垒机系统。
+  - title: 公有云
+    items:
+      - name: 阿里云
+        url: https://www.aliyun.com/
+        desc: 阿里云——阿里巴巴集团旗下公司，是全球领先的云计算及人工智能科技公司。
+      - name: 华为云
+        url: https://www.huaweicloud.com/
+        desc: 华为云是华为公司倾力打造的云战略品牌，致力于为全球客户提供领先的公有云服务，包含弹性云服务器、云数据库、云安全等云计算服务，软件开发服务。
+      - name: 腾讯云
+        url: https://cloud.tencent.com/
+        desc: 腾讯云—腾讯倾力打造的云计算品牌，以卓越科技能力助力各行各业数字化转型，为全球客户提供领先的云计算、大数据、人工智能服务，以及定制化行业解决方案。
+  - title: 存储
+    items:
+      - name: Nfs
+        url: http://nfs.sourceforge.net/nfs-howto/
+        desc: 网络文件系统
+      - name: Ceph
+        url: https://ceph.com/
+        desc: 分布式存储
+      - name: Moosefs
+        url: https://moosefs.com/
+        desc: 分布式存储
+      - name: FastDFS
+        url: https://github.com/happyfish100/fastdfs
+        desc: 分布式存储
+      - name: Glusterfs
+        url: https://www.gluster.org/
+        desc: 分布式存储
+      - name: HDFS
+        url: http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html
+        desc: 分布式存储
+  - title: 域名解析
+    items:
+      - name: BIND
+        url: https://www.isc.org/bind/
+        desc: DNS服务器
+      - name: PowerDNS
+        url: https://www.powerdns.com/
+        desc: DNS服务器
+      - name: Dnsmasq
+        url: http://www.thekelleys.org.uk/dnsmasq/doc.html
+        desc: 是开源的轻量级DNS转发和DHCP、TFTP服务器
+      - name: CoreDNS
+        url: https://coredns.io/
+        desc: DNS和服务发现
+  - title: 操作系统
+    items:
+      - name: Centos
+        url: https://www.centos.org/
+        desc: 操作系统
+      - name: Ubuntu
+        url: https://ubuntu.com/
+        desc: Ubuntu是以桌面应用为主的Linux发行版
+      - name: RedHat
+        url: https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux
+        desc: 红帽旗下的收费操作系统
+      - name: SUSE
+        url: https://www.suse.com/
+        desc: SUSE是Linux操作系统的发行版之一，源自德国。
+      - name: Freebsd
+        url: https://www.freebsd.org/
+        desc: FreeBSD是一个类Unix的操作系统，是第一个开放源代码的系统。
+      - name: Debian
+        url: https://www.debian.org/index.zh-cn.html
+        desc: Debian是完全由自由软件组成的类UNIX操作系统，其包含的多数软件使用GNU通用公共许可协议授权
+  - title: 无人值守
+    items:
+      - name: kickstart
+        url: http://linux.vbird.org/linux_enterprise/0120installation.php#top
+        desc: Kickstart无人值守安装
+      - name: Cobbler
+        url: https://cobbler.github.io/
+        desc: Cobbler是一个Linux安装服务器，可以快速设置网络安装环境。

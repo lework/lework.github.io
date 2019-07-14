@@ -66,7 +66,7 @@ Ansible 开发分为两大模块，一是`modules`，而是`plugins`。
 - [Ansible 开发模块 之【使用其他语言写module】](http://www.jianshu.com/p/6676377b6e25)
 - [Ansible 开发模块 之【module的返回值】](http://www.jianshu.com/p/6771cd8851e6)
 - [Ansible 开发模块 之【连接华为交换机】](http://www.jianshu.com/p/f72b79b0d3f9)
-- [Ansible 开发模块 之【企业微信通知】](https://lework.github.io/2019/07/03/ansible-wechat-module)
+- [Ansible 开发模块 之【企业微信通知】](/2019/07/03/ansible-wechat-module)
 
 ## plugins 开发
 ----
