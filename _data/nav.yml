@@ -417,7 +417,7 @@ toc:
         desc: 巡风是一款适用于企业内网的漏洞快速应急，巡航扫描系统。
       - name: OpsManage
         url: https://github.com/welliamcao/OpsManage/
-        desc: 自动化运维平台: 代码及应用部署CI/CD、资产管理CMDB、计划任务管理平台、SQL审核|回滚、任务调度、站内WIKI
+        desc: "自动化运维平台: 代码及应用部署CI/CD、资产管理CMDB、计划任务管理平台、SQL审核|回滚、任务调度、站内WIKI"
       - name: Ansible Tower
         url: https://www.ansible.com/products/tower
         desc: Ansible Tower是能够帮助任何IT团队更容易使用Ansible的web解决方案。
