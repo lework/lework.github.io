@@ -43,6 +43,14 @@ toc:
       - name: Nginx
         url: https://nginx.org/
         desc: 反向代理和web服务器
+  - title: 推荐博客
+    items:
+      - name: 鳥哥的Linux私房菜
+        url: http://linux.vbird.org/
+        desc: 鳥哥的Linux私房菜
+      - name: InfoQ
+        url: https://www.infoq.cn/topic/operation
+        desc: 促进软件开发领域知识与创新的传播
   - title: 软件镜像
     items:
       - name: 华北-清华
@@ -196,20 +204,32 @@ toc:
       - name: Open-Falcon
         url: http://open-falcon.org/
         desc: 小米Open-Falcon监控
+      - name: Prometheus
+        url: https://prometheus.io/
+        desc: Prometheus是一个用于事件监控和警报的开源软件应用程序。它在使用HTTP拉模型构建的时间序列数据库中记录实时指标，具有灵活的查询和实时警报。
+      - name: InfluxDB
+        url: https://www.influxdata.com/
+        desc: InfluxDB是一个由InfluxData开发的开源时序型数据库。它由Go写成，着力于高性能地查询与存储时序型数据
       - name: elk
         url: https://www.elastic.co/
         desc: 日志分析
+      - name: CacheCloud
+        url: https://github.com/sohutv/cachecloud
+        desc: CacheCloud提供一个Redis云管理平台：实现多种类型(Redis Standalone、Redis Sentinel、Redis Cluster)自动部署、解决Redis实例碎片化现象、提供完善统计、监控、运维功能、减少运维成本和误操作，提高机器的利用率，提供灵活的伸缩性，提供方便的接入客户端。
   - title: 代理
     items:
       - name: Lvs
         url: http://www.linuxvirtualserver.org
-        desc: 4层反向代理
+        desc: Linux虚拟服务器是一个虚拟的服务器集群系统，用于实现负载平衡。项目在1998年5月由章文嵩成立，是中国国内最早出现的自由软件项目之一。
       - name: Nginx
         url: https://nginx.org/
-        desc: 反向代理和web服务器
+        desc: Nginx是异步框架的网页服务器，也可以用作反向代理、负载平衡器和HTTP缓存
+      - name: OpenResty
+        url: https://openresty.org/cn/
+        desc: OpenResty® 是一个基于 Nginx 与 Lua 的高性能 Web 平台，其内部集成了大量精良的 Lua 库、第三方模块以及大多数的依赖项。
       - name: haproxy
         url: http://www.haproxy.org/
-        desc: 反向代理和web服务器
+        desc: HAProxy是一个使用C语言编写的自由及开放源代码软件，其提供高可用性、负载均衡，以及基于TCP和HTTP的应用程序代理。
   - title: 高可用
     items:
       - name: Heartbeat
@@ -364,3 +384,40 @@ toc:
       - name: Cobbler
         url: https://cobbler.github.io/
         desc: Cobbler是一个Linux安装服务器，可以快速设置网络安装环境。
+  - title: 开发
+    items:
+      - name: Python
+        url: https://www.python.org/
+        desc: Python是一种广泛使用的解释型、高级编程、通用型编程语言，由吉多·范罗苏姆创造，第一版发布于1991年。
+      - name: Django
+        url: https://www.djangoproject.com/
+        desc: Django是一个开放源代码的Web应用框架，由Python写成。采用了MVT的软件设计模式，即模型Model，视图View和模板Template。
+      - name: Flask
+        url: http://flask.pocoo.org/
+        desc: Flask是一个使用Python编写的轻量级Web应用框架。基于Werkzeug WSGI工具箱和Jinja2 模板引擎。Flask使用BSD授权。
+      - name: Tornado
+        url: http://www.tornadoweb.org/en/stable/
+        desc: Tornado全称Tornado Web Server，是一个用Python语言写成的Web服务器兼Web应用框架
+      - name: Vue.js
+        url: https://cn.vuejs.org/index.html
+        desc: Vue.js是一个用于创建用户界面的开源JavaScript框架，也是一个创建单页应用的Web应用框架。
+      - name: CODELF
+        url: https://unbug.github.io/codelf/
+        desc: 一个命名变量的神奇网站。
+  - title: 运维平台
+    items:
+      - name: 蓝鲸CMDB
+        url: https://github.com/Tencent/bk-cmdb/
+        desc: 蓝鲸配置平台（蓝鲸CMDB）是一个面向资产及应用的企业级配置管理平台。
+      - name: Archery
+        url: https://github.com/hhyo/archery/
+        desc: Archery是archer的分支项目，定位于SQL审核查询平台，附加部分DB运维功能，所有功能都兼容手机端操作，功能列表
+      - name: 巡风
+        url: https://github.com/ysrc/xunfeng/
+        desc: 巡风是一款适用于企业内网的漏洞快速应急，巡航扫描系统。
+      - name: OpsManage
+        url: https://github.com/welliamcao/OpsManage/
+        desc: 自动化运维平台: 代码及应用部署CI/CD、资产管理CMDB、计划任务管理平台、SQL审核|回滚、任务调度、站内WIKI
+      - name: Ansible Tower
+        url: https://www.ansible.com/products/tower
+        desc: Ansible Tower是能够帮助任何IT团队更容易使用Ansible的web解决方案。
