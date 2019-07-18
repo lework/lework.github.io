@@ -291,6 +291,9 @@ toc:
       - name: walle
         url: https://www.walle-web.io/
         desc: 持续集成/持续交付
+      - name: GitLab CI
+        url: https://about.gitlab.com/product/continuous-integration/
+        desc: GitLab平台上的CI
       - name: Travis CI
         url: https://travis-ci.org/
         desc: 云平台-持续集成/持续交付
