@@ -9,7 +9,7 @@ auth: lework
 * content
 {:toc}
 
-![image.png](/assets/images/杂项/3629406-35ed4d932f0a4331.png)
+![image.png](/assets/images/other/3629406-35ed4d932f0a4331.png)
 近日在使用ssh命令`ssh user@remote ~/myscript.sh` 登陆到远程机器remote上执行脚本时，遇到一个奇怪的问题：
 `~/myscript.sh: line n: app: command not found`
 app是一个新安装的程序，安装路径明明已通过`/etc/profile`配置文件加到环境变量中，但这里为何会找不到？如果直接登陆机器remote并执行`~/myscript.sh`时，app程序可以找到并顺利执行。但为什么使用了ssh远程执行同样的脚本就出错了呢？两种方式执行脚本到底有何不同？如果你也心存疑问，请跟随我一起来展开分析。
@@ -224,7 +224,7 @@ Hello World
 另外一篇[文章](http://www.solipsys.co.uk/new/BashInitialisationFiles.html)给出了一个更直观的图：
 
 
-![image.png](/assets/images/杂项/3629406-836b95ca70ef6501.png)
+![image.png](/assets/images/other/3629406-836b95ca70ef6501.png)
 
 上图的情况稍稍复杂一些，因为它使用了几个关于配置文件的参数： `--login`，`--rcfile`，`--noprofile`，`--norc`，这些参数的引入会使配置文件的加载稍稍发生改变，不过总体来说，不影响我们前面的讨论，相信这张图不会给你带来更多的疑惑。
 
