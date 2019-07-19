@@ -51,6 +51,35 @@ toc:
       - name: InfoQ
         url: https://www.infoq.cn/topic/operation
         desc: 促进软件开发领域知识与创新的传播
+  - title: 实用工具
+    items:
+      - name: asciinema
+        url: https://asciinema.org/
+        desc: 终端录屏工具
+      - name: git.io
+        url: https://git.io/
+        desc: 短域名链接生成
+      - name: processon
+        url: https://www.processon.com/
+        desc: 在线制图
+      - name: 域名备案查询
+        url: http://beian.miit.gov.cn/publish/query/indexFirst.action
+        desc: 国内域名备案查询
+      - name: speedtest
+        url: https://www.speedtest.net/
+        desc: 在线测速
+      - name: tinypng
+        url: https://tinypng.com/
+        desc: 图片压缩
+      - name: xip.io
+        url: http://xip.io/
+        desc: 通配符DNS
+      - name: Let’s Encrypt
+        url: https://letsencrypt.org/
+        desc: 免费ssl证书
+      - name: myssl
+        url: https://myssl.com/
+        desc: SSL检测工具平台
   - title: 软件镜像
     items:
       - name: 华北-清华
