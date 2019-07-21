@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "在centos 7上安装OpenLDAP服务器"
+title: "在在CentOS 7上安装OpenLDAP服务器"
 date: "2019-07-18 23:17:48"
 category:  LDAP
 tags: LDAP openldap
@@ -263,6 +263,7 @@ ldapadd -x -w "123456" -D "cn=Manager,dc=lework,dc=com" -f /root/openldap/users.
 ```
 
 **把OpenLDAP用户加入到用户组**
+
 尽管我们已经把用户和用户组信息，导入到OpenLDAP数据库中了。但实际上目前OpenLDAP用户和用户组之间是没有任何关联的。
 
 如果我们要把OpenLDAP数据库中的用户和用户组关联起来的话，我们还需要做另外单独的配置。
