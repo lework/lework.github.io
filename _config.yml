@@ -33,7 +33,7 @@ disqus_shortname: #lework
 gitalk:
   enable: true
   clientID: 0f2905fdcd849f08a1c5
-  lientSecret: c6bfab960df0d7c3af036756e7e2bcd00a44a9e6
+  clientSecret: c6bfab960df0d7c3af036756e7e2bcd00a44a9e6
   repo: lework.github.io
   owner: lework
   admin: lework
