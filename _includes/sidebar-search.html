@@ -57,7 +57,7 @@
     fuzzy: false,
 	middleware (prop, value) {
 		if (prop === 'title') {
-            return value.replace(options.searchInput.value,'<em class="ais-Highlight">'+options.searchInput.value+'</em>'))
+            return value.replace(options.searchInput.value,'<em class="ais-Highlight">'+options.searchInput.value+'</em>')
         }
     }
   });
