@@ -55,7 +55,7 @@
     noResultsText: 'No results found',
     limit: 10,
     fuzzy: false,
-	middleware (prop, value) {
+	templateMiddleware: function(prop, value, template) {
 		if (prop === 'title') {
             return value.replace(options.searchInput.value,'<em class="ais-Highlight">'+options.searchInput.value+'</em>')
         }
