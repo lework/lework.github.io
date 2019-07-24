@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "在在CentOS 7上安装OpenLDAP服务器"
+title: "在CentOS 7上安装OpenLDAP服务器"
 date: "2019-07-18 23:17:48"
 category:  LDAP
 tags: LDAP openldap
