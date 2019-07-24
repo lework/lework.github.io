@@ -56,9 +56,9 @@
     limit: 10,
     fuzzy: false,
 	templateMiddleware: function(prop, value, template) {
-		if (prop === 'title') {
-            return value.replace(options.searchInput.value,'<em class="ais-Highlight">'+options.searchInput.value+'</em>')
-        }
+		console.log(prop);
+		console.log(value);
+		console.log(template);
     }
   });
   // function adjust_search_box_width() {
