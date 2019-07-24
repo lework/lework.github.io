@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Windows Server 2016安装AD并开启SSL"
-date: "2019-07-18 09:50"
+date: "2019-07-24 18:50"
 category: AD
 tags: LDAP AD
 author: lework
@@ -209,7 +209,8 @@ AD域控制器部署完成，打开**服务器管理器**-**工具**-**Active Di
 
 在Active Directory服务器上执行以下命令来导出证书,供客户端连接使用
 
-```bat
+
+```bash
 C:\Users\Administrator>certutil -ca.cert client.crt
 CA 证书[0]: 3 -- 有效
 CA 证书[0]:
