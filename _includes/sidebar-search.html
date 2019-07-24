@@ -1,11 +1,11 @@
 <div id="site_search">
-  <div class=" has-feedback">
+  <div class="has-feedback">
     <input type="text" id="search_box" class="form-control" placeholder="Search...">
     <span class="glyphicon glyphicon-search form-control-feedback"></span>
   </div>
 </div>
 
-<ul class="content-ul" id="search_results" recent></ul>
+<ul class="search-ul" id="search_results" recent></ul>
 
 <style>
   .form-control {
@@ -24,17 +24,24 @@
       -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
       transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   }
-  .content-ul {
+  .search-ul {
     list-style: none;
-    margin: 0;
+    margin: 10px;
     padding: 0;
+	font-size: 14px;
   }
-  .content-ul>li {
+  .search-ul>li {
     padding: 5px 0;
     border-bottom: 1px solid #ccc;
   }
-  .content-ul>li:last-child {
+  .search-ul>li:last-child {
     border: 0;
+  }
+  .ais-Highlight {
+    color: #FF6666;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
   }
 </style>
 
