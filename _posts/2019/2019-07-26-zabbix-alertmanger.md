@@ -21,6 +21,7 @@ zabbix怎么安装这里不在说明，只说明有更改的地方。
 ### 脚本配置
 
 ```python
+cat  /usr/lib/zabbix/alertscripts/zabbix-to-am.py
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
