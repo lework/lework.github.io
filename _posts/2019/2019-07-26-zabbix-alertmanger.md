@@ -242,7 +242,7 @@ receivers:
 > 这里使用的企业微信作为通知工作
 
 ### 企业微信消息模板
-
+{% raw %}
 ```bash
 cat /etc/alertmanager/config/wechat-zabbix.tmpl
 {{- define "__zabbix_text_alert_list" -}}
@@ -284,8 +284,9 @@ cat /etc/alertmanager/config/wechat-zabbix.tmpl
 {{- end }}
 {{- end }}
 ```
+{% endraw %}
 
 ## 已知的问题
 
 * alertmanger 在接受到alert恢复消息时，alert的`startAt`时间+`group_interval`时间>当前时间才会发送恢复消息。
-* 通知用户的管理必须使用AlertManager的yaml进行管理，配置比较麻烦些等等。
+* 通知用户的管理必须使用AlertManager的yaml进行管理，比较麻烦麻烦等等。
