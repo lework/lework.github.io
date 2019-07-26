@@ -21,7 +21,6 @@ zabbix怎么安装这里不在说明，只说明有更改的地方。
 ### 脚本配置
 
 ```python
-cat  /usr/lib/zabbix/alertscripts/zabbix-to-am.py
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -46,6 +45,7 @@ if len(sys.argv) < 2:
     print("Require Arguments 1 subject")
     sys.exit()
 
+# 设置日志
 log_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs')
 log_file = os.path.join(log_path, os.path.basename(__file__).split('.')[0] + '.log')
 
@@ -64,7 +64,7 @@ logger.setLevel(logging.INFO)
 subject = sys.argv[1]
 
 '''
-Zabbix tmpl
+Zabbix 发送的消息体
 
 {TRIGGER.SEVERITY}
 {HOST.NAME}
@@ -77,9 +77,10 @@ Zabbix tmpl
 firing/resolved
 {EVENT.RECOVERY.DATE} {EVENT.RECOVERY.TIME}
 
+---
 subject = """
 Average\r
-zabbix\r
+putao-zabbix\r
 172.20.9.24\r
 Zabbix servers\r
 Agent ping\r
@@ -96,6 +97,7 @@ logging.info('[source]: ' + subject)
 
 data = {"labels": {}}
 
+# 解析zabbix发送的消息体
 labels = subject.split("\r\n")
 data["labels"]["severity"] = labels[0].strip()
 data["labels"]["name"] = labels[1].strip()
@@ -118,8 +120,9 @@ data['generatorURL'] = "http://172.20.9.24/zabbix.php?action=dashboard.view&ddre
 
 post_data = json.dumps([data])
 
-am_url = "http://127.0.0.1:3000/api/v2/alerts"
-headers = {"Content-Type": "application/json"}
+# 向alertmanager发送请求
+am_url = "http://172.20.6.7:30080/api/v2/alerts"
+headers = {"Content-Type": "application/json", "Host": "alertmanager.monitoring.k8s.local"}
 
 logging.info('[DATA] %s' % post_data)
 
@@ -130,7 +133,7 @@ logging.info('[return] %s' % r.text)
 logging.info('[end].....')
 ```
 
-> `am_url` 更换成你的地址  `generatorURL` 设置报警的页面地址
+> `am_url` 更换成你的地址  `generatorURL` 设置zabbix报警信息的页面地址
 
 进行目录授权
 
