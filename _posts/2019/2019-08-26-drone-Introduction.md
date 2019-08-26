@@ -26,7 +26,7 @@ author: lework
 
 ## Drone 自动化流程
 
-[cicd.png](/assets/images/ci/cicd.png)
+![cicd.png](/assets/images/ci/cicd.png)
 
 Drone调用代码仓库的 API 给 Repository 增加一个 webhook ，当 Repository 触发相应事件(push, tag, pull request)时，代码仓库发起 http 请求回调 drone 触发构建。
 
