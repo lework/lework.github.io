@@ -39,7 +39,7 @@ Webhooks 由代码仓库发送，用于触发 pipeline。代码仓库会在下�
 - 新建一个tag
 - ...
 
-##### 跳过自动部署
+**跳过自动部署**
 
 在本地用git提交代码的时候可以通过添加 `[CI SKIP]` （大小写不敏感）到提交信息（commit message）中来让 Drone 跳过某个提交。
 
@@ -47,6 +47,7 @@ Webhooks 由代码仓库发送，用于触发 pipeline。代码仓库会在下�
 git commit -m "updated README [CI SKIP]"
 ```
 
+{% raw %}
 ## Drone 安装
 
 目前Drone支持多种代码托管服务，几乎涵盖市面上主流的代码仓库，如`Github`, `GitLab`, `Gogs`, `Gitea`、`Bitbucket Server`等，且在drone里预设了对应托管服务的 API，Drone的很多功能比如拉取 git repo list/add webhook to repo 都是通过这些 API 完成的。另外Drone的账户体系依赖于托管服务的账户系统， 并不存在维护账户这个概念。例如我们使用Gogs作为代码托管服务，我们在登录 Drone 时，实际上是 Drone 把用户名密码传给了 Gogs. 因此，激活某个 Repository （仓库） 的构建(为Repository 添加webhook) 能否成功取决于该账号在 Gogs 里是不是该 Repository 的管理员。
@@ -56,7 +57,6 @@ git commit -m "updated README [CI SKIP]"
 ### 单机形式
 
 与gogs一起
-
 ```bash
 docker run \
   --volume=/var/run/docker.sock:/var/run/docker.sock \
@@ -98,7 +98,6 @@ docker run \
   --name=drone \
   drone/drone:1.2.3
 ```
-
 
 
 drone默认使用嵌入式sqlite数据库存储，当然也可以使用其他存储
@@ -280,7 +279,6 @@ steps:                           # 定义执行步骤
   when:
     status: [ success, changed, failure ]
 ```
-
 
 
 `steps`中可用的配置
@@ -472,3 +470,5 @@ SHLVL=1
 ```
 
 有了这些变量，我们在插件里可做的事情就比较多了。
+
+{% endraw %}
