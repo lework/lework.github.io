@@ -39,26 +39,8 @@ GitOps是一种持续交付的方式.它的核心思想是将应用系统的声�
 
 能比较好应对这种复杂性的,首选 [GitFlow 工作流](https://nvie.com/posts/a-successful-git-branching-model/), 即通过并行两个长期分支的方式规范代码的提交.而如果使用了 Github,由于有非常好用的 Pull Request 功能,可以将 GitFlow 进行一定程度的简化,最终有这样的工作流：
 
-``` mermaid
-graph TB
-    commit-b-->|pull request|commit-2
-    commit-3-->|pull request|commit-3'
-    commit-3'-->|release|v1.1.0
-    subgraph branch/master
-    commit-1'-->commit-2'
-    commit-2'-->commit-3'
-    commit-3'-->commit-4'
-    end
-    subgraph branch/dev
-    commit-1-->commit-2
-    commit-2-->commit-3
-    commit-3-->commit-4
-    end
-    subgraph branch/feature/readme
-    commit-a-->commit-b
-    commit-b-->commit-c
-    end
-```
+![gitflow.jpg](/assets/images/ci/gitflow.png)
+
 
 - 以`dev` 为主开发分支,`Master`为发布分支
 - 开发人员始终从`dev`创建自己的分支,如 `feature/readme`
@@ -279,9 +261,9 @@ docker exec prod-control-plane bash -c "cat /etc/containerd/config.toml"
 docker exec prod-control-plane bash -c 'kill -s SIGHUP $(pgrep containerd)'
 ```
 
-####　配置Gogs
+#### 配置Gogs
 
-![gogs.jpg](/assets/images/ci/gogs.jpg)
+![gogs.png](/assets/images/ci/gogs.png)
 
 创建Git仓库
 
@@ -864,6 +846,7 @@ Version: test Build: 3
 ![ci-tag.png](/assets/images/ci/ci-tag.png)
 
 release 的 changlog
+
 ![changlog.png](/assets/images/ci/changlog.png)
 
 ```bash
