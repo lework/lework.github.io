@@ -158,13 +158,13 @@ chown zabbix.zabbix -R /usr/lib/zabbix/alertscripts
 
 在zabbix的web上，配置->动作->创建动作
 
-| 项目              | 值                                                           | 说明                                                         |
-| ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 名称              | 报警到alertmanger                                            |                                                              |
-| 操作/消息内容     | {TRIGGER.SEVERITY}<br/>{HOST.NAME}<br/>{HOST.IP}<br/>{TRIGGER.HOSTGROUP.NAME}<br/>{ITEM.NAME}<br/>{EVENT.DATE} {EVENT.TIME}<br/>{TRIGGER.NAME}<br/>{ITEM.NAME}:{ITEM.VALUE}<br/>firing | 每个值使用换行符隔开，firing为alert的状态                    |
-| 操作/操作         | 1 - 0	发送消息给用户: Admin (Zabbix Administrator) 通过 zabbix-to-am<br/>立即地	5m | 发送消息给admin用户, 注意前面`1-0`表示每隔`5分钟`通知报警，且次数不限 |
-| 恢复操作/消息内容 | {TRIGGER.SEVERITY}<br/>{HOST.NAME}<br/>{HOST.IP}<br/>{TRIGGER.HOSTGROUP.NAME}<br/>{ITEM.NAME}<br/>{EVENT.DATE} {EVENT.TIME}<br/>{TRIGGER.NAME}<br/>{ITEM.NAME}:{ITEM.VALUE}<br/>resolved<br/>{EVENT.RECOVERY.DATE} {EVENT.RECOVERY.TIME} | 每个值使用换行符隔开，resolved为alert的状态，最后一行是恢复的时间点 |
-| 恢复操作/操作     | **发送消息给用户:** Admin (Zabbix Administrator) 通过 zabbix-to-am | 发送消息给admin用户                                          |
+| 项目              | 值                                                                                                                                                                                                                                       | 说明                                                                  |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| 名称              | 报警到alertmanger                                                                                                                                                                                                                        |                                                                       |
+| 操作/消息内容     | {TRIGGER.SEVERITY}<br/>{HOST.NAME}<br/>{HOST.IP}<br/>{TRIGGER.HOSTGROUP.NAME}<br/>{ITEM.NAME}<br/>{EVENT.DATE} {EVENT.TIME}<br/>{TRIGGER.NAME}<br/>{ITEM.NAME}:{ITEM.VALUE}<br/>firing                                                   | 每个值使用换行符隔开，firing为alert的状态                             |
+| 操作/操作         | 1 - 0	发送消息给用户: Admin (Zabbix Administrator) 通过 zabbix-to-am<br/>立即地	5m                                                                                                                                                       | 发送消息给admin用户, 注意前面`1-0`表示每隔`5分钟`通知报警，且次数不限 |
+| 恢复操作/消息内容 | {TRIGGER.SEVERITY}<br/>{HOST.NAME}<br/>{HOST.IP}<br/>{TRIGGER.HOSTGROUP.NAME}<br/>{ITEM.NAME}<br/>{EVENT.DATE} {EVENT.TIME}<br/>{TRIGGER.NAME}<br/>{ITEM.NAME}:{ITEM.VALUE}<br/>resolved<br/>{EVENT.RECOVERY.DATE} {EVENT.RECOVERY.TIME} | 每个值使用换行符隔开，resolved为alert的状态，最后一行是恢复的时间点   |
+| 恢复操作/操作     | **发送消息给用户:** Admin (Zabbix Administrator) 通过 zabbix-to-am                                                                                                                                                                       | 发送消息给admin用户                                                   |
 
 ### 添加报警用户
 
@@ -182,6 +182,8 @@ chown zabbix.zabbix -R /usr/lib/zabbix/alertscripts
 AlertManager怎么安装这里不在说明，只说明有更改的地方。
 
 ### alertmanger配置文件
+
+{% raw %}
 
 ```bash
 global:
@@ -246,7 +248,7 @@ receivers:
 > 这里使用的企业微信作为通知工作
 
 ### 企业微信消息模板
-{% raw %}
+
 ```bash
 cat /etc/alertmanager/config/wechat-zabbix.tmpl
 {{- define "__zabbix_text_alert_list" -}}
@@ -288,6 +290,7 @@ cat /etc/alertmanager/config/wechat-zabbix.tmpl
 {{- end }}
 {{- end }}
 ```
+
 {% endraw %}
 
 ## 已知的问题
