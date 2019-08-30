@@ -127,6 +127,12 @@ nodes:
       hostPort: 30081
     - containerPort: 30082
       hostPort: 30082
+    - containerPort: 30083
+      hostPort: 30083
+    - containerPort: 30084
+      hostPort: 30084
+    - containerPort: 30085
+      hostPort: 30085
   extraMounts:
     - containerPath: /etc/docker/daemon.json
       hostPath: /etc/docker/daemon.json
@@ -488,7 +494,7 @@ ENTRYPOINT ["/bin/hello"]
 项目的`deployment`配置
 
 ```yaml
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ci-demo-go
@@ -503,6 +509,10 @@ spec:
       maxSurge: 1
       maxUnavailable: 1
   minReadySeconds: 3
+  selector:
+    matchLabels:
+      app: ci-demo-springboot
+      environment: test
   template:
     metadata:
       labels:
@@ -621,7 +631,7 @@ metadata:
   name: ci-deploy
   namespace: default
 rules:
-  - apiGroups: ["extensions", ""]
+  - apiGroups: ["apps", "extensions", ""]
     resources: ["pods", "deployments", "deployments/scale", "services"]
     verbs: ["create","get","list","patch","update"]
 
@@ -787,6 +797,59 @@ BREAKING CHANGE: API v3上线,API v1停止支持
 
 记得勾选**Allow Pull Requests**
 
+这里也可以使用脚本进行添加secret,方便大家初始化项目
+
+```
+#!/bin/bash
+
+token=MCXSO9ef0zqKoPc4cqBZ1Qkxqs5fVHxE
+owner=root
+repo=ci-demo-go
+
+
+secret_name=GIT_PASSWORD
+secret_data=12345678
+
+curl -H "Content-Type:application/json" \
+  -H "Authorization: Bearer ${token}" \
+  -X POST \
+  -d "{\"name\": \"${secret_name}\",\"data\": \"${secret_data}\",\"pull_request\": true}" \
+  http://192.168.77.133/api/repos/${owner}/${repo}/secrets
+
+secret_name=EMAIL_PASSWORD
+secret_data=12345678
+
+curl -H "Content-Type:application/json" \
+  -H "Authorization: Bearer ${token}" \
+  -X POST \
+  -d "{\"name\": \"${secret_name}\",\"data\": \"${secret_data}\",\"pull_request\": true}" \
+  http://192.168.77.133/api/repos/${owner}/${repo}/secrets
+
+secret_name=KUBERNETES_KUBECONFIG_TEST
+secret_data=$(cat /root/docker/ci.kubeconfig | base64 -w0)
+
+curl -H "Content-Type:application/json" \
+  -H "Authorization: Bearer ${token}" \
+  -X POST \
+  -d "{\"name\": \"${secret_name}\",\"data\": \"${secret_data}\",\"pull_request\": true}" \
+  http://192.168.77.133/api/repos/${owner}/${repo}/secrets
+
+secret_name=KUBERNETES_KUBECONFIG_PROD
+secret_data=$(cat /root/docker/prod-ci.kubeconfig | base64 -w0)
+
+curl -H "Content-Type:application/json" \
+  -H "Authorization: Bearer ${token}" \
+  -X POST \
+  -d "{\"name\": \"${secret_name}\",\"data\": \"${secret_data}\",\"pull_request\": true}" \
+  http://192.168.77.133/api/repos/${owner}/${repo}/secrets
+
+curl -H "Content-Type:application/json" \
+  -H "Authorization: Bearer ${token}" \
+  -X PATCH \
+  -d "{\"trusted\": true}" \
+  http://192.168.77.133/api/repos/${owner}/${repo}
+```
+
 ​至此我们的go语言以gitflow工作流的方式完成了pipeline,接下来我们就来验证下
 
 ### 模拟工作流
@@ -855,6 +918,14 @@ Version: 1.0.0 Build: 6
 ```
 
 至此,我们的工作流也完成了,总的来说`drone`对使用版本管理规范的团队来说是极大的解放生产力,如果团队没有规范的使用版本管理,看到`drone`这么优秀,快速实行起来吧.
+
+## 更多语言的Ci流程
+
+- [ci-demo-go](https://github.com/lework/ci-demo-go.git)
+- [ci-demo-django](https://github.com/lework/ci-demo-django.git)
+- [ci-demo-yii2](https://github.com/lework/ci-demo-yii2.git)
+- [ci-demo-vue](https://github.com/lework/ci-demo-vue.git)
+- [ci-demo-springboot](https://github.com/lework/ci-demo-springboot.git)
 
 ## 参考
 
