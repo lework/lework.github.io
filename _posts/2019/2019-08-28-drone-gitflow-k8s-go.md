@@ -632,7 +632,7 @@ metadata:
   namespace: default
 rules:
   - apiGroups: ["apps", "extensions", ""]
-    resources: ["pods", "deployments", "deployments/scale", "services"]
+    resources: ["pods", "deployments", "deployments/scale", "services", "replicasets"]
     verbs: ["create","get","list","patch","update"]
 
 ---
