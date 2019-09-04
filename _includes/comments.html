@@ -63,3 +63,15 @@ var gitalk = new Gitalk({
 gitalk.render('gitalk-container')
 </script>
 {% endif %}
+
+{% if site.utteranc_es.enable %}
+<div id="utteranc-es-comment"></div>
+<script src="https://utteranc.es/client.js"
+        repo="{{ site.utteranc_es.repo }}"
+        issue-term="{{ site.utteranc_es.issue-term }}"
+		label="utteranc-es-comment"
+        theme="{{ site.utteranc_es.theme }}"
+        crossorigin="anonymous"
+        async>
+</script>
+{% endif %}

@@ -26,17 +26,22 @@ dribbble_username:
 description_footer: 本站记录我成长之路的点点滴滴！
 
 # comments
-# two ways to comment, only choose one, and use your own short name
-# 三种种评论插件，选一个就好了，使用自己的 short_name
+# four ways to comment, only choose one
+# 四种评论插件，选一个就好了
 duoshuo_shortname: #
 disqus_shortname: #lework
 gitalk:
-  enable: true
+  enable: false
   clientID: 0f2905fdcd849f08a1c5
   clientSecret: c6bfab960df0d7c3af036756e7e2bcd00a44a9e6
   repo: lework.github.io
   owner: lework
   admin: lework
+utteranc_es:
+  enable: true
+  repo: "lework/lework.github.io"
+  issue-term: pathname
+  theme: github-light
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
