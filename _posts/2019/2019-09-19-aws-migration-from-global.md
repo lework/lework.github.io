@@ -6,10 +6,8 @@ category: aws
 tags: aws
 author: lework
 ---
-
-- content
-  
-  {:toc}
+* content
+{:toc}
 
 因为中国区域的`Debian`版本没有新版的,是不是很无语。云平台竟然连 linux 发行版的系统都没的。。。
 
