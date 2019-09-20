@@ -34,7 +34,9 @@ aws 支持邮件和短信的报警通知，考虑时效性问题和结合公司�
 
 ![lambda.png](/assets/images/aws/lambda.png)
 
-```Python
+源码如下：
+
+```
 import json
 from botocore.vendored import requests
 
@@ -125,7 +127,7 @@ def lambda_handler(event, context):
 
 > 下面是报警和恢复的 json 数据
 
-```json
+``` json
 // 报警
 {
     "Records": [
