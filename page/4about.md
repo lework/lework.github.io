@@ -13,7 +13,13 @@ type: page
 
 ## GitHub
 
-<iframe src="https://githubbadge.appspot.com/lework?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+- [lework](https://github.com/lework)
+
+## 开源项目
+
+- [kubectl-check](https://github.com/lework/kubectl-check) 用于检查deployment的所有pod是否就绪的kubectl插件
+- [lenav](https://github.com/lework/lenav)  一个简便的公司内部网址导航站
+- [leversion](https://github.com/lework/leversion)  列出开源软件的最新版本
 
 
 ## QQ

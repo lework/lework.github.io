@@ -7,7 +7,7 @@
 encoding: utf-8
 # Site settings
 title: Lework
-brief-intro: SRE Engineer(target)
+brief-intro: Study hard, improve every day.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lework.github.io" # the base hostname & protocol for your site
 
