@@ -16,6 +16,20 @@ author: lework
 
 ## 使用task方式获取报告
 
+### 统计的系统资源
+
+- Hostname
+- Main IP
+- OS
+- CPU Used
+- CPU LoadAvg
+- Mem Used
+- Swap Used
+- Disk Size Used
+- Disk Inode Used
+- Tcp Connection Used
+- Timestamp
+
 ### 克隆git仓库
 
 ``` 
@@ -85,6 +99,18 @@ ansible-playbook /etc/ansible/os-check.yaml
 上面的操作是我们通过自己写脚本获取系统数据，这种方式有执行速度快，自定义强的优点，也有兼容性差的问题，对各个系统支持的不全面。使用fact数据则是相反。
 
 那下面我们就使用ansible的fact数据来生成巡检报告
+
+### 统计的系统资源
+
+- Hostname
+- Main IP
+- OS
+- Mem Used
+- Swap Used
+- Disk Size Used
+- Disk Inode Used
+- Timestamp
+
 
 ### 配置脚本
 
