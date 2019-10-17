@@ -34,7 +34,8 @@ layout: default
         {{content}}
         </article>
         <hr>
-
+		{% include reward.html %}
+		<hr>
         {% assign hasSimilar = '' %}
         {% for post in site.related_posts %}
             {% assign postHasSimilar = false %}
@@ -63,11 +64,9 @@ layout: default
         {% endif %}
 
         {% include previousAndNext.html %}
-
+		
+		
         <h2 id="comments">Comments</h2>
-        {% include comments.html %}
-
-
     </div>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
     <div class="right">

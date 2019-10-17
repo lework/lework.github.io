@@ -26,9 +26,7 @@ dribbble_username:
 description_footer: 本站记录我成长之路的点点滴滴！
 
 # comments
-# four ways to comment, only choose one
-# 四种评论插件，选一个就好了
-duoshuo_shortname: #
+# 三种评论插件，选一个就好了
 disqus_shortname: #lework
 gitalk:
   enable: false
@@ -43,6 +41,11 @@ utteranc_es:
   issue-term: pathname
   theme: github-light
 
+# 赞赏
+reward:
+  enable: true
+  wechat: /assets/images/reward/wechat.png
+  alipay: /assets/images/reward/alipay.png
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
