@@ -17,6 +17,7 @@ type: page
 
 ## 开源项目
 
+- [Ansible-roles](https://github.com/lework/Ansible-roles) 含有运维日常部署，应用发布，系统操作等等的ansible role，目前已有70+。
 - [kubectl-check](https://github.com/lework/kubectl-check) 用于检查deployment的所有pod是否就绪的kubectl插件
 - [lenav](https://github.com/lework/lenav)  一个简便的公司内部网址导航站
 - [leversion](https://github.com/lework/leversion)  列出开源软件的最新版本
