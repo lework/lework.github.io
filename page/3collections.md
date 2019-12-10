@@ -46,6 +46,12 @@ type: page
 **makedown**
 - 图床：picgo
 
+**基础**
+- 中文包: Chinese (Simplified) Language Pack for Visual Studio Code
+- 文件图标: material icon theme
+- 括号匹配: Bracket Pair Colorizer 2
+- 代码自动补全工具: TabNine
+
 ## notepad++ 插件
 -  js代码压缩,js代码格式化,JSON查看器: JSMinNpp
 

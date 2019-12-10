@@ -28,11 +28,19 @@ layout: default
             {% include tag.html %}
             </div>
 
+            <div class="label-card">
+              <small style="color: #586069;">
+                本文 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字，阅读全文约需 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }}  分钟 
+              </small>
+            </div>
+
         </div>
+        <small><strong>原文地址</strong> {{ site.url }}{{ page.url }}</small>
         <hr>
         <article itemscope itemtype="http://schema.org/BlogPosting">
         {{content}}
         </article>
+        <small><strong>原文地址</strong> {{ site.url }}{{ page.url }}</small>
         <hr>
 		{% include reward.html %}
 		<hr>
