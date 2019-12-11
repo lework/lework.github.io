@@ -1,24 +1,21 @@
 {% if site.reward.enable %}
 <div id="post-reward" class="post-reward">
-  <input type="checkbox" name="reward" id="reward" hidden="">
+  <input type="checkbox" name="reward" id="reward" hidden="" />
   <label class="reward-button" for="reward">赞赏支持</label>
   <div class="qr-code">
-	  {% if site.reward.wechat %}
-      <label class="qr-code-image" for="reward">
-        <img class="image" src="{{ site.reward.wechat }}">
-        <span>微信打赏</span>
-      </label>
-	  {% endif %}
-	  {% if site.reward.alipay %}
-      <label class="qr-code-image" for="reward">
-        <img class="image" src="{{ site.reward.alipay }}">
-        <span>支付宝打赏</span>
-      </label>
-	  {% endif %}
+    {% if site.reward.wechat %}
+    <label class="qr-code-image" for="reward">
+      <img class="image" src="{{ site.reward.wechat }}" />
+      <span>微信赞赏</span>
+    </label>
+    {% endif %} {% if site.reward.alipay %}
+    <label class="qr-code-image" for="reward">
+      <img class="image" src="{{ site.reward.alipay }}" />
+      <span>支付宝赞赏</span>
+    </label>
+    {% endif %}
   </div>
 </div>
 
-<script>
-
-</script>
+<script></script>
 {% endif %}
