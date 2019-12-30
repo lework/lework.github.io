@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'rabbitmq自动化按照'
+title: 'rabbitmq自动化安装'
 date: '2019-12-27 20:00:00'
 category: rabbitmq
 tags: rabbitmq
