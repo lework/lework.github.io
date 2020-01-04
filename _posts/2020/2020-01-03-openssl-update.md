@@ -35,7 +35,7 @@ tar -zxf openssl-1.1.1d.tar.gz
 
 # 编译
 cd ./openssl-1.1.1d/
-./config --prefix=/usr/local/openssl
+./config --prefix=/usr/local/openssl shared zlib
 make
 make install
 
@@ -75,7 +75,7 @@ tar -zxf openssl-1.1.1d.tar.gz
 
 # 编译
 cd ./openssl-1.1.1d/
-./config --prefix=/usr/local/openssl
+./config --prefix=/usr/local/openssl shared zlib
 make
 make install
 
