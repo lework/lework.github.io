@@ -9,7 +9,7 @@ author: lework
 * content
 {:toc}
 
-我们知道，在启动docker容器的时候，可以通过添加``, `` 来限制容器的cpu和内存使用，如果对每个容器都要设置限制，那就需要为在启动时添加这个。这样很是麻烦，有时候不需要限制每个容器，但需要确保所有在主机上运行的容器不能超过宿主机资源的80%, 这样做可以避免因为容器进程导致宿主机资源不够使用从而产生宕机事件。
+我们知道，在启动docker容器的时候，可以通过添加`--cpu-quota`, `--memory` 来限制容器的cpu和内存使用，如果对每个容器都要设置限制，那就需要为在启动时添加这个。这样很是麻烦，有时候不需要限制每个容器，但需要确保所有在主机上运行的容器不能超过宿主机资源的80%, 这样做可以避免因为容器进程导致宿主机资源不够使用从而产生宕机事件。
 
 
 
@@ -55,7 +55,7 @@ Slice的参数说明
 - IPAccounting=：BOOL型，如果为true，则开启ipv4/ipv6的监听和已连接的socket网络收发包统计。
 - IPAddressAllow=ADDRESS[/PREFIXLENGTH]…, IPAddressDeny=ADDRESS[/PREFIXLENGTH]…：开启AF_INET和AF_INET6 sockets的网络包过滤功能。参数格式为IPv4或IPv6的地址列表，IP地址后面支持地址匹配前缀（以'/'分隔），如”10.10.10.10/24“。需要注意，该功能仅在开启“eBPF”模块的系统上才支持。
 - DeviceAllow=：用于控制对指定的设备节点的访问限制。格式为“设备名 权限”，设备名以"/dev/"开头或者"char-"、“block-”开头。权限为'r','w','m'的组合，分别代表可读、可写和可以通过mknode创建指定的设备节点。对应cgroup的"devices.allow"和"devices.deny"参数。
-- DevicePolicy=auto|closed|strict：控制设备访问的策略。strict表示：只允许明确指定的访问类型；closed表示：此外，还允许访问包含/dev/null,/dev/zero,/dev/full,/dev/random,/dev/urandom等标准伪设备。auto表示：此外，如果没有明确的DeviceAllow=存在，则允许访问所有设备。auto是默认设置。
+- DevicePolicy=auto\|closed\|strict：控制设备访问的策略。strict表示：只允许明确指定的访问类型；closed表示：此外，还允许访问包含/dev/null,/dev/zero,/dev/full,/dev/random,/dev/urandom等标准伪设备。auto表示：此外，如果没有明确的DeviceAllow=存在，则允许访问所有设备。auto是默认设置。
 - Slice=：存放unit的slice目录，默认为system.slice。
 - Delegate=：默认关闭，开启后将更多的资源控制交给进程自己管理。开启后unit可以在单其cgroup下创建和管理其自己的cgroup的私人子层级，systemd将不在维护其cgoup以及将其进程从unit的cgroup里移走。开启方法：“Delegate=yes”。所以通过设置Delegate选项，可以解决上面的问题。
 
@@ -72,7 +72,7 @@ Slice的参数说明
 
 
 
-查看 `slice` 的详细说明 [resource-control] (https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html)
+查看 `slice` 的详细说明 [resource-control](https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html)
 
 **配置docker**
 
