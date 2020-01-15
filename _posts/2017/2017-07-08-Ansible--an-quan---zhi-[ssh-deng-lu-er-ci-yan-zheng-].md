@@ -165,7 +165,7 @@ eth0      Link encap:Ethernet  HWaddr 00:0C:29:7D:D4:7A
 
 先输入谷歌验证码
 
-!](/assets/images/Ansible/3629406-fa7479e63a30209c.png)
+![image.png](/assets/images/Ansible/3629406-fa7479e63a30209c.png)
 
 
 在输入root密码
