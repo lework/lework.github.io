@@ -138,7 +138,7 @@ def get_user_comment(user):
         comments = pwd.getpwnam(user).pw_gecos
     except:
         auth_log("No local user (%s) found." % user)
-        return -1
+        comments = ''
 
     return comments # 返回用户描述信息
 
@@ -168,7 +168,9 @@ def gen_key(pamh, user, length):
 
 def pam_sm_authenticate(pamh, flags, argv):
     PIN_LENGTH = 6  # PIN码长度
-    PIN_LIVE = 60  # PIN存活时间,超出时间验证失败
+    PIN_LIVE = 60   # PIN存活时间,超出时间验证失败
+    PIN_LIMIT = 3   # 限制错误尝试次数
+    EMERGENCY_HASH = '\xba2S\x87j\xedk\xc2-Jo\xf5=\x84\x06\xc6\xad\x86A\x95\xed\x14J\xb5\xc8v!\xb6\xc23\xb5H\xba\xea\xe6\x95m\xf3F\xec\x8c\x17\xf5\xea\x10\xf3^\xe3\xcb\xc5\x14y~\xd7\xdd\xd3\x14Td\xe2\xa0\xba\xb4\x13'  # 预定义验证码123456的hash, 用于紧急认证
 
     try:
         user = pamh.get_user()
@@ -177,23 +179,29 @@ def pam_sm_authenticate(pamh, flags, argv):
   
     auth_log("login_ip: %s, login_user: %s" % (pamh.rhost, user))
 
+    if get_user_comment(user) == '':
+        msg = pamh.Message(pamh.PAM_ERROR_MSG, "[Warning] You need to set the Qiyi WeChat username in the comment block for user %s." % (user))
+        pamh.conversation(msg)
+        return pamh.PAM_ABORT
+    
     pin, pin_time = gen_key(pamh, user, PIN_LENGTH)
 
-    for attempt in range(0, 3):  # 仅允许三次错误尝试
+    for attempt in range(0, PIN_LIMIT):  # 限制错误尝试次数
         msg = pamh.Message(pamh.PAM_PROMPT_ECHO_OFF, "Verification code:")
         resp = pamh.conversation(msg)
         resp_time = datetime.datetime.now()
         input_interval = resp_time - pin_time
         if input_interval.seconds > PIN_LIVE:
-            msg = pamh.Message(pamh.PAM_ERROR_MSG, "Time limit exceeded.")
+            msg = pamh.Message(pamh.PAM_ERROR_MSG, "[Warning] Time limit exceeded.")
             pamh.conversation(msg)
             return pamh.PAM_ABORT
-        if get_hash(resp.resp) == pin:  # 用户输入与生成的验证码进行校验
+        resp_hash = get_hash(resp.resp)
+        if resp_hash == pin or resp_hash == EMERGENCY_HASH:  # 用户输入与生成的验证码进行校验
             return pamh.PAM_SUCCESS
         else:
             continue
 
-    msg = pamh.Message(pamh.PAM_ERROR_MSG, "Too many authentication failures.")
+    msg = pamh.Message(pamh.PAM_ERROR_MSG, "[Warning] Too many authentication failures.")
     pamh.conversation(msg)
     return pamh.PAM_AUTH_ERR
 
@@ -215,13 +223,14 @@ def pam_sm_close_session(pamh, flags, argv):
 
 def pam_sm_chauthtok(pamh, flags, argv):
     return pamh.PAM_SUCCESS
-
 ```
 
 需要先设置的参数
 
 - PIN_LENGTH = 6  # PIN码长度
 - PIN_LIVE = 60  # PIN存活时间,超出时间验证失败
+- PIN_LIMIT = 3   # 限制错误尝试次数
+- EMERGENCY_HASH = 'hash string' # 预定义验证码字符串的sha512, 用于紧急认证
 - corpid = ""  # 企业ID
 - secret = ""  # 应用的凭证密钥
 - agentid = "" # 应用ID
@@ -232,7 +241,7 @@ def pam_sm_chauthtok(pamh, flags, argv):
 chmod +x /usr/lib64/security/pam_wechat_auth.py
 ```
 
-在系统用户的描述栏中设置用户的企业微信标识，多个用户使用'|' 分割
+在系统用户的描述栏中设置用户的企业微信标识，多个用户使用`|` 分割
 
 ```bash
 usermod -c 'LiSi' root
