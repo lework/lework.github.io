@@ -26,6 +26,7 @@ type: page
 - [kubectl-check](https://github.com/lework/kubectl-check) 用于检查 deployment 的所有 pod 是否就绪的 kubectl 插件
 - [lenav](https://github.com/lework/lenav) 一个简便的公司内部网址导航站
 - [leversion](https://github.com/lework/leversion) 列出开源软件的最新版本
+- [lemonitor](https://github.com/lework/lemonitor) 开源软件的国内镜像站点
 
 ## 群组织
 
