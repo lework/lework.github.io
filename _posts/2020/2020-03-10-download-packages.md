@@ -35,6 +35,7 @@ Download Packages With Dependencies Locally.
 
   Example:
     get_packages.sh centos7 ansible
+    get_packages.sh centos7 "python36 python36-devel"
     get_packages.sh centos7 ceph /root/ceph.repo
 ```
 
@@ -116,6 +117,75 @@ dr-xr-x---. 4 root root      240 3月  10 21:31 ..
 ```
 
 这个脚本会先下载docker镜像 `centos:7`, 然后更新**仓库缓存**，接着下载**软件包及依赖**。最后**退出容器**打印软件包列表，软件存储在脚本运行目录的`package_centos7_ansible`目录中，拿着这些包就可以去无网的机器上安装了(`yum localinstall *.rpm`)。
+
+### centos7-python36
+
+下载 **centos7** 系统上  **python36** 的相关依赖包
+
+> 因为要在 centos 7 系列系统上安装   python36 python36-devel
+
+```bash
+[root@node130 ~]# bash -x get_packages.sh centos7 "python36 python36-devel"
+[Docker] start container
+124acdfcaf36bd5cb75b6823b770bc90079817ec7022420f589a89ce288c0f92
+
+[Docker] update repo cache
+Loaded plugins: fastestmirror, ovl
+Determining fastest mirrors
+Metadata Cache Created
+
+[Docker] download package
++ docker exec package yum install -y --downloadonly --downloaddir=/tmp/package python36 python36-devel
+Loaded plugins: fastestmirror, ovl
+Loading mirror speeds from cached hostfile
+Resolving Dependencies
+--> Running transaction check
+---> Package python3.x86_64 0:3.6.8-10.el7 will be installed
+--> Processing Dependency: python3-libs(x86-64) = 3.6.8-10.el7 for package: python3-3.6.8-10.el7.x86_64
+......
+---> Package perl-parent.noarch 1:0.225-244.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                    Arch       Version                   Repository
+                                                                           Size
+================================================================================
+Installing:
+ python3                    x86_64     3.6.8-10.el7              base      69 k
+ python3-devel              x86_64     3.6.8-10.el7              base     215 k
+......
+ zip                        x86_64     3.0-11.el7                base     260 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages (+40 Dependent packages)
+
+Total download size: 22 M
+Installed size: 89 M
+Background downloading packages, then exiting:
+--------------------------------------------------------------------------------
+Total                                              2.0 MB/s |  22 MB  00:11     
+exiting because "Download Only" specified
+
+
+[Docker] stop container
+package
+
+[Local] show file
+Path: /root/package_centos7_python36
+
+总用量 23116
+drwxr-xr-x  2 root root    4096 3月  11 11:16 .
+dr-xr-x---. 8 root root    4096 3月  11 11:14 ..
+-rw-r--r--  1 root root  101080 7月   4 2014 dwz-0.11-3.el7.x86_64.rpm
+.....
+-rw-r--r--  1 root root   70736 8月  23 2019 python3-3.6.8-10.el7.x86_64.rpm
+-rw-r--r--  1 root root  220244 8月  23 2019 python3-devel-3.6.8-10.el7.x86_64.rpm
+```
+
+
 
 ### debian7-ceph
 
