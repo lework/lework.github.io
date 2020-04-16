@@ -20,7 +20,7 @@ author: lework
 
 ```bash
 # 当前版本
-openssl vresion
+# openssl version
 OpenSSL 1.0.2k-fips  26 Jan 2017
 
 # 删除旧版本包
@@ -59,7 +59,7 @@ OpenSSL 1.1.1d  10 Sep 2019
 
 ```bash
 # 当前版本
-openssl vresion
+# openssl version
 OpenSSL 1.0.2k-fips  26 Jan 2017
 
 # 删除旧版本包
