@@ -27,6 +27,7 @@ type: page
 - [lenav](https://github.com/lework/lenav) 一个简便的公司内部网址导航站
 - [leversion](https://github.com/lework/leversion) 列出开源软件的最新版本
 - [lemonitor](https://github.com/lework/lemonitor) 开源软件的国内镜像站点
+- [Ansible wiki](https://github.com/leops-china/ansible-wiki) Ansible Wiki站点
 
 ## 群组织
 
