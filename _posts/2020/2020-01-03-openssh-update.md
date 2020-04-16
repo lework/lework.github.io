@@ -56,8 +56,8 @@ tar zxf openssh-8.1p1.tar.gz
 
 # 编译安装
 cd openssh-8.1p1
-./configure --prefix={{ software_install_path }} --with-privsep-path=/var/empty/sshd/ \
-       --sysconfdir=/etc/ssh --with-ssl-dir={{ openssh_ssl_dir }} \
+./configure --prefix=/usr --with-privsep-path=/var/empty/sshd/ \
+       --sysconfdir=/etc/ssh --with-ssl-dir=/usr/local/openssl/ \
        --with-default-path=/usr/local/bin:/bin:/usr/bin \
        --with-superuser-path=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin \
        --with-pam --with-selinux --disable-strip --with-md5-passwords --with-tcp-wrappers
@@ -115,8 +115,8 @@ tar zxf openssh-8.1p1.tar.gz
 
 # 编译安装
 cd openssh-8.1p1
-./configure --prefix={{ software_install_path }} --with-privsep-path=/var/empty/sshd/ \
-       --sysconfdir=/etc/ssh --with-ssl-dir={{ openssh_ssl_dir }} \
+./configure --prefix=/usr --with-privsep-path=/var/empty/sshd/ \
+       --sysconfdir=/etc/ssh --with-ssl-dir=/usr/local/openssl/ \
        --with-default-path=/usr/local/bin:/bin:/usr/bin \
        --with-superuser-path=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin \
        --with-pam --with-selinux --disable-strip --with-md5-passwords --with-tcp-wrappers
