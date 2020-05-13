@@ -60,7 +60,7 @@ cd openssh-8.1p1
        --sysconfdir=/etc/ssh --with-ssl-dir=/usr/local/openssl/ \
        --with-default-path=/usr/local/bin:/bin:/usr/bin \
        --with-superuser-path=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin \
-       --with-pam --with-selinux --disable-strip --with-md5-passwords --with-tcp-wrappers
+       --with-pam --with-selinux --disable-strip --with-md5-passwords
 make
 make install
 
@@ -119,7 +119,7 @@ cd openssh-8.1p1
        --sysconfdir=/etc/ssh --with-ssl-dir=/usr/local/openssl/ \
        --with-default-path=/usr/local/bin:/bin:/usr/bin \
        --with-superuser-path=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin \
-       --with-pam --with-selinux --disable-strip --with-md5-passwords --with-tcp-wrappers
+       --with-pam --with-selinux --disable-strip --with-md5-passwords
 make
 make install
 
