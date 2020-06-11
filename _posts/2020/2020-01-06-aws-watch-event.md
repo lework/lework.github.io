@@ -3,7 +3,7 @@ layout: post
 title: "使用lamdba实现产品的监控项自动创建"
 date: "2020-01-06 19:00"
 category: aws
-tags: aws,lamdba,cloudwatch
+tags: aws lamdba cloudwatch
 author: lework
 ---
 * content
