@@ -21,7 +21,8 @@ author: lework
       1. 使用`系统包`管理方式部署
       2. 使用`源码包`编译方式部署
       3. 使用`docker`容器部署
-      4. 使用`kubernetes`方式部署
+      4. 使用`docker-compose`方式部署
+      5. 使用`kubernetes`方式部署
    2. 部署规模
       1. `单机`部署
       2. `集群`部署
@@ -69,20 +70,65 @@ author: lework
 5. 优化
      1. 针对每种`宿主机`，分别进行相关优化操作
      2. 针对每种`部署规模`，分别进行相关优化操作
-6. 通读官方文档
-7. 整理软件文档
+6. 压测
+
+     1. 单实例压测， 服务器配置2C4G/4C8G等等
+     2. 集群压测， 服务器配置2C4G/4C8G等等
+7. 通读官方文档
+8. 整理软件文档
 
 
 
-**学习方式的话**
+**学习途径的话**
 
-1. google
+> 可通过下列方式去寻找软件相关的知识，帮助各位快速学习。
 
-2. 视频
+1. 官方文档/论坛
 
-3. 书籍
+2. 搜索引擎
 
-4. 官方文档
+   1. 通过`google.com`搜索软件的一切信息，如 `pdf`，`ppt` ，`cookebook`，`awesome`，`cheatsheet`，`install`，`gitbook`
+
+3. 视频
+
+   1. 国内：https://www.bilibili.com/
+   2. 国外：https://www.youtube.com/
+
+4. 书籍
+
+   1. 国外商店：`亚马逊`
+   2. 国内商店：`京东`/`当当`/`闲鱼二手`商城购买实体书
+   3. 读书app：`微信读书`
+   4. pdf文档：网络上搜索 `技术名称 + cookbook` / `ebook`
+      1. https://it-ebooks.info/
+   5. 文章：`google`/`baidu`/`微信公众号`/`个人博客`等等。
+
+5. 会议ppt
+
+   1. 官方每年举行的会议
+   2. https://www.slideshare.net/ | https://myslide.cn/ 中分享的ppt
+
+6. `github`
+
+   1. `github.com`中搜索软件的`awesome`，其整理了软件相关的知识点及工具清单。
+   2. `github.com`中搜索软件的`cheatsheet`，其整理了软件相关的常用命令。
+
+7. 软件的一些常见问题
+
+   1. 国内: https://segmentfault.com/
+   2. 国外: https://stackoverflow.com/
+
+8. 讨论组
+
+   1. 国外: https://www.reddit.com/
+
+9. 培训
+
+   1. 极客时间
+   2. 腾讯课堂
+   3. 网易课堂
+   4. 老男孩教育
+   5. 马哥教育
 
    
 
