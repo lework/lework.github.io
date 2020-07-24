@@ -8,9 +8,6 @@ author: lework
 ---
 * content
 {:toc}
-
-# 运维人是怎么学习一门新软件的？
-
 作为一个苦逼运维人，在学习一门新软件的时候，要经历过哪些阶段，或者说要做哪些事情，才能算真的了解这个软件呢？下面就个人经历而言整理了一些步骤。
 
 
@@ -84,52 +81,35 @@ author: lework
 > 可通过下列方式去寻找软件相关的知识，帮助各位快速学习。
 
 1. 官方文档/论坛
-
 2. 搜索引擎
-
    1. 通过`google.com`搜索软件的一切信息，如 `pdf`，`ppt` ，`cookebook`，`awesome`，`cheatsheet`，`install`，`gitbook`
-
 3. 视频
-
    1. 国内：https://www.bilibili.com/
    2. 国外：https://www.youtube.com/
-
 4. 书籍
-
    1. 国外商店：`亚马逊`
    2. 国内商店：`京东`/`当当`/`闲鱼二手`商城购买实体书
    3. 读书app：`微信读书`
    4. pdf文档：网络上搜索 `技术名称 + cookbook` / `ebook`
       1. https://it-ebooks.info/
    5. 文章：`google`/`baidu`/`微信公众号`/`个人博客`等等。
-
 5. 会议ppt
-
    1. 官方每年举行的会议
    2. https://www.slideshare.net/ | https://myslide.cn/ 中分享的ppt
-
 6. `github`
-
    1. `github.com`中搜索软件的`awesome`，其整理了软件相关的知识点及工具清单。
    2. `github.com`中搜索软件的`cheatsheet`，其整理了软件相关的常用命令。
-
 7. 软件的一些常见问题
-
    1. 国内: https://segmentfault.com/
    2. 国外: https://stackoverflow.com/
-
 8. 讨论组
-
    1. 国外: https://www.reddit.com/
-
 9. 培训
-
    1. 极客时间
    2. 腾讯课堂
    3. 网易课堂
    4. 老男孩教育
    5. 马哥教育
-
    
 
 **写在最后**
