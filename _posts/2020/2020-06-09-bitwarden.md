@@ -3,7 +3,7 @@ layout: post
 title: "自建 Bitwarden 密码服务器"
 date: "2020-06-09 16:40"
 category: linux
-tags: Bitwarden, linux
+tags: Bitwarden linux
 author: lework
 ---
 * content
