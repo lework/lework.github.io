@@ -3,6 +3,7 @@ layout: post
 title: "初创型公司-持续部署系列（四）部署jenkins服务器"
 date: "2016-12-10 19:08:48"
 categories: 初创型公司运维专题
+tags: jenkins
 excerpt: "本次使用的操作系统： Windows Server 2008 R2 Enterprisevs版本： vs 2015jenkins： 2.19.4..."
 auth: lework
 ---

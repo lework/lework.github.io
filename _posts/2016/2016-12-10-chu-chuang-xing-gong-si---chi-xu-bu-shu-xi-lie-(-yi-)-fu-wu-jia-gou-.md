@@ -3,6 +3,7 @@ layout: post
 title: "初创型公司-持续部署系列（一）服务架构"
 date: "2016-12-10 19:06:01"
 categories: 初创型公司运维专题
+tags: jenkins
 excerpt: "本人是一个运维工程师，所以不会从软件层面上去设计架构。网上很少有.net为例的持续交付，这次我们就以.net服务来说明初创型公司怎么做持续交付。..."
 auth: lework
 ---

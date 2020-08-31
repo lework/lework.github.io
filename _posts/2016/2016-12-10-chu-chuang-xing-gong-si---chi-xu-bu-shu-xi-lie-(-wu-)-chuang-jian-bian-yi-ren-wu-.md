@@ -3,6 +3,7 @@ layout: post
 title: "初创型公司-持续部署系列（五）创建编译任务"
 date: "2016-12-10 19:09:18"
 categories: 初创型公司运维专题
+tags: jenkins
 excerpt: "编译打包的流程图如下： 在jenkins服务器上创建目录 D:\\build_code\\demo目录，用于存放编译后的代码 D:\\Packages..."
 auth: lework
 ---
