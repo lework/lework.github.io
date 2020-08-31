@@ -62,9 +62,9 @@ ustc          202.38.95.110       9.2M          1.2s                7.75MB/s
 
 > 本环境是在 centos7 中使用 `yum` 方式安装 jenkins。
 
-当我们在安装完 **jenkins** 的时候，别着急登录web，先设置下国内源。
+当我们在安装完 **jenkins** 的时候，别着急登录web进行初始化操作，先设置下国内源。
 
-1. 先上传自定义的ca证书
+1. 上传自定义的 ca 证书
 
     > 因为 `update-center.json` 里的数据需要证书加密，jenkins 默认则会对数据进行校验。 
     >
@@ -82,7 +82,7 @@ ustc          202.38.95.110       9.2M          1.2s                7.75MB/s
     chown jenkins.jenkins -R /var/lib/jenkins/update-center-rootCAs
     ```
 
-2. 更改url
+2. 更改插件更新中心的 url 地址
 
     这里在终端里进行更改
 
@@ -90,13 +90,12 @@ ustc          202.38.95.110       9.2M          1.2s                7.75MB/s
     sed -i 's#https://updates.jenkins.io/update-center.json#https://cdn.jsdelivr.net/gh/lework/jenkins-update-center/updates/huawei/update-center.json#' /var/lib/jenkins/hudson.model.UpdateCenter.xml
     [ -f /var/lib/jenkins/updates/default.json ] && rm -fv /var/lib/jenkins/updates/default.json
     
-    systemctl daemon-reload
+    systemctl restart jenkins
     ```
 
-    > 当然也可以通过web 来更改：Go to `Jenkins` → `Manage Jenkins` → `Manage Plugins` → `Advanced` → Update Site and submit URL to your `https://cdn.jsdelivr.net/gh/lework/jenkins-update-center/updates/huawei/update-center.json`   
+    > 当然也可以通过web 来更改：Go to `Jenkins` → `Manage Jenkins` → `Manage Plugins` → `Advanced` → Update Site and submit URL to your `https://cdn.jsdelivr.net/gh/lework/jenkins-update-center/updates/huawei/update-center.json`
 
 然后再去 **web** 页面初始化你的 **jenkins**，享受速度飙升的快感吧。
-
 
 
 其他镜像站点的 **update-center.json** 
