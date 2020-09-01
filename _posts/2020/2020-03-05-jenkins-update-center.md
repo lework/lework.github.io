@@ -54,34 +54,54 @@ ustc          202.38.95.110       9.2M          1.2s                7.75MB/s
 
 ```
 
-*huawei* 就是那个 **最靓** 的崽
+*huawei* 就是那个 **最靓** 的崽！
 
 
 
 ## 使用国内镜像
 
 > 本环境是在 centos7 中使用 `yum` 方式安装 jenkins。
+>
+> ```bash
+> wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
+> rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+> yum install jenkins java-1.8.0-openjdk
+> systemctl start jenkins
+> ```
 
 当我们在安装完 **jenkins** 的时候，别着急登录web进行初始化操作，先设置下国内源。
 
 1. 上传自定义的 ca 证书
-
-    > 因为 `update-center.json` 里的数据需要证书加密，jenkins 默认则会对数据进行校验。 
-    >
-    > 使用下面设置，可以关闭jenkins的校验，不过为了安全不推荐使用。
-    >
-    >  ```bash
-    > sed -i 's#$JENKINS_JAVA_OPTIONS#$JENKINS_JAVA_OPTIONS -Dhudson.model.DownloadService.noSignatureCheck=true#g' /etc/init.d/jenkins
-    > 
-    > systemctl daemon-reload
-    >  ```
 
     ```bash
     [ ! -d /var/lib/jenkins/update-center-rootCAs ] && mkdir /var/lib/jenkins/update-center-rootCAs
     wget https://cdn.jsdelivr.net/gh/lework/jenkins-update-center/rootCA/update-center.crt -O /var/lib/jenkins/update-center-rootCAs/update-center.crt
     chown jenkins.jenkins -R /var/lib/jenkins/update-center-rootCAs
     ```
-
+    **注意：** 如果在上诉操作后，还是出现证书校验不通过的错误信息，可以试试下面的操作。
+    
+    ```bash
+    # centos/redhat
+    sudo wget https://cdn.jsdelivr.net/gh/lework/jenkins-update-center/rootCA/update-center.crt -O /etc/pki/catrust/source/anchors/update-center.crt
+    sudo update-ca-trust extract
+    sudo update-ca-trust enable
+    
+    # debian/ubuntu
+    sudo https://cdn.jsdelivr.net/gh/lework/jenkins-update-center/rootCA/update-center.crt -O /usr/share/ca-certificates/update-center.crt
+    sudo update-ca-certificates
+    ```
+    
+    > 因为 `update-center.json` 里的数据需要证书加密，jenkins 默认则会对数据进行校验。 
+    >
+    > 使用下面设置，可以**关闭jenkins的校验**，不过为了安全不推荐使用。
+    >
+    >  ```bash
+    > sed -i 's#$JENKINS_JAVA_OPTIONS#$JENKINS_JAVA_OPTIONS -Dhudson.model.DownloadService.noSignatureCheck=true#g' /etc/init.d/jenkins
+    > 
+    > systemctl daemon-reload
+    >  ```
+    >  
+    
 2. 更改插件更新中心的 url 地址
 
     这里在终端里进行更改
@@ -98,7 +118,8 @@ ustc          202.38.95.110       9.2M          1.2s                7.75MB/s
 然后再去 **web** 页面初始化你的 **jenkins**，享受速度飙升的快感吧。
 
 
-其他镜像站点的 **update-center.json** 
+
+## update-center.json
 
 > 文件会在每天utc时间1点钟更新
 
