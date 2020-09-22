@@ -38,7 +38,7 @@ Ansible 的目标有如下：
 可以用动图说明下此次过程。
 
 
-![46-ansible-playbook-haproxy-nginx1.gif](/assets/images/Ansible/3629406-cd0eaeac69698452.gif
+![46-ansible-playbook-haproxy-nginx1.gif](/assets/images/Ansible/3629406-cd0eaeac69698452.gif)
 
 ## 对管理主机的要求
 ---
