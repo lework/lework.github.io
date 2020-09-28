@@ -183,15 +183,15 @@ SCRIPT_PARAMETER="$*"
 
 ### 节点列表
 
-| name    | ip             | cpu  | mem  | role   |
-| ------- | -------------- | ---- | ---- | ------ |
-| node130 | 192.168.77.130 | 2C   | 2G   | master |
-| node131 | 192.168.77.131 | 2C   | 2G   | master |
-| node132 | 192.168.77.132 | 2C   | 2G   | master |
-| node133 | 192.168.77.133 | 2C   | 4G   | worker |
-| node134 | 192.168.77.134 | 2C   | 4G   | worker |
-| node135 | 192.168.77.135 | 2C   | 4G   | worker |
-| node136 | 192.168.77.136 | 2C   | 2G   | master |
+| name    | ip             | os         | cpu  | mem  | role   |
+| ------- | -------------- | ---------- | ---- | ---- | ------ |
+| node130 | 192.168.77.130 | CentOS 7.7 | 2C   | 2G   | master |
+| node131 | 192.168.77.131 | CentOS 7.7 | 2C   | 2G   | master |
+| node132 | 192.168.77.132 | CentOS 7.7 | 2C   | 2G   | master |
+| node133 | 192.168.77.133 | CentOS 7.7 | 2C   | 4G   | worker |
+| node134 | 192.168.77.134 | CentOS 7.7 | 2C   | 4G   | worker |
+| node135 | 192.168.77.135 | CentOS 7.7 | 2C   | 4G   | worker |
+| node136 | 192.168.77.136 | CentOS 7.7 | 2C   | 2G   | master |
 
 
 
