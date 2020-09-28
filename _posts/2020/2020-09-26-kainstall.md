@@ -188,7 +188,7 @@ SCRIPT_PARAMETER="$*"
 | node130 | 192.168.77.130 | 2C   | 2G   | master |
 | node131 | 192.168.77.131 | 2C   | 2G   | master |
 | node132 | 192.168.77.132 | 2C   | 2G   | master |
-| node133 | 192.168.77.133 | 2C   | 4G   | master |
+| node133 | 192.168.77.133 | 2C   | 4G   | worker |
 | node134 | 192.168.77.134 | 2C   | 4G   | worker |
 | node135 | 192.168.77.135 | 2C   | 4G   | worker |
 | node136 | 192.168.77.136 | 2C   | 2G   | master |
@@ -812,7 +812,7 @@ url： http://grafana.monitoring.cluster.local:32366/
 
 访问 prometheus 
 url： http://prometheus.monitoring.cluster.local:32366/
-![image-20200928125910590](kainstall-prometheus.png)
+![image-20200928125910590](/assets/images/kubernetes/kainstall-prometheus.png)
 
 访问 alertmanager
 url： http://alertmanager.monitoring.cluster.local:32366/
@@ -1007,5 +1007,5 @@ bash kainstall.sh add --storage rook
 
 ## 最后
 
-是不是很简单，你只需要准备好几期，操作下脚本就行了，敲一条命令，喝杯咖啡摸摸鱼，集群就好了。这生活岂不美哉，自动化的美魅力啊。
+是不是很简单，你只需要准备好几期，操作下脚本就行了，敲一条命令，喝杯咖啡摸摸鱼，集群就好了。这生活岂不美哉，自动化的魅力！。
 
