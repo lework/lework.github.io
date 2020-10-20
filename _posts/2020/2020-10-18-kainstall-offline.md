@@ -621,6 +621,12 @@ X-Scheme: http
 
 通过网页访问dashboard，并输入提供的token
 
+**注意：** 这里需要绑定下主机名解析,将下面的内容放入到`hosts`文件中
+
+```bash
+192.168.77.133 kubernetes-dashboard.cluster.local
+```
+
 ![kainstall-dashboard](/assets/images/kubernetes/kainstall-dashboard.png)
 
 

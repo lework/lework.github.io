@@ -22,12 +22,18 @@ type: page
 
 ## 开源项目
 
-- [Ansible-roles](https://github.com/lework/Ansible-roles) 含有运维日常部署，应用发布，系统操作等等的 ansible role，目前已有 70+。
-- [kubectl-check](https://github.com/lework/kubectl-check) 用于检查 deployment 的所有 pod 是否就绪的 kubectl 插件
-- [lenav](https://github.com/lework/lenav) 一个简便的公司内部网址导航站
-- [leversion](https://github.com/lework/leversion) 列出开源软件的最新版本
-- [lemonitor](https://github.com/lework/lemonitor) 开源软件的国内镜像站点
-- [Ansible wiki](https://github.com/leops-china/ansible-wiki) Ansible Wiki站点
+- [2019] [Ansible-roles](https://github.com/lework/Ansible-roles) 含有运维日常部署，应用发布，系统操作等等的 ansible role，目前已有 100+
+- [2019] [kubectl-check](https://github.com/lework/kubectl-check) 用于检查 deployment 的所有 pod 是否就绪的 kubectl 插件
+- [2019] [lenav](https://github.com/lework/lenav) 一个简便的公司内部网址导航站
+- [2019] [leversion](https://github.com/lework/leversion) 列出开源软件的最新版本
+- [2020] [lemonitor](https://github.com/lework/lemonitor) 开源软件的国内镜像站点
+- [2020] [Ansible wiki](https://github.com/leops-china/ansible-wiki) Ansible Wiki站点
+- [2020] [运维备忘单](https://cs.leops.cn/#/) 运维备忘单
+- [2020] [jenkins-update-center](https://github.com/lework/jenkins-update-center) jenkins update-center 国内镜像文件
+- [2020] [lesec](https://github.com/lework/lesec) 基于 openresty 的 lua 简单防火墙
+- [2020] [kainstall](https://github.com/lework/kainstall) 使用 shell 脚本一键部署 kubernetes ha 集群
+- [2020] [kubeadm-certs](https://github.com/lework/kubeadm-certs) 将 kubeadm 的证书有效期设置为10年
+
 
 ## 群组织
 
@@ -51,10 +57,10 @@ type: page
 
 {% include reward.html %}
 
-[1]: https://jekyllrb.com/ 'Jekyll'
-[2]: http://daringfireball.net/projects/markdown/ 'Markdown'
-[3]: https://github.com/ 'GitHub'
-[4]: http://creativecommons.org/licenses/by-nc/3.0/cn/ '署名-非商业性使用 3.0 中国大陆'
+[1]: https://jekyllrb.com/ "Jekyll"
+[2]: http://daringfireball.net/projects/markdown/ "Markdown"
+[3]: https://github.com/ "GitHub"
+[4]: http://creativecommons.org/licenses/by-nc/3.0/cn/ "署名-非商业性使用 3.0 中国大陆"
 
 {% include comments.html %}
 
