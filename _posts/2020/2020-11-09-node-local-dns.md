@@ -630,9 +630,9 @@ spec:
 	
 	dnsperf 参数
 	- `-l 60` :  测试 60s
-	- ` -s 10.96.0.10` : dns 服务器
-- ` -Q 100000`:  最高qps
-	- ` -d records.txt`: 查询的列表
+	- `-s 10.96.0.10` : dns 服务器
+	- `-Q 100000`:  最高qps
+	- `-d records.txt`: 查询的列表
 
    在 Statistics 区域中，我们可以看到发送查询**835613**，查询完成度**100%**，qps 为 **13925.527915**。 返回码有SERVFAIL 是因为 kubernetes 域名查询的错误。
 
@@ -675,6 +675,190 @@ NodeLocal DNS Cache 并没有高可用性的特征，但是我们通过设置Dae
 为了避免这个不必要的麻烦，默认的 DaemonSet 没有设置内存/CPU限制。我建议你保持这种方式，以避免内存终止或任何CPU节流。另外pods被标记为 `system-node-critical` 优先级，这使得nodelocaldns几乎可以保证在节点资源耗尽的情况下，首先被调度，不太可能被驱逐。
 
 如果你想安全起见，我建议你把DaemonSet更新策略改为`OnDelete`，并通过排空Kubernetes节点来进行维护/升级，排空成功后逐一删除Node Local DNS pods。
+
+在pod中，增加一个备用`nameserver`，也就是我们的 `kube-dns`的 cluster ip，从而在 node-local-dns 不可用的情况下，能使用集群中的dns服务解析域名，保障服务不中断业务。
+
+
+
+##  故障演练
+
+模拟 `node-local-dns` pod 意外宕机
+
+1. 进入测试pod容器中
+
+    ```bash
+    # kubectl exec -ti test-node-local-dns -- sh
+    / # cat /etc/resolv.conf 
+    nameserver 169.254.20.10
+    search default.svc.cluster.local svc.cluster.local cluster.local
+    options ndots:2
+    / # 
+    ```
+
+2. 定时查询解析
+
+   ```bash
+   / # while true; do date; nslookup -type=a www.baidu.com; sleep 0.5; done
+   ```
+
+3. 在测试pod节点上kill掉`node-local-dns` pod
+
+   ```bash
+   # docker kill $(docker ps | grep node-cache_node-local-dns  | awk '{print $1}')
+   939d90728c43
+   ```
+
+4. 在测试pod容器中，查看解析情况
+
+   ```bash
+   Wed Nov 11 03:43:55 UTC 2020
+   Server:         169.254.20.10
+   Address:        169.254.20.10:53
+   
+   Non-authoritative answer:
+   www.baidu.com   canonical name = www.a.shifen.com
+   Name:   www.a.shifen.com
+   Address: 180.101.49.11
+   Name:   www.a.shifen.com
+   Address: 180.101.49.12
+   
+   ......
+   
+   Wed Nov 11 03:43:58 UTC 2020
+   Server:         169.254.20.10
+   Address:        169.254.20.10:53
+   
+   www.baidu.com   canonical name = www.a.shifen.com
+   Name:   www.a.shifen.com
+   Address: 180.101.49.11
+   Name:   www.a.shifen.com
+   Address: 180.101.49.12
+   
+   Wed Nov 11 03:43:59 UTC 2020
+   nslookup: read: Connection refused
+   nslookup: read: Connection refused
+   ;; connection timed out; no servers could be reached
+   
+   ......
+   
+   Wed Nov 11 03:46:39 UTC 2020
+   nslookup: read: Connection refused
+   nslookup: read: Connection refused
+   ;; connection timed out; no servers could be reached
+   
+   Wed Nov 11 03:46:44 UTC 2020
+   Server:         169.254.20.10
+   Address:        169.254.20.10:53
+   
+   Non-authoritative answer:
+   www.baidu.com   canonical name = www.a.shifen.com
+   Name:   www.a.shifen.com
+   Address: 180.101.49.11
+   Name:   www.a.shifen.com
+   Address: 180.101.49.12
+   
+   Wed Nov 11 03:46:45 UTC 2020
+   Server:         169.254.20.10
+   Address:        169.254.20.10:53
+   
+   www.baidu.com   canonical name = www.a.shifen.com
+   Name:   www.a.shifen.com
+   Address: 180.101.49.11
+   Name:   www.a.shifen.com
+   Address: 180.101.49.12
+   ```
+
+   > 解析日志做了缩减处理。
+
+   从上列日志中可以看到，在`Wed Nov 11 03:43:59 UTC 2020` 到 `Wed Nov 11 03:46:44 UTC 2020` 时间内，解析域名是不成功的，也就意味着近4分钟内应用是无法连接外网的。node-local-dns pod 在此时间内完成了重建，后续解析才能够成功。
+
+   对于这种情况，我们可以增加一个备用`nameserver`，也就是我们的 `kube-dns`的 cluster，从而在 node-local-dns 不可用的情况下，能使用集群中的dns服务。
+
+5. 添加备用 nameserver
+
+   ```bash
+   / # cat  /etc/resolv.conf 
+   nameserver 169.254.20.10
+   nameserver 10.96.0.10
+   search default.svc.cluster.local svc.cluster.local cluster.local
+   options ndots:2
+   options timeout:2
+   ```
+
+6. 定时查询解析
+
+   ```bash
+   / # while true; do date; nslookup -type=a www.baidu.com; sleep 0.5; done
+   ```
+
+7. 在测试pod节点上kill掉`node-local-dns` pod
+
+   ```bash
+   # docker kill $(docker ps | grep node-cache_node-local-dns  | awk '{print $1}')
+   eaf8e75858e0
+   ```
+
+8. 在测试pod容器中，查看解析情况
+
+   ```bash
+   Wed Nov 11 04:36:58 UTC 2020
+   Server:         169.254.20.10
+   Address:        169.254.20.10:53
+   
+   www.baidu.com   canonical name = www.a.shifen.com
+   Name:   www.a.shifen.com
+   Address: 180.101.49.12
+   Name:   www.a.shifen.com
+   Address: 180.101.49.11
+   
+   ......
+   
+   Wed Nov 11 04:36:59 UTC 2020
+   nslookup: read: Connection refused
+   nslookup: read: Connection refused
+   Server:         10.96.0.10
+   Address:        10.96.0.10:53
+   
+   Non-authoritative answer:
+   www.baidu.com   canonical name = www.a.shifen.com
+   Name:   www.a.shifen.com
+   Address: 180.101.49.12
+   Name:   www.a.shifen.com
+   Address: 180.101.49.11
+   
+   ......
+   
+   Wed Nov 11 04:37:10 UTC 2020
+   nslookup: read: Connection refused
+   nslookup: read: Connection refused
+   Server:         10.96.0.10
+   Address:        10.96.0.10:53
+   
+   Non-authoritative answer:
+   www.baidu.com   canonical name = www.a.shifen.com
+   Name:   www.a.shifen.com
+   Address: 180.101.49.12
+   Name:   www.a.shifen.com
+   Address: 180.101.49.11
+   
+   Wed Nov 11 04:37:16 UTC 2020
+   Server:         169.254.20.10
+   Address:        169.254.20.10:53
+   
+   Non-authoritative answer:
+   www.baidu.com   canonical name = www.a.shifen.com
+   Name:   www.a.shifen.com
+   Address: 180.101.49.12
+   Name:   www.a.shifen.com
+   Address: 180.101.49.11 
+   ```
+
+   > 解析日志做了缩减处理。
+
+   从上列日志中可以看到，在`Wed Nov 11 04:36:59 UTC 2020` 到 `Wed Nov 11 04:37:16 UTC 2020` 时间内，`169.254.20.10` 本地dns 解析域名是不成功的，经过重试  `10.96.0.10` 集群dns获得了域名A记录。这样就能保障在本地dns出现故障时，可以使用集群dns接替解析任务，从而使业务不中断。
+
+
+
 
 ## 监控
 
