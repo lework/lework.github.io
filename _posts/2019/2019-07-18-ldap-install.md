@@ -211,8 +211,7 @@ $EXTENDED_SCHEMA = 1;
 mkdir /root/openldap
 /usr/share/migrationtools/migrate_base.pl >/root/openldap/base.ldif
 
-ldapadd -x -D "cn=Manager,dc=lework,dc=com" -w 123456 -f /root/openldap
-/base.ldif
+ldapadd -x -D "cn=Manager,dc=lework,dc=com" -w 123456 -f /root/openldap/base.ldif
 ```
 
 > `-D`指定绑定dn `-w`指定管理员密码 `-f`指定文件

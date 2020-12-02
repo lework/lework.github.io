@@ -425,14 +425,14 @@ sample-m2dvb 192.168.77.134 10.244.4.10 nginx:1.19.1 62375
 可以看到 pod 只改变了容器镜像和资源id, pod名称, pod主机, pod ip 都没有改变。
 
 再去 pod 节点上查看容器信息
-
+{% raw %}
 ​```bash
 docker ps --filter label=io.kubernetes.pod.name=sample-j5ht6 --format "table {{.Image}}\t{{.CreatedAt}}\t{{.RunningFor}}\t{{.Names}}"      
 IMAGE                                    CREATED AT                      CREATED             NAMES
 nginx                                    2020-10-29 18:00:57 +0800 CST   4 minutes ago       k8s_nginx_sample-j5ht6_default_0c0ad06e-792f-487c-b218-321fb33b1695_1
 registry.aliyuncs.com/k8sxio/pause:3.2   2020-10-29 17:50:56 +0800 CST   14 minutes ago      k8s_POD_sample-j5ht6_default_0c0ad06e-792f-487c-b218-321fb33b1695_0
 ```
-
+{% endraw %}
 可以看到 pod 里 只有 nginx 这个容器重新创建了, pause 容器还是之前的。
 
 cloneset 的执行事件

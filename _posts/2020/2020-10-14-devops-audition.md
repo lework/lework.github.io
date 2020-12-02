@@ -207,6 +207,22 @@ Kubernetes 是一个跨主机集群的 开源的容器调度平台，它可以�
 - 服务的自动发现和负载均衡: 不需要修改您的应用程序来使用不熟悉的服务发现机制，Kubernetes 为容器提供了自己的 IP 地址和一组容器的单个 DNS 名称，并可以在它们之间进行负载均衡。
 - 滚动升级和一键回滚: Kubernetes 逐渐部署对应用程序或其配置的更改，同时监视应用程序运行状况，以确保它不会同时终止所有实例。 如果出现问题，Kubernetes会为您恢复更改，利用日益增长的部署解决方案的生态系统。 
 
+### 6、calico 的 iptables 和 ipvs 的区别
+
+- ipvs 具有调度算法的负载均衡器，例如循环，最短延迟，最少连接，权重等。iptables则只有随机调度。
+- kube-proxy 的iptables 规则数目随着集群的扩大成几何数增长，更新一次规则需要很长时间。但Calico广泛的使用ipset来优化规则链。
+- iptables  按顺序处理规则，而IPVS使用hash表。 随着服务的增加，ipvs的性能保持不变。随着服务数量增加到几千个，IPTables的性能变得不可预测和缓慢。
+- iptables 模式中 kube-proxy 在 `NAT pre-routing` Hook 中实现它的 NAT 和负载均衡功能。而ipvs是在netfilter的INPUT链 上做dnat
+
+### 7、calico 与 flannel 区别
+
+flannel是overlay network, 主要是L2(VXLAN)。 calico主要是L3，用BGP路由。
+
+- flannel vxlan和calico ipip模式都是隧道方案，但是calico的封装协议IPIP的header更小，所以性能比flannel vxlan要好一点点。
+- flannel 旨在解决不同host上的容器网络互联问题，大致原理是每个 host 分配一个 subnet，容器从此 subnet 中分配 IP，这些 IP 可以在 host 间路由，容器间无需 NAT 和 port mapping 就可以跨主机通信。
+- calico是一个纯三层的数据中心网络方案，实现类似于flannel host-gw,不过它没有复用docker 的docker0 bridge，而是自己实现的。
+- Calico基于iptables还提供了丰富而灵活的网络Policy，保证通过各个节点上的ACLs来提供Workload的多租户隔离、安全组以及其他可达性限制等功能。flannel 无策略处理。
+
 ## 三、前端相关
 
 ### 1、简单说下 vue/react的生命周期，有哪些阶段

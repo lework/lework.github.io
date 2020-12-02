@@ -11,6 +11,9 @@ author: lework
 
 在 k8s 中导出(`kubectl get xx -o yaml`)资源描述信息时，会带出一些k8s系统添加的信息，但这些都不是我们需要的信息，官方没有提供过滤的选项，在下面我给出了几种方式来处理这种情况。
 
+
+
+
 ## 输出 yaml
 
 使用 [yq](https://github.com/mikefarah/yq) 项目过滤 yaml 信息
@@ -504,6 +507,133 @@ kubectl_json() {
   "metadata": {}
 }
 ```
+## 使用插件
+
+[kubectl-neat](https://github.com/itaysk/kubectl-neat) 清理Kuberntes yaml和json输出，使其具有可读性.
+
+```bash
+wget https://gh.con.sh/https://github.com/itaysk/kubectl-neat/releases/download/v2.0.1/kubectl-neat_linux.tar.gz
+tar zxf kubectl-neat_linux.tar.gz  -C /usr/local/sbin/
+chmod +x /usr/local/sbin/kubectl-neat
+```
+
+测试使用
+```bash
+# kubectl neat get -- pods -oyaml
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    labels:
+      app: ingress-demo-app
+      pod-template-hash: 78ccc7c466
+    name: ingress-demo-app-78ccc7c466-8kz5h
+    namespace: default
+  spec:
+    containers:
+    - image: traefik/whoami:v1.6.0
+      name: whoami
+      ports:
+      - containerPort: 80
+    preemptionPolicy: PreemptLowerPriority
+    priority: 0
+    serviceAccountName: default
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    labels:
+      app: ingress-demo-app
+      pod-template-hash: 78ccc7c466
+    name: ingress-demo-app-78ccc7c466-m5slh
+    namespace: default
+  spec:
+    containers:
+    - image: traefik/whoami:v1.6.0
+      name: whoami
+      ports:
+      - containerPort: 80
+    preemptionPolicy: PreemptLowerPriority
+    priority: 0
+    serviceAccountName: default
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
+  
+# kubectl get svc -o json | kubectl neat                 
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {"name":"ingress-demo-app","namespace":"default"},
+            "spec": {
+                "clusterIP": "10.96.44.53",
+                "ports": [
+                    {
+                        "name": "http",
+                        "port": 80
+                    }
+                ],
+                "selector": {
+                    "app": "ingress-demo-app"
+                }
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {"labels":{"component":"apiserver","provider":"kubernetes"},"name":"kubernetes","namespace":"default"},
+            "spec": {
+                "clusterIP": "10.96.0.1",
+                "ports": [
+                    {
+                        "name": "https",
+                        "port": 443,
+                        "targetPort": 6443
+                    }
+                ]
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": "",
+        "selfLink": ""
+    }
+}
+```
+
+更多例子
+```bash
+kubectl get pod mypod -o yaml | kubectl neat
+kubectl get pod mypod -oyaml | kubectl neat -o json
+kubectl neat -f - <./my-pod.json
+kubectl neat -f ./my-pod.json
+kubectl neat -f ./my-pod.json --output yaml
+kubectl neat get -- pod mypod -oyaml
+kubectl neat get -- svc -n default myservice --output json
+```
 
 ## 使用 sed
 
@@ -511,12 +641,13 @@ kubectl_json() {
 
 ```bash
 # kubectl get svc ingress-demo-app -o yaml \
-  | sed -n '/managedFields:/{p; :a; N; /name: ingress-demo-app/!ba; s/.*\n//}; p' \
-  | sed -e 's/uid:.*//g' \
-        -e 's/resourceVersion:.*//g' \
-        -e 's/selfLink:.*//g' \
-        -e 's/creationTimestamp:.*//g' \
-        -e 's/managedFields:.*//g' \
+  | sed -n '/ managedFields:/{p; :a; N; / name: ingress-demo-app/!ba; s/.*\n//}; p' \
+  | sed -e 's/ uid:.*//g' \
+        -e 's/ resourceVersion:.*//g' \
+        -e 's/ selfLink:.*//g' \
+        -e 's/ creationTimestamp:.*//g' \
+        -e 's/ managedFields:.*//g' \
+        -e 's/ generateName:.*//g' \
         -e '/^\s*$/d'
 apiVersion: v1
 kind: Service
