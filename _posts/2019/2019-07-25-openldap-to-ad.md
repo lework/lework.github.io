@@ -163,7 +163,7 @@ cat /etc/lsc/openldap2ad/lsc.xml
         </dataset>  
         <dataset>
           <name>objectClass</name>  
-          <policy>KEEP</policy>  
+          <policy>FORCE</policy>  
           <createValues> 
             <string>"user"</string>  
             <string>"organizationalPerson"</string>  
@@ -330,7 +330,7 @@ certutil -ca.cert client.crt
 导入证书
 
 ```bash
-cd /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.el7_6.x86_64/jre/lib/security/
+cd "$(dirname $(dirname `readlink -f /etc/alternatives/java`))/lib/security/"
 
 ../../bin/keytool -import -file /root/openldap/client.crt -keystore jssecacerts
 输入密钥库口令:

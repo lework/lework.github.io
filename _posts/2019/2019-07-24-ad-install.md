@@ -199,11 +199,18 @@ AD域控制器部署完成，打开**服务器管理器**-**工具**-**Active Di
 
 运行-->ldp.exe
 
-`LDAP:\\\WIN-V5SBNPSNFOM.lework.com:389`
+```
+host: WIN-V5SBNPSNFOM.lework.com port: 389
+conn：LDAP:\\WIN-V5SBNPSNFOM.lework.com:389
+```
 
 ![1563964600770](/assets/images/ldap/1563964600770.png)
 
-`LDAPS:\\WIN-V5SBNPSNFOM.lework.com:636`
+```
+host: WIN-V5SBNPSNFOM.lework.com port: 636
+conn：LDAPS:\\WIN-V5SBNPSNFOM.lework.com:636
+```
+SSL 勾选上
 
 ![1563964651346](/assets/images/ldap/1563964651346.png)
 
