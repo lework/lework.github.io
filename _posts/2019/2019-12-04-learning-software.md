@@ -36,39 +36,30 @@ author: lework
       1. 使用`shell`方式进行自动化部署
       2. 使用`ansible`方式进行自动化部署
 
-
 2. 监控报警
-   
      1. 监控指标
-     
           1. 针对每种部署规模，分别进行`监控指标`数据收集
      2. 监控工具
-     
           1. 使用`zabbix`传统方式监控，并制定监控报警模板
           2. 使用`prometheus`方式监控，并制定监控报警模板
           3. 使用`grafana`展示监控面板
      3. 报警方式
-     
           1. `短信`
           2. `邮件`
 3. 备份恢复
      1. 针对每种`部署规模`，分别进行备份软件的数据
      2. 指定`故障场景`，对备份数据进行`恢复`
 4. 升级
-
      1. 升级方式
-
           1. `平滑`升级
           2. `停机`升级
      2. 升级操作
-
           1. 针对每种`部署方式`，分别进行升级版本操作
           2. 针对每种`宿主机`，分别进行升级版本操作
 5. 优化
      1. 针对每种`宿主机`，分别进行相关优化操作
      2. 针对每种`部署规模`，分别进行相关优化操作
 6. 压测
-
      1. 单实例压测， 服务器配置2C4G/4C8G等等
      2. 集群压测， 服务器配置2C4G/4C8G等等
 7. 通读官方文档
@@ -82,7 +73,7 @@ author: lework
 
 1. 官方文档/论坛
 2. 搜索引擎
-   1. 通过`google.com`搜索软件的一切信息，如 `pdf`，`ppt` ，`cookebook`，`awesome`，`cheatsheet`，`install`，`gitbook`
+   1. 通过`google.com`搜索软件的一切信息，如 `pdf`，`ppt` ，`cookebook`，`awesome`，`cheatsheet`，`install`，`gitbook`，`问题`， `Bug`
 3. 视频
    1. 国内：https://www.bilibili.com/
    2. 国外：https://www.youtube.com/
@@ -99,6 +90,7 @@ author: lework
 6. `github`
    1. `github.com`中搜索软件的`awesome`，其整理了软件相关的知识点及工具清单。
    2. `github.com`中搜索软件的`cheatsheet`，其整理了软件相关的常用命令。
+   2. `github.com`中搜索软件的`issues`，其整理了用户使用的问题以及软件的bug。
 7. 软件的一些常见问题
    1. 国内: https://segmentfault.com/
    2. 国外: https://stackoverflow.com/
