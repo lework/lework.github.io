@@ -3,7 +3,7 @@ layout: post
 title: "使用 kainstall 工具一键部署 kubernetes 高可用集群"
 date: "2020-09-26 14:40"
 category: kubernetes
-tags: kubernetes install
+tags: kubernetes k8s-install
 author: lework
 ---
 * content

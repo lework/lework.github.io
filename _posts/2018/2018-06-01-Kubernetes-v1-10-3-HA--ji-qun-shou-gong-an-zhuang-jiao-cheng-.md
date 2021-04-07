@@ -2,6 +2,7 @@
 layout: post
 title: Kubernetes-v1-10-3-HA-集群手工安装教程
 categories: kubernetes
+tags: Ansible kubernetes k8s-install
 date: 2018-06-01 12:04
 excerpt: "之所以这么累的手工安装Kubernetes v1.10.3 HA 集群，是为了深入的了解Kubernetes各个组件的关系和功能，本次使用static pod方式安装服务。"
 auth: lework

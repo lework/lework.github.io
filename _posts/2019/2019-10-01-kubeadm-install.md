@@ -3,7 +3,7 @@ layout: post
 title: "使用kubeadm安装Kubernetes v15.4 ha集群"
 date: "2019-10-01 10:00:00"
 category: kubernetes
-tags: kubernetes k8s ha
+tags: kubernetes k8s-install
 author: lework
 ---
 * content

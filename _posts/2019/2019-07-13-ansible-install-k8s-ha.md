@@ -3,7 +3,7 @@ layout: post
 title: "使用ansible来做kubernetes 1.14.3集群高可用的一键部署"
 date: "2019-07-13 09:22:33"
 category: kubernetes
-tags: ansible kubernetes
+tags: ansible kubernetes k8s-install
 author: lework
 ---
 * content

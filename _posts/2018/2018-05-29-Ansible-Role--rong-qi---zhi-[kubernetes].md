@@ -3,7 +3,7 @@ layout: post
 title: "Ansible Role 容器 之【kubernetes】"
 date: "2018-05-29 10:49:14"
 categories: Ansible
-tags: Ansible kubernetes
+tags: Ansible kubernetes k8s-install
 excerpt: "Ansible Role: kubernetes 以Static Pods方式安装kubernetes 1.10.3 ha 集群。 介绍 Kub..."
 auth: lework
 ---

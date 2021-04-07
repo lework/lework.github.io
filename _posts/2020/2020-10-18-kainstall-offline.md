@@ -3,7 +3,7 @@ layout: post
 title: "使用 kainstall 离线部署 kubernetes v1.19.3 ha 集群"
 date: "2020-10-18 19:40"
 category: kubernetes
-tags: kubernetes install
+tags: kubernetes k8s-install
 author: lework
 ---
 * content

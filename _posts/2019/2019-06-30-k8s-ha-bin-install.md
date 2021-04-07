@@ -3,7 +3,7 @@ layout: post
 title: "全手工使用hyperkube二进制安装Kubernetes v14.3 ha集群"
 date: "2019-06-30 20:58:27"
 category: kubernetes
-tags: kubernetes k8s ha
+tags: kubernetes k8s-install
 author: lework
 ---
 * content
