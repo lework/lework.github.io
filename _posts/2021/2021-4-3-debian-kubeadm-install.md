@@ -553,6 +553,7 @@ makestep 1.0 3
 logdir /var/log/chrony
 EOF
 
+timedatectl set-timezone Asia/Shanghai
 chronyd -q -t 1 'server cn.pool.ntp.org iburst maxsamples 1'
 systemctl enable chronyd
 systemctl start chronyd
@@ -589,7 +590,20 @@ ipvsadm --clear
 
 ```bash
 apt-get install -y auditd audispd-plugins
-cat << EOF >> /etc/audit/rules.d/audit.rules
+cat << EOF > /etc/audit/rules.d/audit.rules
+
+# Remove any existing rules
+-D
+
+# Buffer Size
+-b 8192
+
+# Failure Mode
+-f 1
+
+# Ignore errors
+-i 
+
 # docker
 -w /usr/bin/dockerd -k docker
 -w /var/lib/docker -k docker
