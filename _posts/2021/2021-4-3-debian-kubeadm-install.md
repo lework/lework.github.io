@@ -644,6 +644,55 @@ systemctl enable auditd
 grep single-request-reopen /etc/resolv.conf || sed -i '1ioptions timeout:2 attempts:3 rotate single-request-reopen' /etc/resolv.conf
 ```
 
+### 升级内核
+
+> 注意：这里是可选项。 
+
+
+debian 10 默认关闭了 cgroup hugetlb 。可以通过更新内核开启。
+
+```bash
+root@debian:~# cat /etc/debian_version
+10.9
+root@debian:~# uname -r
+4.19.0-16-amd64
+root@debian:~# grep HUGETLB /boot/config-$(uname -r)    
+# CONFIG_CGROUP_HUGETLB is not set
+CONFIG_ARCH_WANT_GENERAL_HUGETLB=y
+CONFIG_HUGETLBFS=y
+CONFIG_HUGETLB_PAGE=y
+```
+
+更新内核
+
+```bash
+# 添加 backports 源
+$ sudo echo "deb   http://mirrors.aliyun.com/debian buster-backports main" > /etc/apt/sources.list.d/backports.list
+
+# 更新来源
+$ sudo apt update
+
+# 安装 Linux 内核映像 
+$ sudo apt -t buster-backports  install linux-image-amd64
+
+# 安装 Linux 内核标头（可选）
+$ sudo apt -t buster-backports install linux-headers-amd64
+```
+
+重启之后，再次查看 cgroup hugetlb
+
+```bash
+root@debian:~# cat /etc/debian_version 
+10.9
+root@debian:~# uname -r
+5.10.0-0.bpo.4-amd64
+root@debian:~# grep HUGETLB /boot/config-$(uname -r)                   
+CONFIG_CGROUP_HUGETLB=y
+CONFIG_ARCH_WANT_GENERAL_HUGETLB=y
+CONFIG_HUGETLBFS=y
+CONFIG_HUGETLB_PAGE=y
+```
+
 ### 安装 docker-ce
 
 ```bash
@@ -971,7 +1020,7 @@ kubeadm join apiserver.cluster.local:6443 --token nj9wia.n8pmj18em5cfzg7e \
 
 >  记录下join信息，后面node节点加入时使用。
 
-**注意**：这里提示找不到hugelet，是因为 debian 10 默认将cgroup hugelet关闭了。需要更新内核才能开启。
+**注意**：这里如果出现 提示找不到 hugetlb，是因为 debian 10 默认关闭了 cgroup hugetlb 关闭了。可以通过更新内核开启。
 
 使用netstat -ntlp查看服务是否正常启动
 
@@ -1151,7 +1200,7 @@ systemctl enable --now haproxy
     --discovery-token-ca-cert-hash sha256:64ddf85513a7d0321cc19bad82209c83783276daa4cd8ebcb114f63804e649be 
 ```
 
- ## 配置集群
+## 配置集群
 
 ### 配置 worker role
 
