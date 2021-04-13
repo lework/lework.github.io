@@ -535,9 +535,8 @@ echo 'ALL ALL=NOPASSWD: /usr/bin/crictl info' > /etc/sudoers.d/crictl
 ### 时间同步
 
 ```bash
-apt-get remove -y ntp
-apt-get install -y chrony 
-yum install -y chrony 
+ntpd --version > /dev/null 2>1 && apt-get remove -y ntp
+apt-get install -y chrony
 [ ! -f /etc/chrony.conf_bak ] && cp /etc/chrony.conf{,_bak} #备份默认配置
 cat << EOF > /etc/chrony.conf
 server ntp.aliyun.com iburst
@@ -1269,7 +1268,7 @@ Error from server (ServiceUnavailable): the server is currently unable to handle
 部署metric-server组件
 
 ```bash
-# wget https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.4.2/components.yaml metrics-server.yaml
+# wget https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.4.2/components.yaml -O metrics-server.yaml
 
 # sed -i -e 's#k8s.gcr.io/metrics-server#registry.cn-hangzhou.aliyuncs.com/kainstall#g' \
        -e '/--kubelet-preferred-address-types=.*/d' \

@@ -21,9 +21,8 @@ author: lework
 
 
 
+{% raw %}
 ## 环境信息
-
-
 
 | System OS          |   IP Address   | Docker  |    Kernel    | Hostname | Cpu  | Memory | Application      |
 | ------------------ | :------------: | :-----: | :----------: | :------: | ---- | :----: | ---------------- |
@@ -1866,3 +1865,5 @@ nginx                    1/1     Running   0          35s
 
 > 累了吧，试试一键部署[Ansible 应用 之 【使用ansible来做kubernetes 1.14.3集群高可用的一键部署
 】](https://lework.github.io/2019/07/13/ansible-install-k8s-ha/) 
+
+{% endraw %}
