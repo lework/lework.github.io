@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "使用 kubeadm 在 debian 10 上安装 Kubernetes v1.20.5 ha集群"
+title: "在 debian 10 上以 kubeadm 方式安装 Kubernetes v1.20.5 ha集群"
 date: "2021-04-03 22:10:00"
 category: kubernetes
 tags: kubernetes k8s-install
@@ -51,6 +51,7 @@ Flannel :` v0.13.0`
 ## 初始化所有节点
 
 > 在集群所有节点上执行下面的操作
+> **注意**：以下操作有些存在过度优化，请根据自身情况择选。
 
 ### APT调整
 

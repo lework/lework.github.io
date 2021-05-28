@@ -28,7 +28,7 @@ author: lework
 - huawei https://mirrors.huaweicloud.com/jenkins/
 - tsinghua https://mirrors.tuna.tsinghua.edu.cn/jenkins/
 - ustc https://mirrors.ustc.edu.cn/jenkins/
-- bit http://mirror.bit.edu.cn/jenkins/
+- bit https://mirror.bit.edu.cn/jenkins/
 
 ```bash
 # curl -sSL https://cdn.jsdelivr.net/gh/lework/jenkins-update-center/speed-test.sh | bash
@@ -37,7 +37,7 @@ Jenkins mirror update center speed test
 
 [Mirror Site]
 tencent       :  https://mirrors.cloud.tencent.com/jenkins/
-bit           :  http://mirror.bit.edu.cn/jenkins/
+bit           :  https://mirror.bit.edu.cn/jenkins/
 huawei        :  https://mirrors.huaweicloud.com/jenkins/
 tsinghua      :  https://mirrors.tuna.tsinghua.edu.cn/jenkins/
 ustc          :  https://mirrors.ustc.edu.cn/jenkins/
