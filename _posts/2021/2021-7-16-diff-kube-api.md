@@ -14,6 +14,8 @@ author: lework
 查看 kubernetes 各个版本的 API 资源对象信息，以及对比其变化。
 
 
+
+
 ## 实现
 
 技术栈： vue，ant-design-vue, python
