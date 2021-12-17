@@ -23,6 +23,7 @@ type: page
 ## 开源项目
 
 - [2017] [Ansible-roles](https://github.com/lework/Ansible-roles) 含有运维日常部署，应用发布，系统操作等等的 ansible role，目前已有 100+
+- [2019] [Docker-compose-file](https://github.com/lework/Docker-compose-file) 记录使用过的Docker-compose
 - [2019] [kubectl-check](https://github.com/lework/kubectl-check) 用于检查 deployment 的所有 pod 是否就绪的 kubectl 插件
 - [2019] [lenav](https://github.com/lework/lenav) 一个简便的公司内部网址导航站
 - [2019] [leversion](https://github.com/lework/leversion) 列出开源软件的最新版本
@@ -33,6 +34,10 @@ type: page
 - [2020] [lesec](https://github.com/lework/lesec) 基于 openresty 的 lua 简单防火墙
 - [2020] [kainstall](https://github.com/lework/kainstall) 使用 shell 脚本一键部署 kubernetes ha 集群
 - [2020] [kubeadm-certs](https://github.com/lework/kubeadm-certs) 将 kubeadm 的证书有效期设置为10年
+- [2021] [fr](https://github.com/lework/fr) 生产事故记录需求文档-Demo
+- [2021] [sync_image](https://github.com/lework/sync_image) 同步国外 HUB 容器镜像到阿里云 HUB
+- [2021] [kube-api](https://github.com/lework/kube-api) 对比 kubernetes api 版本
+- [2021] [grafana-lenav-panel](https://github.com/lework/grafana-lenav-panel) grafana 的导航面板插件
 
 
 ## 群组织
