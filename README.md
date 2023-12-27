@@ -16,6 +16,7 @@ Windows 用户可以直接使用 [RubyInstaller](http://rubyinstaller.org/) 安�
 
 ```
 gem install jekyll
+gem install jekyll-paginate
 ```
 
 ### 2. 复制博客主题代码
