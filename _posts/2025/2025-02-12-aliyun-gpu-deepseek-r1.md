@@ -6,9 +6,8 @@ category: 大模型
 tags: 阿里云 GPU DeepSeek
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 > 本文介绍如何在阿里云 GPU 服务器上部署 DeepSeek R1 深度思考模型。
 
@@ -69,7 +68,7 @@ DeepSeek-R1-Distill 系列模型是基于知识蒸馏技术，通过使用 DeepS
 1. 安装系统内核头文件
 
 ```bash
-sudo yum install -y kernel-devel-$(uname -r) kernel-headers-$(uname -r)
+yum install -y kernel-devel-$(uname -r) kernel-headers-$(uname -r)
 ```
 
 2. 安装 NVIDIA 驱动
