@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '阿里云GPU服务器部署 DeepSeek R1 深度思考模型'
+title: '部署 DeepSeek R1 32B 深度思考模型'
 date: '2025-02-12 20:00'
 category: 大模型
 tags: 阿里云 GPU DeepSeek
@@ -68,8 +68,13 @@ DeepSeek-R1-Distill 系列模型是基于知识蒸馏技术，通过使用 DeepS
 1. 安装系统内核头文件
 
 ```bash
+# uname -r
+5.10.134-16.al8.x86_64
+
 yum install -y kernel-devel-$(uname -r) kernel-headers-$(uname -r)
 ```
+
+> 这里注意下：cuda 对内核版本是有要求的，内核版本最好要是5版本以上的，具体要求请看  [CUDA系统要求](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#system-requirements)
 
 2. 安装 NVIDIA 驱动
 
@@ -78,6 +83,8 @@ wget https://cn.download.nvidia.com/tesla/470.161.03/NVIDIA-Linux-x86_64-470.161
 chmod +x NVIDIA-Linux-x86_64-470.161.03.run
 sh NVIDIA-Linux-x86_64-470.161.03.run
 ```
+
+> 最新 https://cn.download.nvidia.com/tesla/570.86.15/NVIDIA-Linux-x86_64-570.86.15.run
 
 3. 验证 gpu 驱动是否安装成功
 
@@ -114,10 +121,8 @@ mkdir -p /data/ollama && cd /data/ollama
 wget https://ollama.com/install.sh
 
 # 为了加速下载，可以使用代理
-sed -i 's#https://ollama.com/download#https://gh-proxy.com/github.com/ollama/ollama/releases/download/v0.5.8#g' install.sh
+sed -i 's#https://ollama.com/download#https://gh-proxy.com/github.com/ollama/ollama/releases/download/v0.5.11#g' install.sh
 
-# 修改家目录, data目录是数据盘
-sed -i 's#-U -m -d /usr/share/ollama ollama#-U -m -d /data/ollama ollama#g' install.sh
 
 # 增加ollama systemd的环境变量
 sed -i '/\[Service\]/a\EnvironmentFile=/data/ollama/env' install.sh
@@ -125,6 +130,9 @@ sed -i '/\[Service\]/a\EnvironmentFile=/data/ollama/env' install.sh
 cat > /data/ollama/env <<EOF
 OLLAMA_HOST=0.0.0.0:11434
 OLLAMA_ORIGINS=*
+OLLAMA_KEEP_ALIVE=10m
+OLLAMA_NUM_PARALLEL=1
+OLLAMA_MODELS=/data/ollama/models
 EOF
 
 chmod +x install.sh
@@ -204,7 +212,11 @@ eval rate:            19.77 tokens/s
 
 
 
-**Token生成对比**
+**Token生成速度对比**
+
+- CPU: `16 核(vCPU)`
+- 内存: `60 GiB`
+- GPU: A10 24G
 
 用户输入：`你好，给我讲个可笑的笑话`
 
