@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '部署 DeepSeek R1 671B 深度思考模型'
-date: '2025-02-12 20:00'
+date: '2025-02-19 20:00'
 category: 大模型
 tags: GPU DeepSeek
 author: lework
@@ -380,9 +380,9 @@ DeepSeek-R1-Q4_K_M:latest    1d8ef98ce5e7    510 GB    84%/16% CPU/GPU    Foreve
    [uv](https://docs.astral.sh/uv/) 是一个非常快的Python包和项目管理器，用Rust编写。
 
 ```bash
-wget https://gh-proxy.com/github.com/astral-sh/uv/releases/latest/download/uv-installer.shexport 
+wget https://gh-proxy.com/github.com/astral-sh/uv/releases/latest/download/uv-installer.sh
 # 使用代理
-UV_INSTALLER_GITHUB_BASE_URL=https://gh-proxy.com/github.com
+export UV_INSTALLER_GITHUB_BASE_URL=https://gh-proxy.com/github.com
 bash uv-installer.sh 
 source $HOME/.local/bin/env
 
@@ -653,7 +653,7 @@ pip install "sglang[all]>=0.4.3.post2" --find-links https://flashinfer.ai/whl/cu
 ### 运行模型
 
 ```bash
-python -m sglang.launch_server --model-path /data2/Qwen2.5-72B-Instruct --served-model-name Qwen2.5-72B-Instruct --tp 8 --trust-remote-code  --host 0.0.0.0 --port 8000
+python -m sglang.launch_server --model-path /data2/Qwen2.5-72B-Instruct --served-model-name Qwen2.5-72B-Instruct --tp 8 --trust-remote-code --host 0.0.0.0 --port 8000
 
 # 启动如果以下遇到错误，需要回退 transformers 版本
 ImportError: cannot import name 'is_valid_list_of_images' from 'transformers.models.mllama.image_processing_mllama' (/data/sglang/lib/python3.12/site-packages/transformers/models/mllama/image_processing_mllama.py)
