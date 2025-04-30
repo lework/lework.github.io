@@ -6,9 +6,8 @@ category: ai
 tags: ai dify
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
