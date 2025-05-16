@@ -6,9 +6,8 @@ category: Dockerfile
 tags: Dockerfile
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
@@ -59,7 +58,7 @@ author: lework
   - 学习使用 Jenkins 进行 CI/CD，实现 Docker 镜像的自动化构建与集成
 - **目标读者：** 开发人员、运维工程师，希望快速将所学应用于实际工作。
 
-![dockerfile_images.png](\assets\images\2025\dockerfile_images.png)
+  ![dockerfile_images.png](\assets\images\2025\dockerfile_images.png)
 
 4️⃣ **精益求精，安全高效【进阶篇】**
 
@@ -82,15 +81,20 @@ author: lework
 还在等什么？立即打开这份宝典，开启您的高效 Docker 镜像构建之旅！让标准化的 Dockerfile 为您的业务发展注入强劲动力，助力企业在激烈的市场竞争中脱颖而出！
 
 
-![dockerfile.jpg](\assets\images\2025\dockerfile.jpg)
+  ![dockerfile.jpg](\assets\images\2025\dockerfile.jpg)
 
 
-[**立即阅读，让您的 Docker 技能更上一层楼！**](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU5MzgyMDAyNQ==&action=getalbum&album_id=3950605469210558464&from_itemidx=1&from_msgid=2247484059#wechat_redirect)
+[**点我 立即阅读，让您的 Docker 技能更上一层楼！**](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU5MzgyMDAyNQ==&action=getalbum&album_id=3950605469210558464&from_itemidx=1&from_msgid=2247484059#wechat_redirect)
 
 
-同时，我也建立了微信交流群，请在【乐运维】公众号中恢复加群获取方式。
+同时，我也建立了微信交流群，在群里可以沟通解决Dockerfile相关的问题。
 
-![乐运维](\assets\images\2025\leyunwei.jpg)
+  ![dockerfile-wx.jpg](\assets\images\2025\dockerfile-wx.jpg)
+
+
+如果链接过期，请在【乐运维】公众号中恢复加群获取方式。
+
+  ![乐运维](\assets\images\2025\leyunwei.jpg)
 
 
 {% endraw %}
