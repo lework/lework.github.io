@@ -6,15 +6,18 @@ category: ai
 tags: ai dify
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
 [Dify](https://dify.ai/) 是一款强大的开源大型语言模型（LLM）应用开发与运营平台。在运行过程中，Dify 会产生各类日志数据，默认情况下，Dify 系统本身不提供自动清理这些日志的功能。随着时间的推移，累积的日志可能会占用大量的磁盘存储空间，影响系统性能。因此，定期手动清理日志是一个推荐的做法。
 
 本文档将指导您如何连接到 Dify 使用的 PostgreSQL 数据库，并执行 SQL 命令来安全地清理指定时间之前的日志数据。
+
+
+
+
 
 ## 清理步骤
 

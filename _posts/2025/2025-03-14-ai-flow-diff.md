@@ -6,9 +6,8 @@ category: ai
 tags: ai dify
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
@@ -23,6 +22,10 @@ author: lework
 4. 注重知识库选 RAGFlow
 
 5. 注重易用性和企业级部署选 MaxKB
+
+
+
+
 
 ## 一、背景
 

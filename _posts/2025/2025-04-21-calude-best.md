@@ -6,13 +6,15 @@ category: ai
 tags: ai coding
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
 在当今数字化的时代，代码编写成为了许多人工作和学习中不可或缺的一部分。Claude Code 作为一款强大的命令行工具，为我们的编码工作带来了更多的便利和可能性。今天，就让我们一起来了解一下如何根据 Claude 的编码最佳实践，高效地使用 Claude 来编写代码。
+
+
+
 
 ### 一、自定义你的设置
 

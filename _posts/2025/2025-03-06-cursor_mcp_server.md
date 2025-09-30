@@ -6,9 +6,8 @@ category: ai
 tags: ai cursor coding
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
@@ -30,6 +29,9 @@ author: lework
 3. 让 MCP 专家帮我们实现一个简单的 MCP 应用
 
 准备好了吗？让我们开始吧！
+
+
+
 
 ## 详细步骤
 

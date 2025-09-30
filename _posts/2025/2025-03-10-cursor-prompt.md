@@ -6,9 +6,8 @@ category: ai
 tags: ai cursor
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
@@ -19,6 +18,10 @@ author: lework
 ## 背景
 
 在我最近的一次开发中，我没有让 Cursor 去调试已有代码，而是直接让它开发全新功能。在这个过程中，Cursor 多次遇到了困难，无法顺利完成任务。我发现了一个有效的解决方案，现在分享给大家。
+
+
+
+
 
 ## 两步提示法
 

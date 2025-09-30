@@ -6,15 +6,18 @@ category: ai
 tags: ai cursor coding
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
 在现代软件开发中，AI 编程助手（如 Cursor、Copilot、Windsurf、Trae、VsCode 等）已成为不可或缺的工具。然而，AI 的输出质量在很大程度上取决于我们提供给它的指令（即提示词）。一套精心设计的提示词，能够引导 AI 更精准、更深入地理解我们的意图，从而生成更高质量、更符合要求的代码和解决方案。
 
 本文分享了两套功能强大且应用场景分明的软件开发提示词，旨在帮助您在不同开发阶段更高效地驾驭 AI。
+
+
+
+
 
 ---
 

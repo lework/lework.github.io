@@ -6,9 +6,8 @@ category: docker
 tags: docker harbor
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
@@ -26,6 +25,10 @@ author: lework
 - 2.8.0 版本：取消了 chartmuseum 的支持
 - 2.9.0 版本：取消了 notary 和 chartmuseum 的支持，PostgreSQL 升级到 14 版本
 - 2.11.0 版本：PostgreSQL 升级到 15 版本
+
+
+
+
 
 **数据库重要变动：**
 

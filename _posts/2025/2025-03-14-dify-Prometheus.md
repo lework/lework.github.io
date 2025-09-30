@@ -6,9 +6,8 @@ category: ai
 tags: ai dify kubernetes prometheus
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
@@ -19,6 +18,10 @@ author: lework
 ![image-20250314090418362](\assets\images\2025\image-20250314090418362.png)
 
 是不是很神奇？通过简单的对话就能获取 [Kubernetes](https://kubernetes.io/docs/home/) 集群中 Pod 的资源使用情况并进行智能分析。这篇文章将详细介绍如何利用 [Dify](https://docs.dify.ai/) 平台结合 [Prometheus](https://prometheus.io/) 监控系统，实现对 Kubernetes 资源的智能分析和管理。
+
+
+
+
 
 ## 实现原理
 

@@ -6,9 +6,8 @@ category: ai
 tags: ai llm
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
@@ -19,6 +18,10 @@ author: lework
 ```思考模式：基础概念理解
 提示词不仅仅是技巧，它是一种艺术，是AI时代的沟通桥梁。好的提示词能显著提高问题解答的质量与效率，而这种技能适用于所有大模型产品。
 ```
+
+
+
+
 
 ## 二、提示词优化的基本原则
 

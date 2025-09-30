@@ -6,9 +6,8 @@ category: ai
 tags: ai dify coding cursor
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
@@ -17,6 +16,10 @@ author: lework
 在这篇教程中，我将带领大家使用 Cursor IDE 快速开发一个 Dify 插件，实现向 Kafka topic 发送消息的功能。Cursor 内置的 AI 辅助功能能够显著提升开发效率，特别适合插件快速开发场景。无论你是否有 Python 开发经验，只要按照步骤操作，都能轻松完成。
 
 > 如果你没有 Cursor，也可以使用 Copilot, Trae Cline 等可以使用 Claude-3.7-sonnet AI 模型的工具。
+
+
+
+
 
 ## 准备工作
 

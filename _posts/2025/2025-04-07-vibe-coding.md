@@ -6,9 +6,8 @@ category: ai
 tags: ai coding
 author: lework
 ---
-
-- content
-  {:toc}
+* content
+{:toc}
 
 {% raw %}
 
@@ -21,6 +20,10 @@ author: lework
 想象一下，你不再需要逐字逐句地编写复杂的代码，而是可以通过描述你的想法、与 AI 对话、运行和调整 AI 生成的内容，就能将软件项目变为现实。引用 @karpathy 的话来说，这几乎让你“忘记了代码的存在……只要看到东西，说点什么，运行点什么，复制粘贴点什么，它基本上就能工作了”。
 
 简单来说，**Vibe Coding 就是利用 AI 的力量，通过更直观、更接近人类自然思维的方式来创造软件。**
+
+
+
+
 
 ## 如何进行 Vibe Coding？它的核心引擎是什么？
 
