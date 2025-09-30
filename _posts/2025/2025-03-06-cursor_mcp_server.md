@@ -121,6 +121,4 @@ author: lework
 
 如果你有任何问题或建议，欢迎在评论区留言。祝你编程愉快！
 
-## 阿里云 SLS 日志查询结果\n\n
-
-| time | level | **tag**:**hostname** | **tag**:**pack_id** | **tag**:**receive_time** | **tag**:_cluster_id_ | **tag**:_node_ip_ | **tag**:_node_name_ | **topic** | _container_ip_ | _container_name_ | _image_name_ | _namespace_ | _pod_name_ | _pod_uid_ | _source_ | _time_ | file | func | k8s_label_app |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 2025-03-06T15:32:16+08:00 | error | prd-k8s-node-10.130.20.15 | 2BEE9B2DDEB015DC-8C6563 | 1741246338 | cd4bba3c8f15b4abb880c4cf15b5e36e6 | 10.130.20.15 | prd-k8s-node-10.130.20.15 | | 10.130.33.145 | prd-pc | harbor.xxx.com/prd/pc:master-486ea7e-20250... | business-mall | prd-pc-b5df8d89b-sgqp9 | 17f9b6c7-17d5-400b-bb0a-f6c95bdaa46e | stdout | 2025-03-06T15:32:16.825507537+08:00 | git.ickey.com.cn/mall/opms-base@v0.0.0-20240819... | filedetectbase.(*defaultFileDetectBase).AddRecord | pc |\n\n*注: 由于字段较多，只显示了前 20 个字段\*\n
+{% endraw %}
