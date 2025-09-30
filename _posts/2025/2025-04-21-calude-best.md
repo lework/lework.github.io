@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'laude 编码最佳实践指南，助你高效编写代码'
+title: 'Claude 编码最佳实践指南，助你高效编写代码'
 date: '2025-04-21 20:00'
 category: ai
 tags: ai coding
