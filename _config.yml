@@ -53,6 +53,7 @@ reward:
 # xxxxx字符串
 baidu_tongji_id:
 google_analytics_id:
+google_adsense_client: ca-pub-2340068463279840
 
 # Build settings
 markdown: kramdown
